@@ -1,5 +1,3 @@
-import "./styles/MyComponent.css";
-
 function Home() {
 	return (
 		<>
