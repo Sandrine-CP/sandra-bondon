@@ -33,3 +33,27 @@ p {
 	font-family: var(--font-paragraph);
 	font-weight: var(--font-weight-paragraph);
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
+}
+
+.skip-link:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	background: #007bff;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	z-index: 1000;
+}

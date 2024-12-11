@@ -5,7 +5,7 @@ import "./styles/Home.css";
 function Home() {
 	return (
 		<>
-			<main>
+			<main id="main-content">
 				<section className="hero">
 					<h1 className="hero__title">Vivez-vous</h1>
 					<img className="hero__image" src={Flowers} alt="Des fleurs" />

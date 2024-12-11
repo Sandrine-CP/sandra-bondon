@@ -5,8 +5,6 @@
 	gap: 60px;
 	background-color: #eeeeee;
 	height: 53px;
-}
-
-.header__tagline {
-	font-size: 32px;
+	font-size: 24px;
+	border-bottom: 1px solid #dedcdc;
 }

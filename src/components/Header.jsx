@@ -3,17 +3,17 @@ import "./styles/Header.css";
 
 function Header() {
 	return (
-		<div className="header">
-			<h1 className="header__logo">
+		<header className="header">
+			<div className="header__logo">
 				<Link to="/" aria-label="Retour à l'accueil">
 					{" "}
 					S | B
 				</Link>
-			</h1>
+			</div>
 			<p className="header__tagline">
 				Psychopraticienne - Coach - Hypnothérapeute
 			</p>
-		</div>
+		</header>
 	);
 }
 
