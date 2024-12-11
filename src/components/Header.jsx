@@ -10,7 +10,7 @@ function Header() {
 					S | B
 				</Link>
 			</h1>
-			<p className="header__tgaline">
+			<p className="header__tagline">
 				Psychopraticienne - Coach - Hypnothérapeute
 			</p>
 		</div>
