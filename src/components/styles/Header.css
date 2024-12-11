@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 60px;
+	background-color: #eeeeee;
+	height: 53px;
+}
+
+.header__tagline {
+	font-size: 32px;
+}

@@ -1,0 +1,35 @@
+:root {
+	:root {
+		/* Typographies */
+		--font-title: "Helvetica", sans-serif;
+		--font-paragraph: "Arial", sans-serif;
+
+		/* Weight */
+		--font-weight-title: 700; /* Gras pour les titres */
+		--font-weight-paragraph: 400; /* Normal pour les paragraphes */
+	}
+
+	/* Couleurs */
+	--color-primary: #f9f9f9;
+	--color-secondary: #333333;
+}
+
+body {
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-title);
+	font-weight: var(--font-weight-title);
+}
+
+p {
+	font-family: var(--font-paragraph);
+	font-weight: var(--font-weight-paragraph);
+}
