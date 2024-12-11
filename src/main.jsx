@@ -14,28 +14,16 @@ import "./index.css";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
-		element: <Home />,
-	},
-	{
-		path: "/about",
-		element: <About />,
-	},
-	{
-		path: "/therapies",
-		element: <Therapies />,
-	},
-	{
-		path: "/consultations",
-		element: <Consultations />,
-	},
-	{
-		path: "/professionals",
-		element: <Professionals />,
-	},
-	{
-		path: "/contact",
-		element: <Contact />,
+		path: "/", // App est le layout global
+		element: <App />,
+		children: [
+			{ path: "/", element: <Home /> },
+			{ path: "/about", element: <About /> },
+			{ path: "/therapies", element: <Therapies /> },
+			{ path: "/consultations", element: <Consultations /> },
+			{ path: "/professionals", element: <Professionals /> },
+			{ path: "/contact", element: <Contact /> },
+		],
 	},
 	{
 		path: "*",
