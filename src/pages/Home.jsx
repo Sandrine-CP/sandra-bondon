@@ -7,20 +7,24 @@ function Home() {
 		<>
 			<main id="main-content">
 				<section className="hero">
-					<h1 className="hero__title">Vivez-vous</h1>
-					<img className="hero__image" src={Flowers} alt="Des fleurs" />
-					<div className="hero__subtitle">
-						<h2 className="hero__subtitle-text">
-							Trouvez votre équilibre pas à pas
-						</h2>
+					<div className="hero__title">
+						<h1 className="hero__title-text">Vivez-vous</h1>
 					</div>
-					<div className="hero__text">
-						<p className="hero__paragraph">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-							cupiditate dolore numquam voluptatem rerum fugiat modi ipsum
-							similique, quis, quasi reprehenderit assumenda est cum odit labore
-							beatae nisi eaque veritatis?
-						</p>
+					<div className="hero__section">
+						<div className="hero__image">
+							<img src={Plume} alt="Des fleurs" />
+						</div>
+						<div className="hero__paragraph">
+							<h2 className="hero__paragraph-subtitle">
+								Trouvez votre équilibre pas à pas
+							</h2>
+							<p className="hero__paragraph-text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+								cupiditate dolore numquam voluptatem rerum fugiat modi ipsum
+								similique, quis, quasi reprehenderit assumenda est cum odit
+								labore beatae nisi eaque veritatis?
+							</p>
+						</div>
 					</div>
 				</section>
 				<section className="specialities">
@@ -31,6 +35,12 @@ function Home() {
 						temporibus id illo? Aperiam debitis quod quibusdam exercitationem
 						quos ut illum fugit.
 					</p>
+					<h3 className="specialities__item">Anxiété</h3>
+					<h3 className="specialities__item">Burn Out</h3>
+					<h3 className="specialities__item">Addiction</h3>
+					<h3 className="specialities__item">Phobie</h3>
+					<h3 className="specialities__item">Obsession</h3>
+					<h3 className="specialities__item">Trauma</h3>
 				</section>
 				<section className="therapies">
 					<div className="therapies__title">
