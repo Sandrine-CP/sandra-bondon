@@ -1,6 +1,6 @@
 # Sandra Bondon - Psychopraticienne
 
-Site web informatif pour Sandra Bondon, psychopraticienne spécialisée dans la gestion des émotions, des traumatismes et des phobies grâce à des méthodes comme la **MOSAÏC**, l'**hypnose thérapeutique**, et la **PNL**.
+Site web informatif pour Sandra Bondon, psychopraticienne spécialisée dans la gestion des émotions, des traumatismes et des phobies grâce à des méthodes comme la **MOSAÏC®**, l'**hypnose thérapeutique**, et la **PNL**.
 
 Ce projet est développé avec **Next.js** et **Tailwind CSS** et déployé sur **Vercel**.
 
