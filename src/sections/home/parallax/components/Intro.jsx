@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Background from "../../public/images/kristine-weilert-tLNRTxieD7k-unsplash.jpg";
+import Background from "../../../../../public/images/kristine-weilert-tLNRTxieD7k-unsplash.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 

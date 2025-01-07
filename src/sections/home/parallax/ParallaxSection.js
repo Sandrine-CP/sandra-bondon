@@ -1,11 +1,12 @@
 "use client";
+
 import { useEffect } from "react";
 import Lenis from "lenis";
-import Intro from "@/components/Intro";
-import Description from "@/components/Description";
-import Section from "@/components/Section";
+import Intro from "@/sections/home/parallax/components/Intro";
+import Description from "@/sections/home/parallax/components/Description";
+import Section from "@/sections/home/parallax/components/Section";
 
-export default function Home() {
+export default function ParallaxSection() {
 	useEffect(() => {
 		const lenis = new Lenis();
 

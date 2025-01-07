@@ -1,5 +1,5 @@
 import Gallery from "@/sections/home/Gallery";
-import ParallaxSection from "@/components/ParallaxSection";
+import ParallaxSection from "@/sections/home/parallax/ParallaxSection";
 import Solutions from "@/components/Solutions";
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Background from "../../public/images/daniil-silantev-UIcBEy5TDTA-unsplash.jpg";
+import Background from "../../../../../public/images/daniil-silantev-UIcBEy5TDTA-unsplash.jpg";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
