@@ -1,6 +1,5 @@
 "use client";
 import Gallery from "@/sections/home/Gallery";
-import ParallaxSection from "@/sections/home/parallax/ParallaxSection";
 import Solutions from "@/sections/home/Solutions";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
 					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
 				/>
 				<section className="flex justify-center my-0 bg-black text-white py-20">
-					<p className="text-[7.5vw] uppercase text-center max-w-[50vw] leading-none">
+					<p className="text-[7vw] uppercase text-center max-w-[50vw] leading-none">
 						Toutes les ressources sont en vous.
 					</p>
 				</section>

@@ -3,6 +3,7 @@ import styles from "../home/styles/gallery.module.scss";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import {
 	floating1,
 	floating2,
@@ -89,6 +90,20 @@ export default function Gallery() {
 					Difficultés relationnelles
 				</h1>
 				<p>Il existe une solution pour vous</p>
+				<div className="mt-10 animate-bounce flex justify-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="white"
+						viewBox="0 0 16 16"
+						aria-labelledby="scroll-arrow" // Lien avec le title pour l'accessibilité
+						role="img" // Définit que c'est une image
+					>
+						<title id="scroll-arrow">Flèche vers le bas pour scroller</title>
+						<path d="M8 12L2 6h12L8 12z" />
+					</svg>
+				</div>
 			</div>
 		</main>
 	);
