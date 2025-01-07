@@ -1,5 +1,5 @@
 "use client";
-import styles from "../styles/gallery.module.scss";
+import styles from "../home/styles/gallery.module.scss";
 import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
@@ -12,7 +12,7 @@ import {
 	floating6,
 	floating7,
 	floating8,
-} from "../data";
+} from "../../data";
 
 export default function Gallery() {
 	const plane1 = useRef(null);

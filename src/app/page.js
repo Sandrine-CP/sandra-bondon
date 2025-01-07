@@ -1,4 +1,4 @@
-import Gallery from "@/components/Gallery";
+import Gallery from "@/sections/home/Gallery";
 import ParallaxSection from "@/components/ParallaxSection";
 import Solutions from "@/components/Solutions";
 
