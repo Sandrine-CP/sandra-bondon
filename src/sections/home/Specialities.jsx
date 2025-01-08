@@ -30,6 +30,14 @@ export default function () {
 					</div>
 				))}
 			</div>
+			<div className="mt-10">
+				<button
+					type="button"
+					className="bg-secondary text-primary py-2 px-4 rounded-md"
+				>
+					Me contacter
+				</button>
+			</div>
 		</section>
 	);
 }

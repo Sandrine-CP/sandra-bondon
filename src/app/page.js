@@ -26,11 +26,10 @@ export default function Home() {
 				>
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-2 mix-blend-difference">
 						<p className="text-[1.9vw] uppercase self-end">
-							Ce que vous voulez vivre demain, vous le vivrez aujourd&apos;hui.
+							Sandra Bondon : Psychopraticienne - Business Coach -
+							Hypnothérapeute
 						</p>
-						<p className="text-[5vw] uppercase text-right">
-							Sandra Bondon Psychopraticienne
-						</p>
+						<p className="text-[5vw] uppercase text-right">S | B</p>
 					</div>{" "}
 				</section>
 				<section className="h-screen">
