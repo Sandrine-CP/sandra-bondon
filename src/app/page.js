@@ -33,7 +33,7 @@ export default function Home() {
 						</p>
 					</div>{" "}
 				</section>
-				<section>
+				<section className="h-screen">
 					<Specialities />
 				</section>
 

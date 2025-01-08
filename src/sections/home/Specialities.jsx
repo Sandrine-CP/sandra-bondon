@@ -1,6 +1,10 @@
 "use client";
 import React from "react";
 
+const specialties = [
+	{ id: 1, text: "Addiction", color: "bg-orange", size: "w-28 h-28" },
+];
+
 export default function () {
 	return (
 		<section className="py-16 px-4 text-center">
@@ -9,6 +13,9 @@ export default function () {
 				Lorem ipsum dolor sit amet consectetur. Facilisis donec faucibus sit
 				volutpat netus quis sagittis diam sem.
 			</p>
+			<div className="flex items-center justify-center w-28 h-28 rounded-full font-semibold text-white bg-blue">
+				TEST
+			</div>
 		</section>
 	);
 }
