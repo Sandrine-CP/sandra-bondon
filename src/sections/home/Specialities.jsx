@@ -4,6 +4,7 @@ import React from "react";
 
 const specialties = [
 	{ id: 1, text: "Addiction", color: "bg-orange", size: "w-28 h-28" },
+	{ id: 2, text: "Burn Out", color: "bg-orange", size: "w-20 h-20" },
 ];
 
 export default function () {
@@ -14,10 +15,7 @@ export default function () {
 				Lorem ipsum dolor sit amet consectetur. Facilisis donec faucibus sit
 				volutpat netus quis sagittis diam sem.
 			</p>
-			<div className="flex items-center justify-center w-28 h-28 rounded-full font-semibold text-white bg-blue">
-				TEST
-			</div>
-			<div>
+			<div className="flex flex-wrap justify-center gap-6">
 				{specialties.map((item) => (
 					<div
 						key={item.id}
