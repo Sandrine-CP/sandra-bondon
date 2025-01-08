@@ -1,6 +1,7 @@
 "use client";
 import Gallery from "@/sections/home/Gallery";
 import Solutions from "@/sections/home/Solutions";
+import Specialities from "@/sections/home/Specialities";
 
 export default function Home() {
 	return (
@@ -31,6 +32,9 @@ export default function Home() {
 							Sandra Bondon Psychopraticienne
 						</p>
 					</div>{" "}
+				</section>
+				<section>
+					<Specialities />
 				</section>
 
 				<section className="h-screen bg-white text-black flex items-center justify-center">
