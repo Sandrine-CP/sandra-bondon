@@ -1,4 +1,5 @@
 "use client";
+import Consultations from "@/sections/home/Consultations";
 import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
 import Solutions from "@/sections/home/Solutions";
@@ -38,6 +39,9 @@ export default function Home() {
 				</section>
 				<section>
 					<Professionals />
+				</section>
+				<section>
+					<Consultations />
 				</section>
 
 				<section className="h-screen bg-white text-black flex items-center justify-center">
