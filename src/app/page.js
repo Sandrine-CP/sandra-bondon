@@ -9,17 +9,17 @@ import Specialities from "@/sections/home/Specialities";
 export default function Home() {
 	return (
 		<>
-			<main className="m-0 p-0">
-				<section className="h-screen">
+			<main className="m-0 p-0 bg-black">
+				<section className="h-screen mb-10">
 					<Gallery />
 				</section>
-				<section className="h-[100px] bg-black" />
+				{/* <section className="h-[100px] bg-black" /> */}
 				<section
-					className="h-[500px] bg-cover bg-center"
+					className="h-[500px] bg-cover bg-center sm:h-[400px] md:h-[600px]"
 					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
 				/>
-				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-20">
-					<p className="text-[6vw] uppercase text-center max-w-[50vw] leading-none">
+				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
+					<p className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight">
 						Toutes les ressources sont en vous
 					</p>
 					<Button
@@ -30,32 +30,32 @@ export default function Home() {
 						hoverBgColor="#4961E1"
 						className="mt-6 mb-6"
 					/>
-				</section>
+				</section>{" "}
 				<section
 					className="h-screen bg-cover bg-center"
 					style={{ backgroundImage: "url(/images/divan.jpg)" }}
 				>
-					<div className="relative z-10 text-white flex flex-col justify-between h-full p-2 mix-blend-difference">
-						<p className="text-[1.9vw] uppercase self-end">
+					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">
+						{/* Premier paragraphe */}
+						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
 							Sandra Bondon : Psychopraticienne - Business Coach -
 							Hypnothérapeute
 						</p>
-						<p className="text-[5vw] uppercase text-right">S | B</p>
-					</div>{" "}
+						{/* Deuxième paragraphe */}
+						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
+							S | B
+						</p>
+					</div>
 				</section>
-				<section className="h-screen">
+				<section className="h-screen bg-white">
 					<Specialities />
 				</section>
-				<section>
+				<section className="px-4 sm:px-6 lg:px-0 bg-white">
 					<Professionals />
 				</section>
-				<section>
+				<section className="px-4 sm:px-6 lg:px-10 py-10 md:py-20 bg-white">
 					<Consultations />
 				</section>
-
-				{/* <section className="h-screen bg-white text-black flex items-center justify-center">
-					<Solutions />
-				</section> */}
 			</main>
 		</>
 	);
