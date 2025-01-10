@@ -13,7 +13,6 @@ export default function Home() {
 				<section className="h-screen mb-10">
 					<Gallery />
 				</section>
-				{/* <section className="h-[100px] bg-black" /> */}
 				<section
 					className="h-[500px] bg-cover bg-center sm:h-[400px] md:h-[600px]"
 					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
@@ -36,21 +35,19 @@ export default function Home() {
 					style={{ backgroundImage: "url(/images/divan.jpg)" }}
 				>
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">
-						{/* Premier paragraphe */}
 						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
 							Sandra Bondon : Psychopraticienne - Business Coach -
 							Hypnothérapeute
 						</p>
-						{/* Deuxième paragraphe */}
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B
 						</p>
 					</div>
 				</section>
-				<section className="h-screen bg-white">
+				<section className="h-screen bg-white relative">
 					<Specialities />
 				</section>
-				<section className="px-4 sm:px-6 lg:px-0 bg-white">
+				<section className="px-4 sm:px-6 lg:px-0 bg-white relative">
 					<Professionals />
 				</section>
 				<section className="px-4 sm:px-6 lg:px-10 py-10 md:py-20 bg-white">

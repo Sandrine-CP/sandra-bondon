@@ -15,7 +15,7 @@ const specialties = [
 
 export default function () {
 	return (
-		<section className="py-16 px-4 text-center">
+		<section className="min-h-screen py-16 px-4 text-center">
 			<h2 className="text-2xl font-bold mb-4">Spécialités</h2>
 			<p className="max-w-2xl mx-auto mb-8">
 				Lorem ipsum dolor sit amet consectetur. Facilisis donec faucibus sit
@@ -25,7 +25,7 @@ export default function () {
 				{specialties.map((item) => (
 					<div
 						key={item.id}
-						className={`flex items-center justify-center rounded-full text-white font-semibold ${item.color} ${item.size}`}
+						className={`flex items-center justify-center rounded-full text-white font-semibold ${item.color} ${item.size} sm:{item.size}`}
 					>
 						{item.text}
 					</div>
