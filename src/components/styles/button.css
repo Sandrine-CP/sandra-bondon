@@ -1,0 +1,59 @@
+.cta {
+	position: relative;
+	display: inline-flex; /* Aligne les enfants horizontalement */
+	align-items: center; /* Centre verticalement texte et flèche */
+	padding: 12px 18px;
+	transition: all 0.2s ease;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.cta:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	background: #f2e9e4;
+	width: 45px;
+	height: 45px;
+	transition: all 0.3s ease;
+	z-index: 0; /* Place le rond derrière le contenu */
+}
+
+.cta span {
+	position: relative; /* Place le texte au-dessus du pseudo-élément */
+	font-family: "Ubuntu", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: #2c254d;
+	white-space: nowrap; /* Empêche le texte de couper */
+	z-index: 1; /* Garde le texte au-dessus */
+}
+
+.cta svg {
+	position: relative;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: #2c254d;
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+	z-index: 1; /* Garde la flèche au-dessus */
+}
+
+.cta:hover:before {
+	width: 100%; /* Étend le rond sur toute la largeur */
+}
+
+.cta:hover svg {
+	transform: translateX(0); /* Anime la flèche */
+}
+
+.cta:active {
+	transform: scale(0.95);
+}
