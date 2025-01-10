@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function GoogleReviews() {
 	const [reviews, setReviews] = useState([]);
 	const [loading, setLoading] = useState(true);
+	const [currentIndex, setCurrentIndex] = useState(0);
 
 	useEffect(() => {
 		// Appel à l'API backend
@@ -28,28 +29,53 @@ export default function GoogleReviews() {
 
 	// Ne pas afficher la section si le tableau des avis est vide
 	if (!reviews || reviews.length === 0) {
-		return null; // Retourne `null` pour ne rien afficher
+		return null;
 	}
+
+	// Gestion du changement de carte
+	const handleNext = () => {
+		setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+	};
+
+	const handlePrev = () => {
+		setCurrentIndex(
+			(prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length,
+		);
+	};
 
 	return (
 		<section className="py-16 px-4 bg-white">
 			<h2 className="text-2xl font-bold mb-8 text-center">Avis Google</h2>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{reviews.map((review) => (
-					<div
-						key={`${review.author_name}-${review.time}`} // Clé unique basée sur author_name et time
-						className="p-4 border rounded-lg shadow-lg bg-gray-50"
+			<div className="relative max-w-3xl mx-auto">
+				{/* Carte d'avis */}
+				<div className="p-4 border rounded-lg shadow-lg bg-gray-50 text-center">
+					<p className="font-semibold">{reviews[currentIndex].author_name}</p>
+					<p className="text-yellow-500">
+						{"★".repeat(reviews[currentIndex].rating)}{" "}
+						<span className="text-gray-400">
+							{"☆".repeat(5 - reviews[currentIndex].rating)}
+						</span>
+					</p>
+					<p className="italic">"{reviews[currentIndex].text}"</p>
+				</div>
+
+				{/* Flèches de navigation */}
+				<div className="absolute inset-0 flex items-center justify-between">
+					<button
+						type="button"
+						onClick={handlePrev}
+						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
 					>
-						<p className="font-semibold">{review.author_name}</p>
-						<p className="text-yellow-500">
-							{"★".repeat(review.rating)}{" "}
-							<span className="text-gray-400">
-								{"☆".repeat(5 - review.rating)}
-							</span>
-						</p>
-						<p className="italic">"{review.text}"</p>
-					</div>
-				))}
+						←
+					</button>
+					<button
+						type="button"
+						onClick={handleNext}
+						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+					>
+						→
+					</button>
+				</div>
 			</div>
 		</section>
 	);
