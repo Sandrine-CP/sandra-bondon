@@ -18,8 +18,8 @@ export default function Home() {
 					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
 				/>
 				<section className="flex justify-center my-0 bg-black text-white py-20">
-					<p className="text-[7vw] uppercase text-center max-w-[50vw] leading-none">
-						Toutes les ressources sont en vous.
+					<p className="text-[6vw] uppercase text-center max-w-[50vw] leading-none">
+						Toutes les ressources sont en vous
 					</p>
 				</section>
 				<section
@@ -44,9 +44,9 @@ export default function Home() {
 					<Consultations />
 				</section>
 
-				<section className="h-screen bg-white text-black flex items-center justify-center">
+				{/* <section className="h-screen bg-white text-black flex items-center justify-center">
 					<Solutions />
-				</section>
+				</section> */}
 			</main>
 		</>
 	);

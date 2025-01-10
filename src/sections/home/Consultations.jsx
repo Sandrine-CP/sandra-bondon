@@ -5,25 +5,25 @@ export default function Consultations() {
 			<p className="max-w-2xl mx-auto mb-4 text-center font-semibold">
 				Horaires : 9h00 - 20h00
 			</p>
-			<div className="grid grid-cols-3 gap-4 text-center">
+			<div className="grid grid-cols-1 md:grid-cols-7 gap-4 text-center">
 				{/* Bloc Cabinet */}
-				<div>
+				<div className="col-start-1 md:col-start-2 col-span-1 max-w-xs mx-auto">
 					<div className="bg-primary text-secondary rounded-full py-2 px-4">
 						Cabinet
 					</div>
 					<p className="text-gray-500 mt-2 text-sm">3 emplacements</p>
 				</div>
 				{/* Bloc Téléphone */}
-				<div>
+				<div className="col-start-1 md:col-start-4 col-span-1 max-w-xs mx-auto">
 					<div className="bg-primary text-secondary rounded-full py-2 px-4">
 						Téléphone
 					</div>
 					<p className="text-gray-500 mt-2 text-sm">06 01 02 03 04</p>
 				</div>
 				{/* Bloc En Ligne */}
-				<div>
+				<div className="col-start-1 md:col-start-6 col-span-1 max-w-xs mx-auto">
 					<div className="bg-primary text-secondary rounded-full py-2 px-4">
-						En Ligne
+						En visio
 					</div>
 					<p className="text-gray-500 mt-2 text-sm">via WhatsApp</p>
 				</div>
