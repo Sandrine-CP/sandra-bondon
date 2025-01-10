@@ -1,4 +1,4 @@
-import GoogleMap from "@/components/svg/GoogleMap";
+import GoogleMap from "@/components/GoogleMap";
 
 export default function Consultations() {
 	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];

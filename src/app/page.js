@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/Button";
+import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
 import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
@@ -52,6 +53,9 @@ export default function Home() {
 				</section>
 				<section className="px-4 sm:px-6 lg:px-10 py-10 md:py-20 bg-white">
 					<Consultations />
+				</section>
+				<section>
+					<GoogleReviews />
 				</section>
 			</main>
 		</>
