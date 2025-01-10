@@ -1,4 +1,5 @@
 "use client";
+import Button from "@/components/Button";
 import Consultations from "@/sections/home/Consultations";
 import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
@@ -17,10 +18,16 @@ export default function Home() {
 					className="h-[500px] bg-cover bg-center"
 					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
 				/>
-				<section className="flex justify-center my-0 bg-black text-white py-20">
+				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-20">
 					<p className="text-[6vw] uppercase text-center max-w-[50vw] leading-none">
 						Toutes les ressources sont en vous
 					</p>
+					<Button
+						text="Voir plus"
+						textColor="#FFFFFF"
+						bgColor="#FF5733"
+						className="mt-6 mb-6"
+					/>
 				</section>
 				<section
 					className="h-screen bg-cover bg-center"

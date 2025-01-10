@@ -31,7 +31,7 @@ export default function () {
 					</div>
 				))}
 			</div>
-			<Button />
+			<Button text="Me contacter" className="mt-6 mb-6" />
 		</section>
 	);
 }
