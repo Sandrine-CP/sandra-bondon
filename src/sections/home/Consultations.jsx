@@ -1,4 +1,7 @@
+import GoogleMap from "@/components/svg/GoogleMap";
+
 export default function Consultations() {
+	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];
 	return (
 		<section className="py-16 px-4">
 			<h2 className="text-2xl font-bold mb-4 text-center">Consultations</h2>
@@ -33,6 +36,9 @@ export default function Consultations() {
 				<p className="text-gray-500 text-sm">Tarifs</p>
 				<p className="text-gray-500 text-sm">Prix moyen à titre indicatif</p>
 				<p className="text-gray-500 text-sm">80 à 110 euros</p>
+			</div>
+			<div className="mt-8">
+				<GoogleMap addresses={addresses} />
 			</div>
 		</section>
 	);
