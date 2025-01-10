@@ -33,9 +33,11 @@ export default function Professionals() {
 			</div>
 			<div className="text-center">
 				<Button
-					text="Me contacter"
+					text="Voir plus"
 					textColor="#2C254D"
-					bgColor="#FF5733"
+					bgColor="#FFA500"
+					hoverTextColor="#2C254D"
+					hoverBgColor="#FFA500"
 					className="mt-6 mb-6"
 				/>
 			</div>

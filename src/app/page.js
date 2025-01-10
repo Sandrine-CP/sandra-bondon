@@ -25,7 +25,9 @@ export default function Home() {
 					<Button
 						text="Voir plus"
 						textColor="#FFFFFF"
-						bgColor="#FF5733"
+						bgColor="#4961E1"
+						hoverTextColor="#FFFFFF"
+						hoverBgColor="#4961E1"
 						className="mt-6 mb-6"
 					/>
 				</section>

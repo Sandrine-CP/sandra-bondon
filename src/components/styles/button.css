@@ -9,54 +9,61 @@
 	cursor: pointer;
 }
 
-/* Définit le fond dynamique via la variable CSS */
+/* Fond dynamique */
 .cta:before {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
 	border-radius: 50px;
-	background: var(--bg-color, #f2e9e4); /* Valeur par défaut */
+	background: var(--bg-color, #f2e9e4); /* Fond normal */
 	width: 45px;
 	height: 45px;
 	transition: all 0.3s ease;
-	z-index: 0; /* Place le rond derrière le contenu */
+	z-index: 0;
 }
 
-/* Texte dynamique via la variable CSS */
+/* Texte dynamique */
 .cta span {
 	position: relative;
 	font-family: "Ubuntu", sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 0.05em;
-	color: var(--text-color, #2c254d); /* Valeur par défaut */
+	color: var(--text-color, #2c254d); /* Texte normal */
 	white-space: nowrap;
-	z-index: 1; /* Garde le texte au-dessus */
+	z-index: 1;
 }
 
-/* Couleur dynamique pour la flèche */
+/* Flèche dynamique */
 .cta svg {
 	position: relative;
 	margin-left: 10px;
 	fill: none;
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	stroke: var(--text-color, #2c254d); /* Valeur par défaut */
+	stroke: var(--text-color, #2c254d); /* Texte normal */
 	stroke-width: 2;
 	transform: translateX(-5px);
 	transition: all 0.3s ease;
-	z-index: 1; /* Garde la flèche au-dessus */
+	z-index: 1;
 }
 
+/* Couleurs au hover */
 .cta:hover:before {
-	width: 100%;
+	width: 100%; /* Fond étendu */
+	background: var(--hover-bg-color, #2c254d); /* Fond au hover */
+}
+
+.cta:hover span {
+	color: var(--hover-text-color, #f2e9e4); /* Texte au hover */
 }
 
 .cta:hover svg {
-	transform: translateX(0);
+	stroke: var(--hover-text-color, #f2e9e4); /* Flèche au hover */
+	transform: translateX(0); /* Animer la flèche */
 }
 
 .cta:active {
-	transform: scale(0.95);
+	transform: scale(0.95); /* Effet de clic */
 }
