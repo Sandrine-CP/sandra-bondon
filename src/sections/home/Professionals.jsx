@@ -24,13 +24,15 @@ export default function Professionals() {
 
 					{/* Bloc droit : Image */}
 					<div className="flex justify-center items-center lg:w-1/2">
-						<Image
-							src={Office}
-							alt="Personnes travaillant dans un bureau"
-							width={400}
-							height={300}
-							className="rounded-lg shadow-lg"
-						/>
+						<div className="relative w-96 h-72">
+							<Image
+								src={Office}
+								alt="Personnes travaillant dans un bureau"
+								fill
+								sizes="(max-width: 1024px) 100vw, 50vw" // Taille adaptée selon la largeur d'écran
+								className="rounded-lg shadow-lg"
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

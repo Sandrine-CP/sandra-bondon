@@ -75,7 +75,7 @@ export default function Gallery() {
 				<Image src={floating7} alt="image" width={225} />
 			</div>
 			<div ref={plane2} className={styles.plane}>
-				<Image src={floating4} alt="image" width={250} />
+				<Image src={floating4} alt="image" width={250} priority />
 				<Image src={floating6} alt="image" width={200} />
 				<Image src={floating8} alt="image" width={225} />
 			</div>

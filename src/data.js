@@ -4,7 +4,7 @@ import floating3 from "../public/images/3-trauma.webp";
 import floating4 from "../public/images/4-burnout.webp";
 import floating5 from "../public/images/5-obsession.webp";
 import floating6 from "../public/images/6-addiction2.webp";
-import floating7 from "../public/images/7-anxiété.webp";
+import floating7 from "../public/images/7-anxiete.webp";
 import floating8 from "../public/images/8-chargeMentale.webp";
 
 export {

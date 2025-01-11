@@ -4,13 +4,55 @@ import { keyframes } from "framer-motion";
 import React from "react";
 
 const specialties = [
-	{ id: 1, text: "Addiction", color: "bg-orange", size: "w-28 h-28" },
-	{ id: 2, text: "Burn Out", color: "bg-blue", size: "w-20 h-20" },
-	{ id: 3, text: "Trauma", color: "bg-orange", size: "w-32 h-32" },
-	{ id: 4, text: "Anxiété", color: "bg-blue", size: "w-28 h-28" },
-	{ id: 5, text: "Charge Mentale", color: "bg-orange", size: "w-28 h-28" },
-	{ id: 6, text: "Obsession", color: "bg-blue", size: "w-32 h-32" },
-	{ id: 7, text: "Phobie", color: "bg-orange", size: "w-24 h-24" },
+	{
+		id: 1,
+		text: "Addiction",
+		color: "bg-orange",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 2,
+		text: "Burn Out",
+		color: "bg-blue",
+		size: "w-20 h-20",
+		textColor: "text-white",
+	},
+	{
+		id: 3,
+		text: "Trauma",
+		color: "bg-orange",
+		size: "w-32 h-32",
+		textColor: "text-primary",
+	},
+	{
+		id: 4,
+		text: "Anxiété",
+		color: "bg-blue",
+		size: "w-28 h-28",
+		textColor: "text-white",
+	},
+	{
+		id: 5,
+		text: "Charge Mentale",
+		color: "bg-orange",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 6,
+		text: "Obsession",
+		color: "bg-blue",
+		size: "w-32 h-32",
+		textColor: "text-white",
+	},
+	{
+		id: 7,
+		text: "Phobie",
+		color: "bg-orange",
+		size: "w-24 h-24",
+		textColor: "text-primary",
+	},
 ];
 
 export default function () {
@@ -25,7 +67,7 @@ export default function () {
 				{specialties.map((item) => (
 					<div
 						key={item.id}
-						className={`flex items-center justify-center rounded-full text-white font-semibold ${item.color} ${item.size} sm:{item.size}`}
+						className={`flex items-center justify-center rounded-full font-semibold ${item.color} ${item.size} ${item.textColor} sm:{item.size}`}
 					>
 						{item.text}
 					</div>
