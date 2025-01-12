@@ -2,6 +2,7 @@
 import Button from "@/components/Button";
 import { keyframes } from "framer-motion";
 import React from "react";
+import Link from "next/link";
 
 const specialties = [
 	{
@@ -73,14 +74,16 @@ export default function () {
 					</div>
 				))}
 			</div>
-			<Button
-				text="Me contacter"
-				textColor="#2C254D"
-				bgColor="#F2E9E4"
-				hoverTextColor="#2C254D"
-				hoverBgColor="#F2E9E4"
-				className="mt-6 mb-6"
-			/>
+			<Link href="/contact">
+				<Button
+					text="Me contacter"
+					textColor="#2C254D"
+					bgColor="#F2E9E4"
+					hoverTextColor="#2C254D"
+					hoverBgColor="#F2E9E4"
+					className="mt-6 mb-6"
+				/>
+			</Link>
 		</section>
 	);
 }

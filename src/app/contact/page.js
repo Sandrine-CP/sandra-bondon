@@ -65,16 +65,17 @@ export default function ContactPage() {
 		<main className="min-h-screen bg-white">
 			<section className="py-6 px-4 text-center">
 				<h1 className="text-2xl font-bold mb-4">Contactez-moi</h1>
-				<p className="text-lg mb-4">
-					Remplissez le formulaire ci-dessous ou envoyez un email à :{" "}
-					<a
-						href="mailto:s.cazenave@hotmail.fr"
-						className="text-blue-500 underline"
-					>
-						s.cazenave@hotmail.fr
-					</a>
-					.
-				</p>
+				<div className="container mx-auto px-4">
+					<p className="text-lg mb-4">
+						Remplissez le formulaire ci-dessous ou envoyez un email à :{" "}
+						<a
+							href="mailto:s.cazenave@hotmail.fr"
+							className="text-blue-500 underline"
+						>
+							s.cazenave@hotmail.fr
+						</a>
+					</p>
+				</div>
 			</section>
 			<section className="py-4">
 				<div
@@ -103,6 +104,7 @@ export default function ContactPage() {
 								name="name"
 								id="name"
 								onChange={handleChange}
+								autoComplete="family-name"
 							/>
 							{errors.name && (
 								<p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -121,6 +123,7 @@ export default function ContactPage() {
 								name="prenom"
 								id="prenom"
 								onChange={handleChange}
+								autoComplete="given-name"
 							/>
 						</div>
 						<div className="mb-4">
@@ -138,6 +141,7 @@ export default function ContactPage() {
 								name="email"
 								id="email"
 								onChange={handleChange}
+								autoComplete="email"
 							/>
 							{errors.email && (
 								<p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -158,6 +162,7 @@ export default function ContactPage() {
 								name="text"
 								id="text"
 								onChange={handleChange}
+								autoComplete="off"
 							/>
 							{errors.text && (
 								<p className="text-red-500 text-sm mt-1">{errors.text}</p>

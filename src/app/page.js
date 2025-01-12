@@ -7,6 +7,7 @@ import Professionals from "@/sections/home/Professionals";
 import Solutions from "@/sections/home/Solutions";
 import Specialities from "@/sections/home/Specialities";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import Link from "next/link";
 
 export default function Home() {
 	return (
