@@ -2,41 +2,61 @@
 import { useState } from "react";
 
 export default function ContactPage() {
-	const [errorMessage, setErrorMessage] = useState(""); // État pour les erreurs
-	const [showError, setShowError] = useState(false); // État pour afficher ou cacher la modal
+	const [errors, setErrors] = useState({});
 
-	// Fonction pour valider le formulaire
+	const validateField = (name, value) => {
+		let error = "";
+
+		if (!value) {
+			if (name === "name") error = "Veuillez entrer votre nom.";
+			if (name === "email") error = "Veuillez indiquer votre adresse e-mail.";
+			if (name === "text")
+				error = "Veuillez me préciser votre situation ou votre besoin.";
+		} else if (name === "email") {
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(value)) {
+				error = "L'adresse e-mail n'est pas valide.";
+			}
+		}
+
+		setErrors((prevErrors) => ({
+			...prevErrors,
+			[name]: error,
+		}));
+	};
+
 	const handleValidation = (event) => {
-		event.preventDefault(); // Empêche la soumission par défaut
+		event.preventDefault();
 		const form = event.target;
+		const formErrors = {};
 
-		// Récupérer les champs
 		const name = form.name.value.trim();
 		const email = form.email.value.trim();
 		const text = form.text.value.trim();
 
-		// Vérifier les champs et afficher des messages personnalisés
-		if (!name) {
-			setErrorMessage("Veuillez entrer votre nom.");
-			setShowError(true);
+		if (!name) formErrors.name = "Veuillez entrer votre nom.";
+		if (!email) formErrors.email = "Veuillez indiquer votre adresse e-mail.";
+		else {
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(email)) {
+				formErrors.email = "L'adresse e-mail n'est pas valide.";
+			}
+		}
+		if (!text)
+			formErrors.text = "Veuillez me préciser votre situation ou votre besoin.";
+
+		if (Object.keys(formErrors).length > 0) {
+			setErrors(formErrors);
 			return;
 		}
 
-		if (!email) {
-			setErrorMessage("Veuillez indiquer votre adresse e-mail.");
-			setShowError(true);
-			return;
-		}
-
-		if (!text) {
-			setErrorMessage("Veuillez me préciser votre situation, votre besoin.");
-			setShowError(true);
-			return;
-		}
-
-		// Si tout est bon, on soumet le formulaire
 		alert("Formulaire envoyé avec succès !");
 		form.submit();
+	};
+
+	const handleChange = (event) => {
+		const { name, value } = event.target;
+		validateField(name, value);
 	};
 
 	return (
@@ -49,13 +69,17 @@ export default function ContactPage() {
 						href="mailto:s.cazenave@hotmail.fr"
 						className="text-blue-500 underline"
 					>
-						s.cazenave@shotmail.fr
+						s.cazenave@hotmail.fr
 					</a>
 					.
 				</p>
 			</section>
 			<section className="py-4">
-				<div className="max-w-md mx-auto relative overflow-hidden z-10 bg-secondary p-8 rounded-lg shadow-md">
+				<div
+					className="max-w-md mx-auto relative overflow-hidden z-10 bg-secondary p-8 rounded-lg shadow-md 
+                        before:w-24 before:h-24 before:absolute before:bg-orange before:rounded-full before:-z-10 before:blur-2xl
+                        after:w-32 after:h-32 after:absolute after:bg-blue after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12"
+				>
 					<h2 className="text-2xl text-primary font-bold mb-6">Contact</h2>
 					<form method="post" action="#" onSubmit={handleValidation}>
 						<div className="mb-4">
@@ -66,11 +90,17 @@ export default function ContactPage() {
 								Nom
 							</label>
 							<input
-								className="mt-1 p-2 w-full border rounded-md"
+								className={`mt-1 p-2 w-full border rounded-md ${
+									errors.name ? "border-red-500" : "border-gray-300"
+								}`}
 								type="text"
 								name="name"
 								id="name"
+								onChange={handleChange}
 							/>
+							{errors.name && (
+								<p className="text-red-500 text-sm mt-1">{errors.name}</p>
+							)}
 						</div>
 						<div className="mb-4">
 							<label
@@ -80,10 +110,11 @@ export default function ContactPage() {
 								Prénom
 							</label>
 							<input
-								className="mt-1 p-2 w-full border rounded-md"
+								className="mt-1 p-2 w-full border rounded-md border-gray-300"
 								type="text"
 								name="prenom"
 								id="prenom"
+								onChange={handleChange}
 							/>
 						</div>
 						<div className="mb-4">
@@ -94,11 +125,17 @@ export default function ContactPage() {
 								Adresse e-mail
 							</label>
 							<input
-								className="mt-1 p-2 w-full border rounded-md"
+								className={`mt-1 p-2 w-full border rounded-md ${
+									errors.email ? "border-red-500" : "border-gray-300"
+								}`}
+								type="email"
 								name="email"
 								id="email"
-								type="email"
+								onChange={handleChange}
 							/>
+							{errors.email && (
+								<p className="text-red-500 text-sm mt-1">{errors.email}</p>
+							)}
 						</div>
 						<div className="mb-4">
 							<label
@@ -108,11 +145,17 @@ export default function ContactPage() {
 								Décrivez votre besoin
 							</label>
 							<textarea
-								className="mt-1 p-2 w-full border rounded-md"
+								className={`mt-1 p-2 w-full border rounded-md ${
+									errors.text ? "border-red-500" : "border-gray-300"
+								}`}
 								rows="3"
 								name="text"
 								id="text"
+								onChange={handleChange}
 							/>
+							{errors.text && (
+								<p className="text-red-500 text-sm mt-1">{errors.text}</p>
+							)}
 						</div>
 						<div className="flex justify-end">
 							<button
@@ -125,22 +168,6 @@ export default function ContactPage() {
 					</form>
 				</div>
 			</section>
-
-			{/* Pop-up pour afficher les erreurs */}
-			{showError && (
-				<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
-					<div className="bg-white  p-6 rounded-lg shadow-lg max-w-sm text-center">
-						<p className="text-primary font-bold mb-4">{errorMessage}</p>
-						<button
-							type="button"
-							className="bg-red-500 text-white px-4 py-2 rounded hover:bg-primary"
-							onClick={() => setShowError(false)}
-						>
-							Fermer
-						</button>
-					</div>
-				</div>
-			)}
 		</main>
 	);
 }
