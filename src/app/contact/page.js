@@ -2,6 +2,8 @@
 import { useState } from "react";
 
 export default function ContactPage() {
+	const formActionUrl = process.env.NEXT_PUBLIC_FORMSPREE_URL;
+
 	const [errors, setErrors] = useState({});
 
 	const validateField = (name, value) => {
@@ -50,7 +52,7 @@ export default function ContactPage() {
 			return;
 		}
 
-		alert("Formulaire envoyé avec succès !");
+		// alert("Formulaire envoyé avec succès !");
 		form.submit();
 	};
 
@@ -81,7 +83,11 @@ export default function ContactPage() {
                         after:w-32 after:h-32 after:absolute after:bg-blue after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12"
 				>
 					<h2 className="text-2xl text-primary font-bold mb-6">Contact</h2>
-					<form method="post" action="#" onSubmit={handleValidation}>
+					<form
+						method="post"
+						action={formActionUrl}
+						onSubmit={handleValidation}
+					>
 						<div className="mb-4">
 							<label
 								className="block text-sm font-medium text-gray-600"
