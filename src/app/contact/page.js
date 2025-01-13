@@ -1,5 +1,4 @@
 "use client";
-import NavBar from "@/components/NavBar";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -64,9 +63,6 @@ export default function ContactPage() {
 
 	return (
 		<>
-			<header>
-				<NavBar />
-			</header>
 			<main className="min-h-screen bg-white">
 				<section className="py-6 px-4 text-center">
 					<h1 className="text-2xl font-bold mb-4">Contactez-moi</h1>

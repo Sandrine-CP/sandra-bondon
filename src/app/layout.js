@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -6,7 +7,7 @@ export const metadata = {
 	description:
 		"Découvrez les solutions proposées par Sandra Bondon pour surmonter vos difficultés relationnelles et émotionnelles.",
 	keywords:
-		"Psychopraticienne, Hypnothérapeute, Coaching, Thérapie, Hypnose, MOSAIC®, Santé mentale, Sandra Bondon",
+		"Psychopraticienne, Hypnothérapeute, Coaching, Business Coaching, Thérapie, Thérapie brève, Hypnose, MOSAIC®, Santé mentale, Sandra Bondon, Burn-Out, Phobies, Traumatismes, Addiction, Obsessions, Charge Mentale, Anxiété",
 	openGraph: {
 		title: "Sandra Bondon - Psychopraticienne Coach Hypnothérapeute",
 		description:
@@ -33,7 +34,11 @@ export default function RootLayout({ children }) {
 					content="xpGDYjq2PEG7WEU8_zSf_F1Xwh3ThkDvQHce-zuNHxM"
 				/>
 			</head>
-			<body className="font-body bg-background text-primary">{children}</body>
+
+			<body className="font-body bg-background text-primary">
+				<Header />
+				{children}
+			</body>
 		</html>
 	);
 }
