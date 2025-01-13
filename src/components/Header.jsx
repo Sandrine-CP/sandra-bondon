@@ -14,7 +14,7 @@ export default function Header() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<header className="bg-[#f4f0ea] fixed w-full p-2 sm:p-5">
+		<header className="bg-[#f4f0ea] fixed top-0 w-full p-2 sm:p-5 z-50">
 			<div className="flex justify-center text-[12px] sm:text-[15px] uppercase font-light relative">
 				{/* Titre / Logo */}
 				<Link href="/" className="absolute left-0 text-black no-underline">
@@ -34,8 +34,9 @@ export default function Header() {
 				>
 					{/* Burger */}
 					<div
-						className={`relative w-[22.5px] h-[20px] before:content-[''] before:w-full before:h-[2px] before:bg-black before:block before:absolute before:top-0 before:transition-transform before:duration-[0.5s]
-                        after:content-[''] after:w-full after:h-[2px] after:bg-black after:block after:absolute after:bottom-0 after:transition-transform after:duration-[0.5s]
+						className={`relative w-[22.5px] h-[20px] before:content-[''] before:w-full before:h-[2px] before:bg-black before:block before:absolute before:top-0
+                        before:transition-transform before:duration-[0.5s] after:content-[''] after:w-full after:h-[2px] after:bg-black after:block after:absolute after:bottom-0
+                        after:transition-transform after:duration-[0.5s]
                         ${isActive ? "before:rotate-45 before:top-[50%] after:-rotate-45 after:top-[50%]" : ""}`}
 					/>
 
