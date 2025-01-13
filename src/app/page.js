@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<main className="m-0 p-0 bg-black">
-				<section className="h-screen mb-10">
+				<section className="h-screen mt-0 pt-0 mb-10">
 					<Gallery />
 				</section>
 				<section

@@ -14,7 +14,7 @@ export default function Header() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<header className="bg-[#f4f0ea] fixed top-0 w-full p-2 sm:p-5 z-50">
+		<header className="bg-secondary fixed top-0 w-full p-2 sm:p-5 z-50">
 			<div className="flex justify-center text-[12px] sm:text-[15px] uppercase font-light relative">
 				{/* Titre / Logo */}
 				<Link href="/" className="absolute left-0 text-black no-underline">

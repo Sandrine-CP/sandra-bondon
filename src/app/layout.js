@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
 
 			<body className="font-body bg-background text-primary">
 				<Header />
-				<main className="pt-[60px] sm:pt-[80px]">{children}</main>
+				<main className="pt-[60px] sm:pt-[60px]">{children}</main>
 			</body>
 		</html>
 	);
