@@ -19,7 +19,7 @@ const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
 
 export const height = {
 	initial: { height: 0 },
-	enter: { height: "100vh", transition },
+	enter: { height: "auto", transition },
 	exit: { height: 0, transition },
 };
 
@@ -30,10 +30,10 @@ export default function Nav({ onClose }) {
 			initial="initial"
 			animate="enter"
 			exit="exit"
-			className="fixed top-0 left-0 w-full h-full bg-secondary z-40 flex flex-col items-center justify-center gap-10"
+			className="fixed top-0 left-0 w-full bg-secondary z-40 flex flex-col items-center gap-10 p-6"
 		>
 			{/* Close + Burger */}
-			<div className="absolute top-6 flex items-center gap-4">
+			<div className="absolute top-6 flex items-center gap-4 justify-center w-full">
 				{/* Burger Icon */}
 				<button
 					type="button"
@@ -51,10 +51,14 @@ export default function Nav({ onClose }) {
 			</div>
 
 			{/* Links */}
-			<Body links={links} onClose={onClose} />
+			<div className="mt-20 flex flex-col items-center gap-6">
+				<Body links={links} onClose={onClose} />
+			</div>
 
 			{/* Footer */}
-			<Footer />
+			<div className="mt-auto">
+				<Footer />
+			</div>
 		</motion.div>
 	);
 }
