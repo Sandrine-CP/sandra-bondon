@@ -38,20 +38,16 @@ export default function Nav({ onClose }) {
 				<button
 					type="button"
 					onClick={onClose}
-					className="flex flex-col justify-around w-6 h-6 bg-transparent border-none cursor-pointer p-0"
+					className="relative w-6 h-6 flex items-center justify-center"
 				>
-					<span className="block w-6 h-0.5 bg-black rotate-45" />
-					<span className="block w-6 h-0.5 bg-black -rotate-45" />
+					{/* Trait supérieur */}
+					<span className="absolute w-full h-0.5 bg-black transform transition-transform duration-500 rotate-45" />
+					{/* Trait inférieur */}
+					<span className="absolute w-full h-0.5 bg-black transform transition-transform duration-500 -rotate-45" />
 				</button>
 
 				{/* Close Text */}
-				<button
-					type="button"
-					onClick={onClose}
-					className="text-black uppercase text-sm"
-				>
-					Close
-				</button>
+				<span className="text-black text-sm uppercase">Close</span>
 			</div>
 
 			{/* Links */}
