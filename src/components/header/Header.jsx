@@ -23,9 +23,10 @@ export default function Header() {
 			>
 				S | B
 			</Link>
+			<p className="pl-5">Psychopraticienne - Coach - Hypnothérapeute</p>
 
-			{/* Burger/Menu centré */}
-			<div className="flex-1 flex justify-center items-center space-x-2 gap-2">
+			{/* Burger/Menu à */}
+			<div className="flex-1 flex justify-end items-center space-x-2 gap-2">
 				<button
 					type="button"
 					onClick={() => setIsActive(!isActive)}

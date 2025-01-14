@@ -32,8 +32,8 @@ export default function Nav({ onClose }) {
 			exit="exit"
 			className="fixed top-0 left-0 w-full bg-secondary z-40 flex flex-col items-center gap-10 p-6"
 		>
-			{/* Close + Burger */}
-			<div className="absolute top-6 flex items-center gap-4 justify-center w-full">
+			{/* Close + Burger à droite */}
+			<div className="absolute top-6 right-6 flex items-center gap-4">
 				{/* Burger Icon */}
 				<button
 					type="button"
@@ -47,19 +47,7 @@ export default function Nav({ onClose }) {
 				</button>
 
 				{/* Close Text */}
-				<motion.span
-					variants={{
-						initial: { opacity: 0 },
-						enter: { opacity: 1, transition: { duration: 0.3, delay: 0.2 } },
-						exit: { opacity: 0, transition: { duration: 0.2 } },
-					}}
-					initial="initial"
-					animate="enter"
-					exit="exit"
-					className="text-black text-sm uppercase"
-				>
-					Close
-				</motion.span>
+				<span className="text-black text-sm uppercase">Close</span>
 			</div>
 
 			{/* Links */}
