@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import Nav from "./Nav";
 
 // Animation pour l'opacité
 export const opacity = {
@@ -59,6 +60,7 @@ export default function Header() {
 							Fermer
 						</motion.p>
 					</div>
+					<AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
 				</button>
 			</div>
 		</header>
