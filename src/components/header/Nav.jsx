@@ -51,7 +51,7 @@ export default function Nav({ onClose }) {
 			</div>
 
 			{/* Links */}
-			<Body links={links} />
+			<Body links={links} onClose={onClose} />
 
 			{/* Footer */}
 			<Footer />
