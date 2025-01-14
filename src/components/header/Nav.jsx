@@ -32,14 +32,27 @@ export default function Nav({ onClose }) {
 			exit="exit"
 			className="fixed top-0 left-0 w-full h-full bg-secondary z-40 flex flex-col items-center justify-center gap-10"
 		>
-			{/* Close Button (optional redundancy) */}
-			<button
-				type="button"
-				className="absolute top-4 right-4 text-black uppercase text-sm"
-				onClick={onClose}
-			>
-				Close
-			</button>
+			{/* Close + Burger */}
+			<div className="absolute top-6 flex items-center gap-4">
+				{/* Burger Icon */}
+				<button
+					type="button"
+					onClick={onClose}
+					className="flex flex-col justify-around w-6 h-6 bg-transparent border-none cursor-pointer p-0"
+				>
+					<span className="block w-6 h-0.5 bg-black rotate-45" />
+					<span className="block w-6 h-0.5 bg-black -rotate-45" />
+				</button>
+
+				{/* Close Text */}
+				<button
+					type="button"
+					onClick={onClose}
+					className="text-black uppercase text-sm"
+				>
+					Close
+				</button>
+			</div>
 
 			{/* Links */}
 			<Body links={links} />
