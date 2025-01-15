@@ -21,16 +21,15 @@ export default function Professionals() {
 							pleinement et sereinement leur carrière.
 						</p>
 					</div>
-
 					{/* Bloc droit : Image */}
 					<div className="flex justify-center items-center lg:w-1/2">
-						<div className="relative w-96 h-72">
+						<div className="w-full max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
 							<Image
 								src={Office}
 								alt="Personnes travaillant dans un bureau"
-								fill
-								sizes="(max-width: 1024px) 100vw, 50vw" // Taille adaptée selon la largeur d'écran
-								className="rounded-lg shadow-lg"
+								width={640} // Largeur explicite
+								height={480} // Hauteur explicite pour ratio 4:3
+								className="rounded-lg shadow-lg object-cover w-full"
 							/>
 						</div>
 					</div>

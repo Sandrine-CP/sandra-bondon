@@ -24,14 +24,16 @@ export default function Home() {
 					<p className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight">
 						Toutes les ressources sont en vous
 					</p>
-					<Button
-						text="Voir plus"
-						textColor="#FFFFFF"
-						bgColor="#4961E1"
-						hoverTextColor="#FFFFFF"
-						hoverBgColor="#4961E1"
-						className="mt-6 mb-6"
-					/>
+					<Link href="/solutions-pour-vous">
+						<Button
+							text="Voir plus"
+							textColor="#FFFFFF"
+							bgColor="#4961E1"
+							hoverTextColor="#FFFFFF"
+							hoverBgColor="#4961E1"
+							className="mt-6 mb-6"
+						/>
+					</Link>
 				</section>{" "}
 				<section
 					className="h-screen bg-cover bg-center"
