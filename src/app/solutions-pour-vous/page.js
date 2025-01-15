@@ -1,3 +1,6 @@
+import TestGsap from "@/sections/therapies/TestGsap";
+import TestGsapWithScroll from "@/sections/therapies/TestGsapWithScroll";
+
 export default function SolutionsPourVous() {
 	return (
 		<main className="min-h-screen bg-white">
@@ -27,12 +30,8 @@ export default function SolutionsPourVous() {
 					positionnement et la posture qui est en adéquation avec qui vous êtes.
 				</p>
 			</section>
-			<section className="py-6 px-4 text-center">
-				<h2 className="text-2xl font-bold mb-4 p-5">Approche</h2>
-				<p className="pt-5">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-				</p>
-			</section>
+			<TestGsap />
+			<TestGsapWithScroll />
 		</main>
 	);
 }
