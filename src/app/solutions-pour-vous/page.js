@@ -1,7 +1,18 @@
-import TestGsap from "@/sections/therapies/TestGsap";
-import TestGsapWithScroll from "@/sections/therapies/TestGsapWithScroll";
+"use client";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import AnimationGsap from "@/sections/therapies/AnimationGsap";
+import Approach from "@/sections/therapies/Approach";
+import DividerSVG from "@/components/svg/DividerSVG";
+import Therapies from "@/sections/therapies/Therapies";
 
 export default function SolutionsPourVous() {
+	const timeline = gsap.timeline();
+
+	useEffect(() => {
+		timeline.pause(); // Optionnel : Commence la timeline en pause
+		timeline.play(); // Démarre la timeline
+	}, [timeline]);
 	return (
 		<main className="min-h-screen bg-white">
 			<section className="py-6 px-4 text-center">
@@ -30,8 +41,10 @@ export default function SolutionsPourVous() {
 					positionnement et la posture qui est en adéquation avec qui vous êtes.
 				</p>
 			</section>
-			<TestGsap />
-			<TestGsapWithScroll />
+			<DividerSVG width="80%" height="1.2rem" color="#FF5733" />
+			<AnimationGsap timeline={timeline} />
+			<Approach timeline={timeline} />
+			<Therapies />
 		</main>
 	);
 }
