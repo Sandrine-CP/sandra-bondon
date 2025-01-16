@@ -15,7 +15,10 @@ export default function Approach({ timeline }) {
 	}, [timeline]);
 
 	return (
-		<section id="approach" className="py-10 px-4 text-center bg-secondary">
+		<section
+			id="approach"
+			className="py-10 px-4 text-center bg-secondary mt-16"
+		>
 			<h2 className="text-xl font-bold mb-6">Approche personnalisée</h2>
 			<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
 				En tant que psychopraticienne, je m'engage à écouter attentivement votre

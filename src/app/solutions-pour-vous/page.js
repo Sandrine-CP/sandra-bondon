@@ -43,6 +43,8 @@ export default function SolutionsPourVous() {
 			</section>
 			<DividerSVG width="80%" height="1.2rem" color="#FF5733" />
 			<AnimationGsap timeline={timeline} />
+			<DividerSVG width="80%" height="1.2rem" color="#FF5733" />
+
 			<Approach timeline={timeline} />
 			<Therapies />
 		</main>

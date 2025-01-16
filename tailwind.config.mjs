@@ -24,6 +24,12 @@ const config = {
 				heading: ["Helvetica", "sans-serif"], // Titres
 				body: ["Arial", "sans-serif"], // Paragraphes
 			},
+			transformOrigin: {
+				"center-back": "center back",
+			},
+			perspective: {
+				"3d": "1000px",
+			},
 		},
 	},
 	plugins: [],
