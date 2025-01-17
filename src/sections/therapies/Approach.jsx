@@ -1,19 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
 
-export default function Approach({ timeline }) {
-	useEffect(() => {
-		const section = document.querySelector("#approach");
-
-		if (section) {
-			timeline.fromTo(
-				section,
-				{ opacity: 0, x: -100 },
-				{ opacity: 1, x: 0, duration: 1.2, ease: "power3.out" },
-			);
-		}
-	}, [timeline]);
-
+export default function Approach() {
 	return (
 		<section
 			id="approach"

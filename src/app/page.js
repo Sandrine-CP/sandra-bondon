@@ -4,7 +4,6 @@ import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
 import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
-import Solutions from "@/sections/home/Solutions";
 import Specialities from "@/sections/home/Specialities";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Link from "next/link";
