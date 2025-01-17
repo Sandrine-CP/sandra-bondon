@@ -11,7 +11,9 @@ export default function SolutionsPourVous() {
 		<>
 			<main className="min-h-screen bg-white">
 				<section className="py-6 px-4 text-center">
-					<h1 className="text-2xl font-bold mb-4 p-5">Solutions Pour Vous</h1>
+					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
+						Solutions Pour Vous
+					</h1>
 					<p className="pt-5">
 						Ma pratique est dite{" "}
 						<strong className="text-primary font-bold">brève</strong>, elle se

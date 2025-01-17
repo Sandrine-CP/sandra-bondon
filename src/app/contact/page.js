@@ -65,7 +65,9 @@ export default function ContactPage() {
 		<>
 			<main className="min-h-screen bg-white">
 				<section className="py-6 px-4 text-center">
-					<h1 className="text-2xl font-bold mb-4">Contactez-moi</h1>
+					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
+						Contactez-moi
+					</h1>
 					<div className="container mx-auto px-4">
 						<p className="text-lg mb-4">
 							Remplissez le formulaire ci-dessous ou envoyez un email à :{" "}
