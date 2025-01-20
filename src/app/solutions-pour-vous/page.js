@@ -2,7 +2,10 @@
 import AnimationGsap from "@/sections/therapies/AnimationGsap";
 import Approach from "@/sections/therapies/Approach";
 import Therapies from "@/sections/therapies/Therapies";
+import Button from "@/components/Button";
 import { gsap } from "gsap";
+import Link from "next/link";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function SolutionsPourVous() {
 	const timeline = gsap.timeline();
@@ -42,6 +45,20 @@ export default function SolutionsPourVous() {
 				<AnimationGsap timeline={timeline} />
 				<Approach />
 				<Therapies />
+				<Link
+					href="/contact"
+					className="flex flex-grow justify-center items-center text-center m-4"
+				>
+					<Button
+						text="Me contacter"
+						textColor="#2C254D"
+						bgColor="#FFA500"
+						hoverTextColor="#2C254D"
+						hoverBgColor="#FFA500"
+						className="mt-6"
+					/>
+				</Link>
+				<ScrollToTopButton />
 			</main>
 		</>
 	);

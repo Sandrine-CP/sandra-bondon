@@ -11,34 +11,71 @@ import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import GoogleReviews from "@/components/GoogleReviews";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Seances() {
 	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];
 
-	const sectionRef = useRef(null);
+	// Refs pour les animations
+	const horairesRef = useRef(null); // Section Horaires et Tarifs
+	const sectionRef = useRef(null); // Section Google cabinet et Google map
+	const leftBlockRef = useRef(null); // Bloc gauche image cabinet
+	const rightBlockRef = useRef(null); // Bloc droit texte cabinet
 
 	useEffect(() => {
+		// Animation pour la section Horaires et Tarifs
 		gsap.fromTo(
-			sectionRef.current,
-			{
-				opacity: 0,
-				y: 50,
-			},
+			horairesRef.current,
+			{ opacity: 0, y: 50 },
 			{
 				opacity: 1,
-				y: 0, // Fin : visible et à sa position d'origine
-				duration: 1.5, // Durée de l'animation
+				y: 0,
+				duration: 1.5,
 				scrollTrigger: {
-					trigger: sectionRef.current, // L'élément à observer
-					start: "top 80%", // Déclenche lorsque le haut de la section arrive à 80% du viewport
-					end: "top 30%", // Animation complète à 30% du viewport
-					scrub: true, // Animation liée au scroll
+					trigger: horairesRef.current,
+					start: "top 80%",
+					end: "top 30%",
+					scrub: true,
+				},
+			},
+		);
+
+		// Animation pour le bloc gauche (image cabinet)
+		gsap.fromTo(
+			leftBlockRef.current,
+			{ x: "-100%", opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 1.5,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: sectionRef.current,
+					start: "top 80%",
+				},
+			},
+		);
+
+		// Animation pour le bloc droit (texte cabinet)
+		gsap.fromTo(
+			rightBlockRef.current,
+			{ x: "100%", opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 1.5,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: sectionRef.current,
+					start: "top 80%",
 				},
 			},
 		);
 	}, []);
+
 	return (
 		<>
 			<Head>
@@ -101,10 +138,9 @@ export default function Seances() {
 				/>
 			</Head>
 			<main className="min-h-screen bg-white">
-				<h1 className="text-2xl font-bold uppercase mb-6 p-5">Séances</h1>
-
 				{/* Section présentation */}
 				<section className="py-6 px-4 text-center">
+					<h1 className="text-2xl font-bold uppercase mb-6 p-5">Séances</h1>
 					<div className="flex flex-col lg:flex-row m-2">
 						{/* Bloc gauche : titre et texte */}
 						<motion.div
@@ -113,8 +149,8 @@ export default function Seances() {
 							animate={{ x: 0, opacity: 1 }} // Position finale
 							transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
 						>
-							<h2 className="text-xl font-bold p-5">Comment ça se passe ?</h2>
-							<p className="pt-5">
+							<h2 className="text-xl font-bold">Comment ça se passe ?</h2>
+							<p className="pt-4">
 								Chaque séance est un moment dédié à vous et à votre bien-être.{" "}
 								<br />
 								Lors de notre première rencontre, nous prenons le temps{" "}
@@ -154,7 +190,7 @@ export default function Seances() {
 
 				{/* Section horaires et tarifs */}
 				<section
-					ref={sectionRef}
+					ref={horairesRef}
 					className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md"
 				>
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
@@ -191,10 +227,13 @@ export default function Seances() {
 				</section>
 
 				{/* Section Google cabinet et Google map */}
-				<section className="py-6 px-4 text-center">
+				<section ref={sectionRef} className="py-6 px-4 text-center">
 					<div className="flex flex-col lg:flex-row m-2">
-						{/* Bloc droit : Image cabinet */}
-						<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
+						{/* Bloc gauche : Image cabinet */}
+						<div
+							ref={leftBlockRef}
+							className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
+						>
 							<Image
 								src={Cabinet}
 								alt="Photo du cabinet à Louveciennes de Sandra Bondon"
@@ -203,12 +242,15 @@ export default function Seances() {
 								className="rounded-lg shadow-lg object-cover"
 							/>{" "}
 						</div>
-						{/* Bloc gauche : titre et texte cabinet */}
-						<div className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full">
+						{/* Bloc droit : titre et texte cabinet */}
+						<div
+							ref={rightBlockRef}
+							className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
+						>
 							<h2 className="text-xl font-bold p-5">
 								Trouvez facilement mon cabinet
 							</h2>
-							<p className="pt-5">
+							<p>
 								Le cabinet est situé au cœur de [ville ou quartier], dans un
 								espace calme et facilement accessible. <br />
 								Vous pouvez consulter la carte ci-dessous pour trouver
@@ -224,14 +266,14 @@ export default function Seances() {
 
 				{/* Section Avis Google */}
 				<section className="py-6 px-4 text-center">
-					<h2 className="text-xl font-bold mb-4 p-5">
-						Ce que disent mes clients
-					</h2>
+					<h2 className="text-xl font-bold">Ce que disent mes clients</h2>
 					<p className="pt-5">
 						La satisfaction de mes clients est au cœur de ma pratique. <br />
 						Découvrez leurs témoignages ci-dessous :
 					</p>
+					<GoogleReviews />
 				</section>
+				<ScrollToTopButton />
 			</main>
 		</>
 	);
