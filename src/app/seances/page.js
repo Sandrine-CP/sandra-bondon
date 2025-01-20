@@ -6,6 +6,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Bagages from "@../../../public/images/bagages.jpg";
+import Cabinet from "@../../../public/images/cabinet.jpg";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -14,6 +15,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Seances() {
+	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];
+
 	const sectionRef = useRef(null);
 
 	useEffect(() => {
@@ -98,8 +101,10 @@ export default function Seances() {
 				/>
 			</Head>
 			<main className="min-h-screen bg-white">
+				<h1 className="text-2xl font-bold uppercase mb-6 p-5">Séances</h1>
+
+				{/* Section présentation */}
 				<section className="py-6 px-4 text-center">
-					<h1 className="text-2xl font-bold uppercase mb-6 p-5">Séances</h1>
 					<div className="flex flex-col lg:flex-row m-2">
 						{/* Bloc gauche : titre et texte */}
 						<motion.div
@@ -129,8 +134,7 @@ export default function Seances() {
 								Généralement, une séance dure environ 50 minutes.
 							</p>
 						</motion.div>
-
-						{/* Bloc droit : Image */}
+						{/* Bloc droit : Image bagages */}
 						<motion.div
 							className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
 							initial={{ x: "100vw", opacity: 0 }} // Position de départ
@@ -147,6 +151,8 @@ export default function Seances() {
 						</motion.div>
 					</div>{" "}
 				</section>
+
+				{/* Section horaires et tarifs */}
 				<section
 					ref={sectionRef}
 					className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md"
@@ -183,18 +189,40 @@ export default function Seances() {
 						/>
 					</Link>
 				</section>
+
+				{/* Section Google cabinet et Google map */}
 				<section className="py-6 px-4 text-center">
-					<h2 className="text-xl font-bold mb-4 p-5">
-						Trouvez facilement mon cabinet
-					</h2>
-					<p className="pt-5">
-						Le cabinet est situé au cœur de [ville ou quartier], dans un espace
-						calme et facilement accessible. <br />
-						Vous pouvez consulter la carte ci-dessous pour trouver l’itinéraire
-						le plus pratique depuis votre emplacement. <br />
-						Un parking gratuit est disponible à proximité.
-					</p>
+					<div className="flex flex-col lg:flex-row m-2">
+						{/* Bloc droit : Image cabinet */}
+						<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
+							<Image
+								src={Cabinet}
+								alt="Photo du cabinet à Louveciennes de Sandra Bondon"
+								width={420} // Largeur explicite
+								height={420} // Hauteur explicite
+								className="rounded-lg shadow-lg object-cover"
+							/>{" "}
+						</div>
+						{/* Bloc gauche : titre et texte cabinet */}
+						<div className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full">
+							<h2 className="text-xl font-bold p-5">
+								Trouvez facilement mon cabinet
+							</h2>
+							<p className="pt-5">
+								Le cabinet est situé au cœur de [ville ou quartier], dans un
+								espace calme et facilement accessible. <br />
+								Vous pouvez consulter la carte ci-dessous pour trouver
+								l’itinéraire le plus pratique depuis votre emplacement. <br />
+								Un parking gratuit est disponible à proximité.
+							</p>
+						</div>
+					</div>{" "}
+					<div className="m-8">
+						<GoogleMap addresses={addresses} />
+					</div>
 				</section>
+
+				{/* Section Avis Google */}
 				<section className="py-6 px-4 text-center">
 					<h2 className="text-xl font-bold mb-4 p-5">
 						Ce que disent mes clients

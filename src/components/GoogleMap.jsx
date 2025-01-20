@@ -9,6 +9,11 @@ export default function GoogleMap({ addresses }) {
 
 	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
 
+	if (!apiKey) {
+		console.error("Clé d'API Google Maps manquante !");
+		return <p>Erreur : La clé d'API Google Maps est manquante.</p>;
+	}
+
 	return (
 		<div className="map-container">
 			{/* Carte */}
