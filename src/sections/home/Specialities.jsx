@@ -78,9 +78,9 @@ export default function () {
 				<Button
 					text="Me contacter"
 					textColor="#2C254D"
-					bgColor="#F2E9E4"
+					bgColor="#FFA500"
 					hoverTextColor="#2C254D"
-					hoverBgColor="#F2E9E4"
+					hoverBgColor="#FFA500"
 					className="mt-6 mb-6"
 				/>
 			</Link>

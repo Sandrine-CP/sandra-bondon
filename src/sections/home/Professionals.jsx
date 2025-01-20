@@ -1,18 +1,64 @@
 import Image from "next/image";
 import Office from "../../../public/images/professionals.jpg";
 import Button from "@/components/Button";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Professionals() {
+	const sectionRef = useRef(null); // Référence pour toute la section
+	const leftBlockRef = useRef(null); // Référence pour le bloc gauche (texte)
+	const rightBlockRef = useRef(null); // Référence pour le bloc droit (image)
+
+	useEffect(() => {
+		// Animation pour le bloc gauche (texte)
+		gsap.fromTo(
+			leftBlockRef.current,
+			{ x: "-100%", opacity: 0 }, // Part de la gauche
+			{
+				x: 0,
+				opacity: 1,
+				duration: 1.5,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: sectionRef.current,
+					start: "top 80%",
+				},
+			},
+		);
+
+		// Animation pour le bloc droit (image)
+		gsap.fromTo(
+			rightBlockRef.current,
+			{ x: "100%", opacity: 0 }, // Part de la droite
+			{
+				x: 0,
+				opacity: 1,
+				duration: 1.5,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: sectionRef.current,
+					start: "top 80%",
+				},
+			},
+		);
+	}, []);
+
 	return (
-		<section className="bg-[#fafafc] py-16 px-4">
+		<section ref={sectionRef} className="bg-[#fafafc] py-16 px-4">
 			<div>
 				<h2 className="text-2xl font-bold mb-8 text-center">
 					Solution pour vos collaborateurs
 				</h2>
 				<div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8">
-					{/* Bloc gauche : H3 et paragraphe */}
-					<div className="flex flex-col justify-center items-center text-center lg:w-1/2">
-						<h3 className="font-semibold mb-4">Accompagner</h3>
+					{/* Bloc gauche : Texte */}
+					<div
+						ref={leftBlockRef} // Référence ici
+						className="flex flex-col justify-center items-center text-center lg:w-1/2"
+					>
+						<h3 className="text-l font-bold mb-4">Accompagner</h3>
 						<p className="leading-relaxed">
 							Nous identifions ensemble vos besoins. <br />
 							Nous pouvons travailler sur la gestion du changement, la charge
@@ -21,8 +67,12 @@ export default function Professionals() {
 							pleinement et sereinement leur carrière.
 						</p>
 					</div>
+
 					{/* Bloc droit : Image */}
-					<div className="flex justify-center items-center lg:w-1/2">
+					<div
+						ref={rightBlockRef} // Référence ici
+						className="flex justify-center items-center lg:w-1/2"
+					>
 						<div className="w-full max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
 							<Image
 								src={Office}

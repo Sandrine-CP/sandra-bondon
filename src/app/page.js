@@ -7,6 +7,8 @@ import Professionals from "@/sections/home/Professionals";
 import Specialities from "@/sections/home/Specialities";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Link from "next/link";
+import Image from "next/image";
+import Ressources from "../../public/images/lumiere.jpg";
 
 export default function Home() {
 	return (
@@ -16,8 +18,10 @@ export default function Home() {
 					<Gallery />
 				</section>
 				<section
-					className="h-[500px] bg-cover bg-center sm:h-[400px] md:h-[600px]"
-					style={{ backgroundImage: "url(/images/lumiere.jpg)" }}
+					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[400px]"
+					style={{
+						backgroundImage: "url(/images/lumiere.jpg)",
+					}}
 				/>
 				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
 					<p className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight">
@@ -35,8 +39,8 @@ export default function Home() {
 					</Link>
 				</section>{" "}
 				<section
-					className="h-screen bg-cover bg-center"
-					style={{ backgroundImage: "url(/images/divan.jpg)" }}
+					className="h-[75vh] bg-cover bg-center"
+					style={{ backgroundImage: "url(/images/divan2.png)" }}
 				>
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">
 						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
@@ -56,6 +60,19 @@ export default function Home() {
 				</section>
 				<section className="px-4 sm:px-6 lg:px-10 py-10 md:py-20 bg-white">
 					<Consultations />
+					<Link
+						href="/seances"
+						className=" flex flex-row justify-center text-center"
+					>
+						<Button
+							text="Voir plus"
+							textColor="#2C254D"
+							bgColor="#FFA500"
+							hoverTextColor="#2C254D"
+							hoverBgColor="#FFA500"
+							className="mt-6 mb-6"
+						/>
+					</Link>
 				</section>
 				<section>
 					<GoogleReviews />
