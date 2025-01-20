@@ -9,21 +9,51 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import Link from "next/link";
 import Image from "next/image";
 import Ressources from "../../public/images/lumiere.jpg";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+	const ressourcesRef = useRef(null);
+
+	useEffect(() => {
+		gsap.fromTo(
+			ressourcesRef.current,
+			{ x: "-100%", opacity: 0 }, // Commence en dehors de l'écran à gauche
+			{
+				x: 0,
+				opacity: 1,
+				duration: 1.5,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: ressourcesRef.current, // Déclencheur de l'animation
+					start: "top 80%", // Début de l'animation (80% depuis le haut de la fenêtre)
+				},
+			},
+		);
+	}, []);
+
 	return (
 		<>
 			<main className="m-0 p-0 bg-black">
+				{/* Section Gallerie d'images */}
 				<section className="h-screen mt-0 pt-0 mb-10">
 					<Gallery />
 				</section>
+				{/* Section image lumière */}
 				<section
 					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[400px]"
 					style={{
 						backgroundImage: "url(/images/lumiere.jpg)",
 					}}
 				/>
-				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
+				{/* Section Ressources */}
+				<section
+					ref={ressourcesRef}
+					className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20"
+				>
 					<p className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight">
 						Toutes les ressources sont en vous
 					</p>
@@ -38,6 +68,7 @@ export default function Home() {
 						/>
 					</Link>
 				</section>{" "}
+				{/* Section Sandra Bondon */}
 				<section
 					className="h-[75vh] bg-cover bg-center"
 					style={{ backgroundImage: "url(/images/divan2.png)" }}
