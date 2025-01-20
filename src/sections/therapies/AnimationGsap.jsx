@@ -17,7 +17,6 @@ export default function AnimationGsap({ timeline }) {
 	return (
 		<section className="py-6 px-4 mb-10 bg-gray-50 text-center">
 			<h2 className="text-xl font-bold mb-8">Vous êtes</h2>
-
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
 				<ul className="list-none space-y-4">
 					<li className="text-l font-bold bg-primary text-secondary shadow-md rounded-lg p-2">

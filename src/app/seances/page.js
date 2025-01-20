@@ -4,6 +4,9 @@ import GoogleMap from "@/components/GoogleMap";
 import Link from "next/link";
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+import Bagages from "@../../../public/images/bagages.jpg";
+import { motion } from "framer-motion";
 
 export default function Seances() {
 	return (
@@ -70,24 +73,54 @@ export default function Seances() {
 			<main className="min-h-screen bg-white">
 				<section className="py-6 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-4 p-5">Séances</h1>
-					<h2 className="text-xl font-bold p-5">Comment ça se passe ?</h2>
-					<p className="pt-5">
-						Chaque séance est un moment dédié à vous et à votre bien-être.{" "}
-						<br />
-						Lors de notre première rencontre, nous prenons le temps d’explorer
-						vos besoins, vos attentes, et vos objectifs. <br />
-						Cette étape est essentielle pour établir une relation de confiance
-						et définir un plan d’accompagnement personnalisé. <br />
-						Les séances se déroulent dans un cadre bienveillant et confidentiel.
-						Elles sont conçues pour vous aider à surmonter vos blocages,
-						retrouver un équilibre émotionnel, et avancer vers vos objectifs
-						personnels ou professionnels. <br />
-						La durée et la fréquence des séances varient en fonction de vos
-						besoins spécifiques. <br />
-						Généralement, une séance dure environ 50 minutes.
-					</p>
+					<div className="flex flex-col lg:flex-row">
+						{/* Bloc gauche : titre et texte */}
+						<motion.div
+							className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
+							initial={{ x: "-100vw", opacity: 0 }} // Position de départ
+							animate={{ x: 0, opacity: 1 }} // Position finale
+							transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
+						>
+							<h2 className="text-xl font-bold p-5">Comment ça se passe ?</h2>
+							<p className="pt-5">
+								Chaque séance est un moment dédié à vous et à votre bien-être.{" "}
+								<br />
+								Lors de notre première rencontre, nous prenons le temps{" "}
+								<strong className="text-primary font-bold">
+									d’explorer vos besoins, vos attentes, et vos objectifs.
+								</strong>{" "}
+								<br />
+								Cette étape est essentielle pour établir une relation de{" "}
+								<strong className="text-primary font-bold">confiance </strong>
+								et définir un plan d’accompagnement personnalisé. <br />
+								Les séances se déroulent dans un cadre bienveillant et
+								confidentiel. Elles sont conçues pour vous aider à surmonter vos
+								blocages, retrouver un équilibre émotionnel, et avancer vers vos
+								objectifs personnels ou professionnels. <br />
+								La durée et la fréquence des séances varient en fonction de vos
+								besoins spécifiques. <br />
+								Généralement, une séance dure environ 50 minutes.
+							</p>
+						</motion.div>
+
+						{/* Bloc droit : Image */}
+						<motion.div
+							className="flex justify-start items-center lg:w-1/2 w-full mt-4 lg:mt-0"
+							initial={{ x: "100vw", opacity: 0 }} // Position de départ
+							animate={{ x: 0, opacity: 1 }} // Position finale
+							transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
+						>
+							<Image
+								src={Bagages}
+								alt="Illustration de valises pour symboliser le voyage intérieur"
+								width={640}
+								height={480}
+								className="rounded-lg shadow-lg object-cover w-full max-w-sm lg:max-w-xl"
+							/>
+						</motion.div>
+					</div>{" "}
 				</section>
-				<section className="py-6 px-4 text-center bg-secondary">
+				<section className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md">
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">

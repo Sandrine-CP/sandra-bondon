@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 export default function Professionals() {
 	return (
-		<section className="bg-secondary py-16 px-4">
+		<section className="bg-[#fafafc] py-16 px-4">
 			<div>
 				<h2 className="text-2xl font-bold mb-8 text-center">
 					Solution pour vos collaborateurs
