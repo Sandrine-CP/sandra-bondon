@@ -7,8 +7,35 @@ import Head from "next/head";
 import Image from "next/image";
 import Bagages from "@../../../public/images/bagages.jpg";
 import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Seances() {
+	const sectionRef = useRef(null);
+
+	useEffect(() => {
+		gsap.fromTo(
+			sectionRef.current,
+			{
+				opacity: 0,
+				y: 50,
+			},
+			{
+				opacity: 1,
+				y: 0, // Fin : visible et à sa position d'origine
+				duration: 1.5, // Durée de l'animation
+				scrollTrigger: {
+					trigger: sectionRef.current, // L'élément à observer
+					start: "top 80%", // Déclenche lorsque le haut de la section arrive à 80% du viewport
+					end: "top 30%", // Animation complète à 30% du viewport
+					scrub: true, // Animation liée au scroll
+				},
+			},
+		);
+	}, []);
 	return (
 		<>
 			<Head>
@@ -72,8 +99,8 @@ export default function Seances() {
 			</Head>
 			<main className="min-h-screen bg-white">
 				<section className="py-6 px-4 text-center">
-					<h1 className="text-2xl font-bold uppercase mb-4 p-5">Séances</h1>
-					<div className="flex flex-col lg:flex-row">
+					<h1 className="text-2xl font-bold uppercase mb-6 p-5">Séances</h1>
+					<div className="flex flex-col lg:flex-row m-2">
 						{/* Bloc gauche : titre et texte */}
 						<motion.div
 							className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
@@ -105,7 +132,7 @@ export default function Seances() {
 
 						{/* Bloc droit : Image */}
 						<motion.div
-							className="flex justify-start items-center lg:w-1/2 w-full mt-4 lg:mt-0"
+							className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
 							initial={{ x: "100vw", opacity: 0 }} // Position de départ
 							animate={{ x: 0, opacity: 1 }} // Position finale
 							transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
@@ -113,14 +140,17 @@ export default function Seances() {
 							<Image
 								src={Bagages}
 								alt="Illustration de valises pour symboliser le voyage intérieur"
-								width={640}
-								height={480}
-								className="rounded-lg shadow-lg object-cover w-full max-w-sm lg:max-w-xl"
-							/>
+								width={420} // Largeur explicite
+								height={420} // Hauteur explicite
+								className="rounded-lg shadow-lg object-cover"
+							/>{" "}
 						</motion.div>
 					</div>{" "}
 				</section>
-				<section className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md">
+				<section
+					ref={sectionRef}
+					className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md"
+				>
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">
