@@ -43,21 +43,23 @@ export default function SolutionsPourVous() {
 					</p>
 				</section>
 				<AnimationGsap timeline={timeline} />
-				<Approach />
+				<section className="py-10 px-4 text-center bg-[#fafafc] rounded-md m-6 ">
+					<Approach />
+					<Link
+						href="/contact"
+						className="flex flex-grow justify-center items-center text-center m-4"
+					>
+						<Button
+							text="Me contacter"
+							textColor="#2C254D"
+							bgColor="#FFA500"
+							hoverTextColor="#2C254D"
+							hoverBgColor="#FFA500"
+							className="mt-6"
+						/>
+					</Link>
+				</section>
 				<Therapies />
-				<Link
-					href="/contact"
-					className="flex flex-grow justify-center items-center text-center m-4"
-				>
-					<Button
-						text="Me contacter"
-						textColor="#2C254D"
-						bgColor="#FFA500"
-						hoverTextColor="#2C254D"
-						hoverBgColor="#FFA500"
-						className="mt-6"
-					/>
-				</Link>
 				<ScrollToTopButton />
 			</main>
 		</>

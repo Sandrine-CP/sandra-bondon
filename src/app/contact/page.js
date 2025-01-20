@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ContactPage() {
 	const formActionUrl = process.env.NEXT_PUBLIC_FORMSPREE_URL;
@@ -60,6 +60,10 @@ export default function ContactPage() {
 		const { name, value } = event.target;
 		validateField(name, value);
 	};
+
+	useEffect(() => {
+		window.scrollTo(0, 0); // Définit la position de défilement tout en haut
+	}, []);
 
 	return (
 		<>

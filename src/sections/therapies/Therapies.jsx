@@ -44,7 +44,7 @@ export default function Therapies() {
 
 	return (
 		<>
-			<section id="approach" className="py-10 px-4 text-center bg-white mt-16">
+			<section id="approach" className="py-10 px-4 text-center bg-white ">
 				<h2 className="text-xl font-bold mb-6">
 					Techniques thérapeutiques adaptées
 				</h2>
@@ -60,7 +60,7 @@ export default function Therapies() {
 					temps réduit.
 				</p>
 			</section>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
 				{therapiesList.map((therapy) => (
 					<Card
 						key={therapy.id}
