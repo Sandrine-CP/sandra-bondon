@@ -29,7 +29,11 @@ export default function GoogleReviews() {
 
 	// Ne pas afficher la section si le tableau des avis est vide
 	if (!reviews || reviews.length === 0) {
-		return <p>Aucun avis disponible pour le moment.</p>;
+		return (
+			<p className="bg-white text-center italic mb-10">
+				Aucun avis disponible pour le moment.
+			</p>
+		);
 	}
 
 	// Gestion du changement de carte

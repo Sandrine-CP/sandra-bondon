@@ -120,6 +120,14 @@ export default function Home() {
 						/>
 					</Link>
 				</section>
+				{/* Section Avis Google */}
+				<section className="py-6 px-4 text-center bg-white">
+					<h2 className="text-xl font-bold">Ce que disent mes clients</h2>
+					<p className="pt-5">
+						La satisfaction de mes clients est au cœur de ma pratique. <br />
+						Découvrez leurs témoignages ci-dessous :
+					</p>
+				</section>
 				<section>
 					<GoogleReviews />
 				</section>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Bagages from "@../../../public/images/bagages.jpg";
+import Bagages from "@../../../public/images/bagages.webp";
 import Cabinet from "@../../../public/images/cabinet.jpg";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";
@@ -136,6 +136,12 @@ export default function Seances() {
 					name="twitter:image"
 					content="https://www.sandrabondon.com/images/illustration-seances.jpg"
 				/>
+				<link
+					rel="preload"
+					href="/images/bagages.webp"
+					as="image"
+					type="image/webp"
+				/>
 			</Head>
 			<main className="min-h-screen bg-white">
 				{/* Section présentation */}
@@ -171,20 +177,18 @@ export default function Seances() {
 							</p>
 						</motion.div>
 						{/* Bloc droit : Image bagages */}
-						<motion.div
-							className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
-							initial={{ x: "100vw", opacity: 0 }} // Position de départ
-							animate={{ x: 0, opacity: 1 }} // Position finale
-							transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
-						>
-							<Image
-								src={Bagages}
-								alt="Illustration de valises pour symboliser le voyage intérieur"
-								width={420} // Largeur explicite
-								height={420} // Hauteur explicite
-								className="rounded-lg shadow-lg object-cover"
-							/>{" "}
-						</motion.div>
+						<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
+							<div style={{ width: 521, height: 366 }}>
+								<Image
+									src={Bagages}
+									alt="Illustration de valises pour symboliser le voyage intérieur"
+									className="rounded-lg shadow-lg object-cover"
+									placeholder="blur"
+									// priority
+									// loading="eager"
+								/>
+							</div>
+						</div>
 					</div>{" "}
 				</section>
 
@@ -237,15 +241,16 @@ export default function Seances() {
 							<Image
 								src={Cabinet}
 								alt="Photo du cabinet à Louveciennes de Sandra Bondon"
-								width={420} // Largeur explicite
-								height={420} // Hauteur explicite
+								width="auto" // Largeur explicite
+								height="auto" // Hauteur explicite
 								className="rounded-lg shadow-lg object-cover"
+								priority
 							/>{" "}
 						</div>
 						{/* Bloc droit : titre et texte cabinet */}
 						<div
 							ref={rightBlockRef}
-							className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
+							className="flex flex-col justify-center items-center text-center lg:w-1/2 w-full"
 						>
 							<h2 className="text-xl font-bold p-5">
 								Trouvez facilement mon cabinet
@@ -271,8 +276,8 @@ export default function Seances() {
 						La satisfaction de mes clients est au cœur de ma pratique. <br />
 						Découvrez leurs témoignages ci-dessous :
 					</p>
-					<GoogleReviews />
 				</section>
+				<GoogleReviews />
 				<ScrollToTopButton />
 			</main>
 		</>

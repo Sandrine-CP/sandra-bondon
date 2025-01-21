@@ -1,4 +1,4 @@
-import "../../styles/pageConstruction.css";
+import UnderConstruction from "@/components/UnderConstruction";
 
 export default function APropos() {
 	return (
@@ -12,13 +12,7 @@ export default function APropos() {
 						Page en cours de construction
 					</h2>
 				</section>
-				<section>
-					<div className="container">
-						<div className="loader" />
-						<div className="loader" />
-						<div className="loader" />
-					</div>
-				</section>
+				<UnderConstruction />
 			</main>
 		</>
 	);
