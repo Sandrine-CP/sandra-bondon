@@ -16,11 +16,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-	const ressourcesRef = useRef(null);
+	const lumiereRef = useRef(null);
+	const textRef = useRef(null); // Référence pour le texte
 
 	useEffect(() => {
 		gsap.fromTo(
-			ressourcesRef.current,
+			lumiereRef.current,
 			{ x: "-100%", opacity: 0 }, // Commence en dehors de l'écran à gauche
 			{
 				x: 0,
@@ -28,8 +29,21 @@ export default function Home() {
 				duration: 1.5,
 				ease: "power2.out",
 				scrollTrigger: {
-					trigger: ressourcesRef.current, // Déclencheur de l'animation
+					trigger: lumiereRef.current, // Déclencheur de l'animation
 					start: "top 80%", // Début de l'animation (80% depuis le haut de la fenêtre)
+				},
+			},
+		);
+		gsap.fromTo(
+			textRef.current,
+			{ opacity: 0 }, // Départ avec opacité 0 (invisible)
+			{
+				opacity: 1, // Arrivée avec opacité 1 (visible)
+				duration: 2,
+				ease: "power2.out",
+				scrollTrigger: {
+					trigger: textRef.current, // Le texte déclenche l'animation
+					start: "top 90%", // Déclenche lorsque le texte arrive à 90% du viewport
 				},
 			},
 		);
@@ -44,17 +58,18 @@ export default function Home() {
 				</section>
 				{/* Section image lumière */}
 				<section
+					ref={lumiereRef}
 					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[400px]"
 					style={{
 						backgroundImage: "url(/images/lumiere.jpg)",
 					}}
 				/>
 				{/* Section Ressources */}
-				<section
-					ref={ressourcesRef}
-					className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20"
-				>
-					<p className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight">
+				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
+					<p
+						ref={textRef}
+						className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight"
+					>
 						Toutes les ressources sont en vous
 					</p>
 					<Link href="/solutions-pour-vous">
