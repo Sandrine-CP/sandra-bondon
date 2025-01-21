@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,14 +87,16 @@ export default function Professionals() {
 				</div>
 			</div>
 			<div className="text-center mt-8">
-				<Button
-					text="Voir plus"
-					textColor="#2C254D"
-					bgColor="#FFA500"
-					hoverTextColor="#2C254D"
-					hoverBgColor="#FFA500"
-					className="mt-6"
-				/>
+				<Link href="/solutions-pour-vos-collaborateurs">
+					<Button
+						text="Voir plus"
+						textColor="#2C254D"
+						bgColor="#FFA500"
+						hoverTextColor="#2C254D"
+						hoverBgColor="#FFA500"
+						className="mt-6"
+					/>
+				</Link>
 			</div>
 		</section>
 	);
