@@ -13,6 +13,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import GoogleReviews from "@/components/GoogleReviews";
+import FadeInSectionAnimation from "@/components/FadeInSectionAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -193,11 +194,14 @@ export default function Seances() {
 				</section>
 
 				{/* Section horaires et tarifs */}
-				<section
-					ref={horairesRef}
-					className="py-6 px-4 text-center bg-[#fafafc] rounded-md m-6 shadow-md"
+				<FadeInSectionAnimation
+					bgColor="#fafafc"
+					textColor="#000"
+					className="m-6"
 				>
-					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
+					<h2 className="text-xl font-bold mb-4">
+						VERSION 2-Horaires et Tarifs
+					</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">
 						Je vous accueille sur rendez-vous, du lundi au vendredi de 9h à 18h
@@ -209,14 +213,13 @@ export default function Seances() {
 						<li>Séance de couple : XX €</li>
 						<li>Séance de groupe (minimum X personnes) : XX €</li>
 					</ul>
-
 					<p className="pt-5">
 						Les séances peuvent se faire en cabinet ou en visioconférence, selon
 						vos préférences.
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
-						à me contacter via le formulaire en ligne ou par téléphone au [
-						numéro].
+						à me contacter via le formulaire en ligne ou par téléphone au
+						[numéro].
 					</p>
 					<Link href="/contact">
 						<Button
@@ -228,7 +231,7 @@ export default function Seances() {
 							className="mt-6"
 						/>
 					</Link>
-				</section>
+				</FadeInSectionAnimation>
 
 				{/* Section Google cabinet et Google map */}
 				<section ref={sectionRef} className="py-6 px-4 text-center">
