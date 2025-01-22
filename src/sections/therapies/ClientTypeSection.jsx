@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 
-export default function AnimationGsap({ timeline }) {
+export default function ClientTypeSection({ timeline }) {
 	useEffect(() => {
 		const listItems = document.querySelectorAll("ul li");
 

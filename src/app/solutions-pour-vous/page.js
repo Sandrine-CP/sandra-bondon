@@ -1,11 +1,20 @@
 "use client";
-import AnimationGsap from "@/sections/therapies/AnimationGsap";
-import Approach from "@/sections/therapies/Approach";
-import Therapies from "@/sections/therapies/Therapies";
-import Button from "@/components/Button";
+// Organisation des imports
+// Imports de base : React, hooks, libraries essentielles
 import { gsap } from "gsap";
-import Link from "next/link";
+
+// Bibliothèques tierces
+
+// Composants parents
+
+// Composants enfants
+import ApproachSection from "@/sections/therapies/ApproachSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import TherapiesSection from "@/sections/therapies/TherapiesSection";
+import ClientTypeSection from "@/sections/therapies/ClientTypeSection";
+
+// Utilitaires et helpers
+// Styles et assets
 
 export default function SolutionsPourVous() {
 	const timeline = gsap.timeline();
@@ -42,24 +51,11 @@ export default function SolutionsPourVous() {
 						êtes.
 					</p>
 				</section>
-				<AnimationGsap timeline={timeline} />
+				<ClientTypeSection timeline={timeline} />
 				<section className="py-10 px-4 text-center bg-[#fafafc] rounded-md m-6 ">
-					<Approach />
-					<Link
-						href="/contact"
-						className="flex flex-grow justify-center items-center text-center m-4"
-					>
-						<Button
-							text="Me contacter"
-							textColor="#2C254D"
-							bgColor="#FFA500"
-							hoverTextColor="#2C254D"
-							hoverBgColor="#FFA500"
-							className="mt-6"
-						/>
-					</Link>
+					<ApproachSection />
 				</section>
-				<Therapies />
+				<TherapiesSection />
 				<ScrollToTopButton />
 			</main>
 		</>

@@ -2,7 +2,7 @@
 
 import Card from "@/components/Card";
 
-export default function Therapies() {
+export default function TherapiesSection() {
 	const therapiesList = [
 		{
 			id: 1,
