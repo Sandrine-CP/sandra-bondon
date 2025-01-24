@@ -1,4 +1,5 @@
 import Header from "@/components/header/Header";
+import PagesFooter from "@/components/PagesFooter";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
 			<body className="font-body bg-background text-primary">
 				<Header />
 				<main className="pt-[60px] sm:pt-[60px]">{children}</main>
+				<PagesFooter />
 			</body>
 		</html>
 	);
