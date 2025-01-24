@@ -1,14 +1,38 @@
+// Organisation des imports
+// Imports de base : React, hooks, libraries essentielles
 import Link from "next/link";
+import { FaLinkedin, FaFacebook } from "react-icons/fa";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function PagesFooter() {
 	return (
 		<footer className="bg-secondary text-sm p-4 mt-4 grid grid-cols-1 md:grid-cols-4 gap-4">
 			{" "}
-			<div>
-				<p>Linkedin</p>
-				<p>Facebook</p>
-				<p>Psychologue.net</p>
-			</div>
+			<div className="mt-4 flex justify-center space-x-4">
+				{" "}
+				<a
+					href="https://www.linkedin.com/in/sandrine-cazenave-peyrasson"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="LinkedIn"
+					className="text-primary hover:text-blue-500"
+				>
+					<FaLinkedin size={24} />
+				</a>
+				<a
+					href="https://www.facebook.com/sandra-url"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Facebook"
+					className="text-primary hover:text-blue-500"
+				>
+					<FaFacebook size={24} />
+				</a>
+			</div>{" "}
 			<div>
 				<h2 className="font-bold">Informations légales</h2>
 				<p>Sandra Bondon</p>
