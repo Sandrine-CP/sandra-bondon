@@ -4,16 +4,66 @@ import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
 import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
-import Specialities from "@/sections/home/Specialities";
+import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Link from "next/link";
-import Image from "next/image";
-import Ressources from "../../public/images/lumiere.jpg";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const specialties = [
+	{
+		id: 1,
+		text: "Addiction",
+		color: "bg-secondary",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 2,
+		text: "Burn Out",
+		color: "bg-primary",
+		size: "w-20 h-20",
+		textColor: "text-white",
+	},
+	{
+		id: 3,
+		text: "Trauma",
+		color: "bg-secondary",
+		size: "w-32 h-32",
+		textColor: "text-primary",
+	},
+	{
+		id: 4,
+		text: "Anxiété",
+		color: "bg-primary",
+		size: "w-28 h-28",
+		textColor: "text-white",
+	},
+	{
+		id: 5,
+		text: "Charge Mentale",
+		color: "bg-secondary",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 6,
+		text: "Obsession",
+		color: "bg-primary",
+		size: "w-32 h-32",
+		textColor: "text-white",
+	},
+	{
+		id: 7,
+		text: "Phobie",
+		color: "bg-secondary",
+		size: "w-24 h-24",
+		textColor: "text-primary",
+	},
+];
 
 export default function Home() {
 	const lumiereRef = useRef(null);
@@ -98,8 +148,26 @@ export default function Home() {
 						</p>
 					</div>
 				</section>
-				<section className="h-screen bg-white relative">
-					<Specialities />
+				{/* Section Spécialités */}
+				<section className="bg-white">
+					<FloatingList
+						items={specialties}
+						title="Spécialités"
+						description="Lorem ipsum dolor sit amet consectetur. Facilisis donec faucibus sit volutpat netus quis sagittis diam sem."
+					/>
+					<Link
+						href="/contact"
+						className=" flex flex-row justify-center text-center"
+					>
+						<Button
+							text="Me contacter"
+							textColor="#2C254D"
+							bgColor="#FFA500"
+							hoverTextColor="#2C254D"
+							hoverBgColor="#FFA500"
+							className="mt-6 mb-6"
+						/>
+					</Link>
 				</section>
 				<section className="px-4 sm:px-6 lg:px-0 bg-white relative">
 					<Professionals />

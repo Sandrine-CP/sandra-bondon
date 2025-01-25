@@ -19,6 +19,7 @@ export default function APropos() {
 				<h1 className="text-2xl font-bold uppercase text-center m-6 p-5">
 					A Propos
 				</h1>
+
 				<section className="flex flex-row justify-center items-center mb-24">
 					<div>
 						<h2 className="text-xl font-bold text-center">

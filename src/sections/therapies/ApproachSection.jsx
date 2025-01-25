@@ -21,7 +21,9 @@ export default function ApproachSection() {
 				textColor="#000"
 				className="m-6"
 			>
-				<h2 className="text-xl font-bold mb-6">Approche personnalisée</h2>
+				<h2 className="text-xl font-bold mb-6">
+					Je propose une approche personnalisée
+				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
 					En tant que psychopraticienne, je m'engage à écouter attentivement
 					votre besoin. Ensemble, nous explorons vos difficultés et vos

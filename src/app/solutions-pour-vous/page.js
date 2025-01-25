@@ -12,9 +12,62 @@ import ApproachSection from "@/sections/therapies/ApproachSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import TherapiesSection from "@/sections/therapies/TherapiesSection";
 import ClientTypeSection from "@/sections/therapies/ClientTypeSection";
+import FloatingList from "@/components/FloatingList";
 
 // Utilitaires et helpers
 // Styles et assets
+
+const clients = [
+	{
+		id: 1,
+		text: "Enfants",
+		color: "bg-primary",
+		size: "w-24 h-24",
+		textColor: "text-white",
+	},
+	{
+		id: 2,
+		text: "Adultes",
+		color: "bg-secondary",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 3,
+		text: "Adolescents",
+		color: "bg-primary",
+		size: "w-32 h-32",
+		textColor: "text-white",
+	},
+	{
+		id: 4,
+		text: "Individuels",
+		color: "bg-secondary",
+		size: "w-28 h-28",
+		textColor: "text-primary",
+	},
+	{
+		id: 5,
+		text: "Groupe",
+		color: "bg-primary",
+		size: "w-20 h-20",
+		textColor: "text-white",
+	},
+	{
+		id: 6,
+		text: "Famille",
+		color: "bg-secondary",
+		size: "w-24 h-24",
+		textColor: "text-primary",
+	},
+	{
+		id: 7,
+		text: "Couple",
+		color: "bg-primary",
+		size: "w-28 h-28",
+		textColor: "text-white",
+	},
+];
 
 export default function SolutionsPourVous() {
 	const timeline = gsap.timeline();
@@ -51,10 +104,14 @@ export default function SolutionsPourVous() {
 						êtes.
 					</p>
 				</section>
-				<ClientTypeSection timeline={timeline} />
-				<section className="py-10 px-4 text-center bg-[#fafafc] rounded-md m-6 ">
+				<section className="py-10 px-4 text-center ">
+					<h2 className="text-xl font-bold mb-4">Que vous soyez</h2>
+					<FloatingList items={clients} />
+				</section>
+				<section className="py-10 px-4 text-center">
 					<ApproachSection />
 				</section>
+
 				<TherapiesSection />
 				<ScrollToTopButton />
 			</main>
