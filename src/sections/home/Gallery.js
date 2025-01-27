@@ -70,18 +70,55 @@ export default function Gallery() {
 			className={styles.main}
 		>
 			<div ref={plane1} className={styles.plane}>
-				<Image src={floating1} alt="image" width={300} />
-				<Image src={floating2} alt="image" width={300} />
-				<Image src={floating7} alt="image" width={225} priority />
+				<Image
+					src={floating1}
+					alt="image"
+					width={300}
+					className="rounded-xl hidden sm:block"
+				/>
+				<Image src={floating2} alt="image" width={300} className="rounded-xl" />
+				<Image
+					src={floating7}
+					alt="image"
+					width={200}
+					className="rounded-xl "
+					priority
+				/>
 			</div>
 			<div ref={plane2} className={styles.plane}>
-				<Image src={floating4} alt="image" width={250} priority />
-				<Image src={floating6} alt="image" width={200} />
-				<Image src={floating8} alt="image" width={225} />
+				<Image
+					src={floating4}
+					alt="image"
+					width={200}
+					className="rounded-xl hidden sm:block"
+					priority
+				/>
+				<Image
+					src={floating6}
+					alt="image"
+					width={200}
+					className="rounded-xl hidden sm:block"
+				/>
+				<Image
+					src={floating8}
+					alt="image"
+					width={225}
+					className="rounded-xl hidden sm:block"
+				/>
 			</div>
 			<div ref={plane3} className={styles.plane}>
-				<Image src={floating3} alt="image" width={150} />
-				<Image src={floating5} alt="image" width={200} />
+				<Image
+					src={floating3}
+					alt="image"
+					width={150}
+					className="rounded-xl hidden sm:block"
+				/>
+				<Image
+					src={floating5}
+					alt="image"
+					width={160}
+					className="rounded-xl hidden sm:block"
+				/>
 			</div>
 			<div className={styles.title}>
 				<h1>

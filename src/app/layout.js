@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
 					name="google-site-verification"
 					content="xpGDYjq2PEG7WEU8_zSf_F1Xwh3ThkDvQHce-zuNHxM"
 				/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
 
 			<body className="font-body bg-background text-primary">
