@@ -105,8 +105,8 @@ export default function Seances() {
 						<li>Séance de groupe (minimum X personnes) : XX €</li>
 					</ul>
 					<p className="pt-5">
-						Les séances peuvent se faire en cabinet ou en visioconférence, selon
-						vos préférences.
+						Les séances peuvent se faire en cabinet ou en visioconférence
+						(WhatsApp), selon vos préférences.
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
 						à me contacter via le formulaire en ligne ou par téléphone au

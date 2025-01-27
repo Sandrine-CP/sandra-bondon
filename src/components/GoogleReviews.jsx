@@ -32,7 +32,7 @@ export default function GoogleReviews() {
 		return (
 			<p className="bg-white text-center italic mb-10">
 				Aucun avis disponible pour le moment : soyez le premier à laisser un
-				avis
+				témoignage
 			</p>
 		);
 	}

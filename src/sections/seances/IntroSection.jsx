@@ -34,8 +34,13 @@ export default function IntroSection() {
 						<br />
 						Cette étape est essentielle pour établir une relation de{" "}
 						<strong className="text-primary font-bold">confiance </strong>
-						et définir un plan d’accompagnement personnalisé. <br />
+						et définir un plan d’
+						<strong className="text-primary font-bold">
+							accompagnement personnalisé
+						</strong>
+						. <br />
 						Les séances se déroulent dans un cadre bienveillant et confidentiel.
+						<br />
 						Elles sont conçues pour vous aider à surmonter vos blocages,
 						retrouver un équilibre émotionnel, et avancer vers vos objectifs
 						personnels ou professionnels. <br />

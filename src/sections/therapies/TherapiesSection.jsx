@@ -1,6 +1,7 @@
 "use client";
-
+import Link from "next/link";
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 export default function TherapiesSection() {
 	const therapiesList = [
@@ -49,26 +50,53 @@ export default function TherapiesSection() {
 					Techniques thérapeutiques adaptées
 				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
-					La thérapie brève est une approche centrée sur la recherche de
-					solutions concrètes et rapides pour surmonter des difficultés
-					spécifiques. Contrairement aux thérapies traditionnelles, elle se
-					concentre sur le présent et le futur, en mobilisant vos ressources
-					pour atteindre vos objectifs. La durée de ce type de thérapie varie
-					généralement entre 5 et 15 séances, selon la nature de la
-					problématique et les besoins individuels. Grâce à des techniques
-					adaptées et ciblées, elle offre des résultats significatifs dans un
-					temps réduit.
+					La thérapie brève est une approche centrée sur la recherche de{" "}
+					<strong className="text-primary font-bold">
+						solutions concrètes et rapides
+					</strong>{" "}
+					pour surmonter des difficultés spécifiques.
+					<br /> Contrairement aux thérapies traditionnelles, elle se concentre
+					sur le présent et le futur, en mobilisant vos ressources pour
+					atteindre vos objectifs.
+					<br /> La durée de ce type de thérapie varie généralement entre XX et
+					XX séances, selon la nature de la problématique et les besoins
+					individuels.
+					<br /> Grâce à des techniques adaptées et ciblées, elle offre des{" "}
+					<strong className="text-primary font-bold">
+						résultats significatifs
+					</strong>{" "}
+					dans un temps réduit.
 				</p>
 			</section>
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
-				{therapiesList.map((therapy) => (
-					<Card
-						key={therapy.id}
-						title={therapy.title}
-						description={therapy.description}
+			<section>
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
+					{therapiesList.map((therapy) => (
+						<Card
+							key={therapy.id}
+							title={therapy.title}
+							description={therapy.description}
+						/>
+					))}
+				</div>
+			</section>
+			<section>
+				<p className="text-center">
+					Vous souhaitez savoir comment une séance se déroule ?
+				</p>
+				<Link
+					href="/seances"
+					className=" flex flex-row justify-center text-center"
+				>
+					<Button
+						text="Voir plus"
+						textColor="#2C254D"
+						bgColor="#FFA500"
+						hoverTextColor="#2C254D"
+						hoverBgColor="#FFA500"
+						className="mt-6 mb-6"
 					/>
-				))}
-			</div>
+				</Link>
+			</section>
 		</>
 	);
 }

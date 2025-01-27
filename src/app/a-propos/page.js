@@ -39,15 +39,13 @@ export default function APropos() {
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<h3 className="font-bold text-center m-4">Sandra Bondon</h3>
-						<p className="text-center mb-4">
-							Présentation brève de Sandra, psychopraticienne.
-						</p>
+						<p className="text-center mb-4">Présentation brève.</p>
 					</div>
 				</section>
 				<section>
 					<h3 className="font-bold text-center m-4">Introduction</h3>
 					<p className="text-center mb-4">
-						phrase engageante sur ta mission : “Vous accompagner vers un
+						phrase engageante sur ta mission : “Vous accompagner vers un
 						équilibre émotionnel grâce à une approche bienveillante et adaptée.”
 					</p>
 				</section>
@@ -62,7 +60,7 @@ export default function APropos() {
 					</h3>
 					<p className="text-center mb-4">
 						Une explication brève pour compléter, mais ne pas répéter, la page
-						Thérapies.
+						Thérapies/Solution pour vous.
 					</p>
 					<h3 className="font-bold text-center m-4">
 						Pourquoi je fais ce métier

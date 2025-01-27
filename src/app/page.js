@@ -153,7 +153,9 @@ export default function Home() {
 					<FloatingList
 						items={specialties}
 						title="Spécialités"
-						description="Lorem ipsum dolor sit amet consectetur. Facilisis donec faucibus sit volutpat netus quis sagittis diam sem."
+						description="Difficultés relationnelles : Lorsque la communication est difficile avec l'Autre. 
+						Que ce soit au travail ou en famille. 
+						Que les mots vous manquent, car les émotions sont trop présentes voire que vous ne savez pas comment exprimer ce qu'il se passe pour vous. Mal Etre : un état général sans savoir vraiment quoi, pourquoi, comment mais avec l'envie de vous sentir plus en adéquation avec vous-même. Comme trouver du sens à ce que vous faites."
 					/>
 					<Link
 						href="/contact"

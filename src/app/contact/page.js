@@ -68,8 +68,8 @@ export default function ContactPage() {
 	return (
 		<>
 			<main className="min-h-screen bg-white">
-				<section className="py-6 px-4 text-center">
-					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
+				<section className="py-4 px-4 text-center">
+					<h1 className="text-2xl font-bold uppercase mb-2 p-4">
 						Contactez-moi
 					</h1>
 					<div className="container mx-auto px-4">
