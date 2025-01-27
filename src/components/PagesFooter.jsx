@@ -35,18 +35,27 @@ export default function PagesFooter() {
 			</div>{" "}
 			<div>
 				<h2 className="font-bold">Informations légales</h2>
-				<p>Sandra Bondon</p>
-				<p>Numéro d'immatriculation</p>
+				<p>Sandra Bondon - EI</p>
 				<address>
 					32 Bis rue de Montbuisson
 					<br />
 					Louveciennes, Yvelines
 				</address>
+				<p>Numéro d'immatriculation</p>
+				<p>Numéro d'identification TVA [si applicable]</p>
+
+				<a
+					href="mailto:s.cazenave@hotmail.fr"
+					className="text-blue-500 underline"
+				>
+					[mailSandra]
+				</a>
 				<p>Mentions légales</p>
 			</div>
 			<div>
 				<h2 className="font-bold">Crédits</h2>
 				<p>Conception et réalisation du site : Sandrine Cazenave</p>
+				<p>Site hébergé par Vercel</p>
 				<p>Crédits photos : Unsplash</p>
 				<p>© 2025 Sandra Bondon. Tous droits réservés.</p>
 			</div>

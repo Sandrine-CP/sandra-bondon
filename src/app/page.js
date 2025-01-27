@@ -1,4 +1,10 @@
 "use client";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import Image from "next/image";
+import Sandra from "../../public/images/sandra-bondon.webp";
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
@@ -6,10 +12,6 @@ import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
 import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import Link from "next/link";
-import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -135,9 +137,18 @@ export default function Home() {
 				</section>{" "}
 				{/* Section Sandra Bondon */}
 				<section
-					className="h-[75vh] bg-cover bg-center"
-					style={{ backgroundImage: "url(/images/divan2.png)" }}
+					className="h-[75vh] bg-cover bg-center relative"
+					style={{ backgroundImage: "url(/images/fondHomeAbout.jpg)" }}
 				>
+					<div className="absolute bottom-4 left-4">
+						<Image
+							src={Sandra}
+							alt="Sandra Bondon, psychopraticienne"
+							width={150} // Taille par défaut pour mobile
+							height={150} // Taille par défaut pour mobile
+							className="rounded-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
+						/>
+					</div>{" "}
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">
 						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
 							Sandra Bondon : Psychopraticienne - Business Coach -
