@@ -75,11 +75,8 @@ export default function ContactPage() {
 					<div className="container mx-auto px-4">
 						<p className="text-lg mb-4">
 							Remplissez le formulaire ci-dessous ou envoyez un email à :{" "}
-							<a
-								href="mailto:s.cazenave@hotmail.fr"
-								className="text-blue-500 underline"
-							>
-								s.cazenave@hotmail.fr
+							<a href="mailto:[mailSandra]" className="text-blue-500 underline">
+								[mailSandra]
 							</a>
 						</p>
 					</div>

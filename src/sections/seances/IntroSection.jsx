@@ -46,7 +46,7 @@ export default function IntroSection() {
 						personnels ou professionnels. <br />
 						La durée et la fréquence des séances varient en fonction de vos
 						besoins spécifiques. <br />
-						Généralement, une séance dure environ 50 minutes.
+						Généralement, une séance dure environ 60 minutes.
 					</p>
 				</motion.div>
 				{/* Bloc droit : Image bagages */}

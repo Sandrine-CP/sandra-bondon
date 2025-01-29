@@ -95,14 +95,14 @@ export default function Seances() {
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">
-						Je vous accueille sur rendez-vous, du lundi au vendredi de 9h à 18h
+						Je vous accueille sur rendez-vous, du lundi au vendredi de 9h à 20h
 						et le samedi matin de 9h à 12h.
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>
-						<li>Séance individuelle : XX €</li>
-						<li>Séance de couple : XX €</li>
-						<li>Séance de groupe (minimum X personnes) : XX €</li>
+						<li>Séance individuelle : 80 à 110 €</li>
+						<li>Séance de couple : 160 €</li>
+						<li>Séance de groupe (minimum 3 personnes) : me contacter</li>
 					</ul>
 					<p className="pt-5">
 						Les séances peuvent se faire en cabinet ou en visioconférence
@@ -110,7 +110,7 @@ export default function Seances() {
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
 						à me contacter via le formulaire en ligne ou par téléphone au
-						[numéro].
+						[numéro en cours d&apos;attribution].
 					</p>
 					<Link href="/contact">
 						<Button
