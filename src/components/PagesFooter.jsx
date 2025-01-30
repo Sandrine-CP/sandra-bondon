@@ -1,7 +1,7 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import Link from "next/link";
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 // Bibliothèques tierces
 // Composants parents
 // Composants enfants
@@ -25,13 +25,13 @@ export default function PagesFooter() {
 						<FaLinkedin size={24} />
 					</a>
 					<a
-						href="https://www.facebook.com/sandra-url"
+						href="https://www.instagram.com/sandrabondon_sb/"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Facebook"
 						className="text-primary hover:text-blue-500"
 					>
-						<FaFacebook size={24} />
+						<FaInstagram size={24} />
 					</a>
 				</div>{" "}
 				<div>
@@ -43,12 +43,12 @@ export default function PagesFooter() {
 						Louveciennes, Yvelines
 					</address>
 					<a
-						href="mailto:s.cazenave@hotmail.fr"
+						href="mailto:sandrabondon@gmail.com"
 						className="text-blue-500 underline"
 					>
-						mail Sandra
+						sandrabondon@gmail.com
 					</a>
-					<p>Tel Sandra</p>
+					<p>Tel : 0624182302</p>
 				</div>
 				<div>
 					<h2 className="font-bold">Crédits</h2>

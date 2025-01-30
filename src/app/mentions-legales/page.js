@@ -17,22 +17,28 @@ export default function MentionsLegales() {
 					<p>Statut du propriétaire : Profession Libérale</p>
 					<p>Propriétaire : Sandra Bondon - EI</p>
 					<p>Statut : Entreprise Individuelle</p>
-					<p>Numéro d&apos;immatriculation : [à compléter]</p>
+					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
 					<address>
 						32 Bis rue de Montbuisson
 						<br />
 						Louveciennes, Yvelines
 					</address>
-					<a href="mailto:[mailSandra]" className="text-blue-500 underline">
-						[mailSandra]
+					<a
+						href="mailto:sandrabondon@gmail.com"
+						className="text-blue-500 underline"
+					>
+						sandrabondon@gmail.com
 					</a>
-					<p>[Tel Sandra]</p>
+					<p>Tél : 0624182302</p>
 					<p>Responsable de publication : Sandra Bondon</p>
 					<p>
-						Contacter le responsable de publication :{" "}
-						<a href="mailto:[mailSandra]" className="text-blue-500 underline">
-							[mailSandra]
+						Contacter le responsable de publication:{" "}
+						<a
+							href="mailto:sandrabondon@gmail.com"
+							className="text-blue-500 underline"
+						>
+							sandrabondon@gmail.com
 						</a>
 					</p>
 				</div>
@@ -127,8 +133,11 @@ export default function MentionsLegales() {
 						demande par e-mail à :
 					</p>
 					<p>
-						<a href="mailto:[mailSandra]" className="text-blue-500 underline">
-							[mailSandra]
+						<a
+							href="mailto:sandrabondon@gmail.com"
+							className="text-blue-500 underline"
+						>
+							sandrabondon@gmail.com
 						</a>
 					</p>{" "}
 				</div>

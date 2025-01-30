@@ -40,7 +40,7 @@ export default function Seances() {
 				/>
 
 				{/* <!-- Canonical link (éviter le contenu dupliqué si la page est accessible via plusieurs URLs) --> */}
-				<link rel="canonical" href="https://www.sandrabondon.com/seances" />
+				<link rel="canonical" href="https://www.sandra-bondon.com/seances" />
 
 				{/* <!-- Open Graph (pour partager sur les réseaux sociaux) --> */}
 				<meta
@@ -110,7 +110,7 @@ export default function Seances() {
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
 						à me contacter via le formulaire en ligne ou par téléphone au
-						[numéro en cours d&apos;attribution].
+						0624182302.
 					</p>
 					<Link href="/contact">
 						<Button
