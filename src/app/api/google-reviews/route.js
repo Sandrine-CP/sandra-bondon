@@ -22,6 +22,10 @@ export async function GET(request) {
 		const response = await axios.get(url);
 
 		console.log("Données retournées par l'API Google :", response.data);
+		console.log(
+			"Clé API Google Reviews côté serveur :",
+			process.env.GOOGLE_API_KEY,
+		);
 
 		// Vérifie si des avis existent dans la réponse
 		const reviews = response.data?.result?.reviews || [];
