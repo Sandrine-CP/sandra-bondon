@@ -24,7 +24,11 @@ export default function GoogleReviews() {
 
 	// Affiche un message de chargement pendant la récupération des données
 	if (loading) {
-		return <p>Chargement des avis...</p>;
+		return (
+			<p className="bg-white text-center italic mb-10">
+				Chargement des avis...
+			</p>
+		);
 	}
 
 	// Ne pas afficher la section si le tableau des avis est vide
