@@ -12,6 +12,7 @@ import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
 import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import CardsAnimation from "@/sections/home/CardsAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,8 +106,9 @@ export default function Home() {
 		<>
 			<main className="m-0 p-0 bg-black">
 				{/* Section Gallerie d'images */}
-				<section className="h-screen mt-0 pt-0 mb-10">
-					<Gallery />
+				<section className="h-screen mt-4 pt-0 mb-10">
+					{/* <Gallery /> */}
+					<CardsAnimation />
 				</section>
 				{/* Section image lumière */}
 				<section
