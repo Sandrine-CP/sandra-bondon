@@ -1,29 +1,49 @@
 import { motion } from "framer-motion";
-import "./ImageCard.css";
 
-export default function ImageCard({ title, description }) {
+export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 	return (
-		// class card
-		// <div className="relative rounded-lg w-[300px] h-[200px] flex justify-center items-center overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ease-[cubic-bezier(0.95,0.05,0.795,0.035)] hover:rotate-6 scale-1.1 hover:shadow-lg">
-		<motion.div
-			className="card"
-			animate={{
-				y: [0, -10, 0],
-			}}
-			transition={{
-				duration: 2,
-				repeat: Number.POSITIVE_INFINITY,
-				ease: "easeInOut",
-			}}
-		>
-			<p className="title">{title}</p>
-			{/* class card__content */}
-			<div className="card__content">
-				{/* class card__title */}
-				{/* <p className="card__subtitle ">Burn Out</p> */}
-				{/* class description */}
-				<p className="card__description">{description}</p>
-			</div>
-		</motion.div>
+		<div>
+			{/* Conteneur flottant */}
+			<motion.div
+				animate={{
+					y: [0, -10, 0], // Flottement
+				}}
+				transition={{
+					duration: 2,
+					repeat: Number.POSITIVE_INFINITY,
+					ease: "easeInOut",
+				}}
+				className="flex flex-col items-center"
+			>
+				{/* Carte avec effet hover */}
+				<motion.div
+					className="relative w-[300px] h-[200px] bg-gradient-to-br from-[#8d99ae] to-[#e0e1dd] rounded-xl flex items-center justify-center overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:rotate-[-5deg] hover:scale-110 hover:shadow-xl group"
+					whileHover={{
+						rotate: -5,
+						scale: 1.1,
+						transition: { duration: 0.6, ease: [0.23, 1, 0.32, 1] },
+					}}
+				>
+					{/* Image */}
+					<motion.img
+						className="w-[295px] h-[195px] rounded-xl object-cover transition-all duration-500 ease-[cubic-bezier(0.23,1,0,32,1)] group-hover:scale-0 group-hover:rotate-[45deg]"
+						src={imageSrc}
+						alt={imageAlt}
+					/>
+
+					{/* Contenu affiché au survol */}
+					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-45deg] w-full h-full p-5 bg-white opacity-0 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-0 group-hover:opacity-100">
+						<p className="mt-2 text-sm text-gray-700 leading-relaxed">
+							{description}
+						</p>
+					</div>
+				</motion.div>
+			</motion.div>
+
+			{/* Titre sous la carte */}
+			<p className="mt-4 text-gray text-center text-lg font-semibold text-gray-800">
+				{title}
+			</p>
+		</div>
 	);
 }
