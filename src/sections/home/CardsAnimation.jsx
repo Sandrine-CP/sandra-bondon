@@ -6,9 +6,10 @@ export default function CardsAnimation() {
 	return (
 		<>
 			{/* Conteneur flex centré */}
-			<div className="h-screen bg-black flex justify-center">
+			<div className="h-screen bg-[#22223b] flex justify-center">
 				{/* Grid avec centrage */}
-				<div className="grid grid-cols-3 gap-10 pt-10 px-10 place-items-center">
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 md:pt-10place-items-center">
+					{" "}
 					<div>
 						<ImageCard
 							imageSrc="/images/4-burnout.webp"
@@ -19,32 +20,31 @@ export default function CardsAnimation() {
 					</div>
 					<div>
 						<ImageCard
-							imageSrc="/images/3-trauma.webp"
-							imageAlt="Personne repliée sur elle-même"
-							title="Traumatisme"
-							description="Lorem ipsum"
-						/>
-					</div>
-					<div>
-						<ImageCard
-							imageSrc="/images/6-addiction2.webp"
-							imageAlt="Personne qui fume"
-							title="Addiction"
-							description="Lorem ipsum"
-						/>
-					</div>
-					<div>
-						<ImageCard
 							imageSrc="/images/1-phobie.webp"
 							imageAlt="Toile d'araignée"
 							title="Phobie"
-							description="Lorem ipsum"
+							description="Troubles anxieux qui se manifestent par une crainte intense, persistante, et gênante, focalisée sur un objet précis ou sur un type de situation bien défini."
 						/>
 					</div>
-
+					<div>
+						<ImageCard
+							imageSrc="/images/2-addiction.webp"
+							imageAlt="Personne en souffrance"
+							title="Dépendance / Addiction"
+							description="Une addiction est une dépendance à une substance ou à une activité, avec des conséquences néfastes sur la santé de la personne affectée. Elle peut être favorisée par des facteurs environnementaux ou liés à l'individu."
+						/>
+					</div>
+					<div>
+						<ImageCard
+							imageSrc="/images/3-trauma.webp"
+							imageAlt="Personne repliée sur elle-même"
+							title="Traumatisme"
+							description="Le psychotraumatisme est l'ensemble des mécanismes de sauvegarde d'ordre psychologique, neurobiologique et physiologique qui peuvent se mettre en place à la suite d'un ou de plusieurs évènements générant une charge émotionnelle non contrôlée"
+						/>
+					</div>
 					{/* Conteneur central ajusté */}
 					<div className="flex flex-col justify-center items-center w-[280px] h-[180px] rounded-lg shadow-lg">
-						<h1 className="text-secondary text-center text-lg font-semibold">
+						<h1 className="text-secondary text-center text-2xl font-semibold">
 							Mal être
 							<br />
 							Difficultés relationnelles
@@ -56,17 +56,16 @@ export default function CardsAnimation() {
 							height={250}
 							className="rounded-[10px]"
 						/> */}
-						<p className="text-secondary text-sm text-center mt-2">
+						<p className="text-secondary text-lg text-center mt-2">
 							Une solution existe pour vous
 						</p>
 					</div>
-
 					<div>
 						<ImageCard
 							imageSrc="/images/5-obsession.webp"
 							imageAlt="Tête de profil avec pensées noires"
 							title="Obsession"
-							description="Lorem ipsum"
+							description="Pensées dérangeantes, répétitives et incontrôlables causant une forte anxiété."
 						/>
 					</div>
 					<div />
@@ -75,7 +74,7 @@ export default function CardsAnimation() {
 							imageSrc="/images/7-anxiete.webp"
 							imageAlt="Femme anxieuse"
 							title="Anxiété"
-							description="Lorem ipsum"
+							description="Trouble émotionnel se traduisant par un sentiment indéfinissable d'insécurité."
 						/>
 					</div>
 					{/* <div>

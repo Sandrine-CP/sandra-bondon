@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
-import Sandra from "../../public/images/sandra-bondon.webp";
+import Sandra from "../../public/images/sandra-bondon1.jpeg";
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
@@ -104,9 +104,9 @@ export default function Home() {
 
 	return (
 		<>
-			<main className="m-0 p-0 bg-black">
+			<main className="m-0 p-0 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
-				<section className="h-screen mt-4 pt-0 mb-10">
+				<section className="h-screen mt-4 pt-20 mb-20">
 					{/* <Gallery /> */}
 					<CardsAnimation />
 				</section>
@@ -119,7 +119,7 @@ export default function Home() {
 					}}
 				/>
 				{/* Section Ressources */}
-				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
+				<section className="flex flex-col items-center justify-center my-0 bg-[#22223b] text-white py-10 md:py-20">
 					<p
 						ref={textRef}
 						className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight"
@@ -148,7 +148,7 @@ export default function Home() {
 							alt="Sandra Bondon, psychopraticienne"
 							width={150} // Taille par défaut pour mobile
 							height={150} // Taille par défaut pour mobile
-							className="rounded-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
+							className="rounded-e-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
 						/>
 					</div>{" "}
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">

@@ -8,7 +8,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 
 // Composants enfants
-import Sandra from "@../../../public/images/sandra-bondon.webp";
+import Sandra from "@../../../public/images/sandra-bondon2.jpeg";
 // Utilitaires
 // Styles
 
@@ -32,9 +32,9 @@ export default function APropos() {
 						<Image
 							src={Sandra}
 							alt="Sandra Bondon, psychopraticienne"
-							width={200}
+							width={190}
 							height={200}
-							className="rounded-full"
+							className="rounded-s-full"
 						/>
 					</div>
 					<div className="flex flex-col justify-center items-center">

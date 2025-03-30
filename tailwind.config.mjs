@@ -9,8 +9,8 @@ const config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#2C254D", // Titres
-				secondary: "#F2E9E4", // Fond navbar beige
+				primary: "#22223b", // Titres (OLD : #2C254D)
+				secondary: "#ffd7ba", // Fond navbar beige (OLD : #F2E9E4)
 				accent: "#FFA500", // Boutons actifs
 				background: "#FEFFFE", // Fond principal
 				darkBackground: "#2C254D", // Fond sections alternées
@@ -32,7 +32,18 @@ const config = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		({ addUtilities }) => {
+			addUtilities({
+				".glow-text": {
+					color: "#fff",
+					fontSize: "2rem",
+					textAlign: "center",
+					filter: "url(#glow)",
+				},
+			});
+		},
+	],
 };
 
 // Exportation propre avec variable nommée

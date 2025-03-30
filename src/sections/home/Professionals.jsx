@@ -48,7 +48,7 @@ export default function Professionals() {
 	}, []);
 
 	return (
-		<section ref={sectionRef} className="bg-[#fafafc] py-16 px-4">
+		<section ref={sectionRef} className="bg-[#ffd7ba] py-16 px-4">
 			<div>
 				<h2 className="text-2xl font-bold mb-8 text-center">
 					Solution pour vos collaborateurs
@@ -87,7 +87,7 @@ export default function Professionals() {
 				</div>
 			</div>
 			<div className="text-center mt-8">
-				<Link href="/solutions-pour-vos-collaborateurs">
+				<Link href="/solutions-pour-vous">
 					<Button
 						text="Voir plus"
 						textColor="#2C254D"

@@ -6,7 +6,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 			{/* Conteneur flottant */}
 			<motion.div
 				animate={{
-					y: [0, -10, 0], // Flottement
+					y: [0, -20, 0], // Flottement
 				}}
 				transition={{
 					duration: 2,
@@ -41,7 +41,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 			</motion.div>
 
 			{/* Titre sous la carte */}
-			<p className="mt-4 text-gray text-center text-lg font-semibold text-gray-800">
+			<p className="mt-4 text-gray text-center text-lg text-gray-800">
 				{title}
 			</p>
 		</div>

@@ -15,7 +15,7 @@ export default function Header() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<header className="bg-secondary fixed top-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center">
+		<header className="bg-[#ffd7ba] fixed top-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center">
 			{/* Logo aligné à gauche */}
 			<div className="flex items-center space-x-2">
 				<Link
