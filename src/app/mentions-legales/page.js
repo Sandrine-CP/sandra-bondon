@@ -15,7 +15,7 @@ export default function MentionsLegales() {
 					</p>{" "}
 					<h2 className="text-xl font-bold mb-4">Présentation du site</h2>
 					<p>Statut du propriétaire : Profession Libérale</p>
-					<p>Propriétaire : Sandra Bondon - EI</p>
+					<p>Propriétaire : Sandra Bondon - Auto-entrepreneur</p>
 					<p>Statut : Entreprise Individuelle</p>
 					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
@@ -30,7 +30,7 @@ export default function MentionsLegales() {
 					>
 						sandrabondon@gmail.com
 					</a>
-					<p>Tél : 0624182302</p>
+					<p>Tél : 06 24 18 23 02</p>
 					<p>Responsable de publication : Sandra Bondon</p>
 					<p>
 						Contacter le responsable de publication:{" "}

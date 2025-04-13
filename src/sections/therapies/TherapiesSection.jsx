@@ -25,13 +25,13 @@ export default function TherapiesSection() {
 		},
 		{
 			id: 4,
-			title: "Psychodrame",
+			title: "Thérapie des états du Moi®",
 			description:
 				"Une méthode basée sur la mise en scène pour explorer et résoudre des conflits internes.",
 		},
 		{
 			id: 5,
-			title: "Thérapie stratégique",
+			title: "Thérapie brève",
 			description:
 				"Une approche ciblée et orientée vers la résolution rapide des problèmes.",
 		},
@@ -40,6 +40,16 @@ export default function TherapiesSection() {
 			title: "MOSAIC®",
 			description:
 				"Une approche innovante pour débloquer des schémas émotionnels grâce à des techniques expérimentales.",
+		},
+		{
+			id: 7,
+			title: "Thérapie de couple",
+			description: "Lorem ipsum doloris.",
+		},
+		{
+			id: 8,
+			title: "Therapie individuelle<br /> (adulte,ado,enfant",
+			description: "Lorem ipsum doloris.",
 		},
 	];
 

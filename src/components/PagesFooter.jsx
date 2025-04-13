@@ -33,10 +33,18 @@ export default function PagesFooter() {
 					>
 						<FaInstagram size={24} />
 					</a>
+					<Link
+						className="hover:texte-primary hover:underline"
+						href="https://www.psychologue.net/cabinets/sandra-bondon"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Psychologue.net
+					</Link>
 				</div>{" "}
 				<div>
 					<h2 className="font-bold">Coordonnées</h2>
-					<p>Sandra Bondon - EI</p>
+					<p>Sandra Bondon - Auto-entrepreneur</p>
 					<address>
 						32 Bis rue de Montbuisson
 						<br />
@@ -48,7 +56,7 @@ export default function PagesFooter() {
 					>
 						sandrabondon@gmail.com
 					</a>
-					<p>Tel : 0624182302</p>
+					<p>Tel : 06 24 18 23 02</p>
 				</div>
 				<div>
 					<h2 className="font-bold">Crédits</h2>

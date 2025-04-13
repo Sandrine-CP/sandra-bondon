@@ -106,7 +106,7 @@ export default function Home() {
 		<>
 			<main className="m-0 p-0 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
-				<section className="h-screen mt-4 pt-20 mb-20">
+				<section className="mt-4 pt-20 mb-20">
 					{/* <Gallery /> */}
 					<CardsAnimation />
 				</section>

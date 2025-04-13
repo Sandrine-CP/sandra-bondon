@@ -17,7 +17,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 			>
 				{/* Carte avec effet hover */}
 				<motion.div
-					className="relative w-[300px] h-[200px] bg-gradient-to-br from-[#8d99ae] to-[#e0e1dd] rounded-xl flex items-center justify-center overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:rotate-[-5deg] hover:scale-110 hover:shadow-xl group"
+					className="relative w-[300px] h-[200px] bg-gradient-to-br from-[] to-[#e0e1dd] rounded-xl flex items-center justify-center overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] hover:rotate-[-5deg] hover:scale-110 hover:shadow-xl group"
 					whileHover={{
 						rotate: -5,
 						scale: 1.1,
@@ -32,7 +32,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 					/>
 
 					{/* Contenu affiché au survol */}
-					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-45deg] w-full h-full p-5 bg-white opacity-0 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-0 group-hover:opacity-100">
+					<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-45deg] w-full h-full p-5 bg-[#ffd7ba] opacity-0 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:rotate-0 group-hover:opacity-100">
 						<p className="mt-2 text-sm text-gray-700 leading-relaxed">
 							{description}
 						</p>

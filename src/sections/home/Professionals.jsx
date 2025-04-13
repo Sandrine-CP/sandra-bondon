@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Office from "../../../public/images/professionals.jpg";
+import Office from "../../../public/images/collaborateurs2.jpg";
 import Button from "@/components/Button";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -87,7 +87,7 @@ export default function Professionals() {
 				</div>
 			</div>
 			<div className="text-center mt-8">
-				<Link href="/solutions-pour-vous">
+				<Link href="/solutions-pour-vos-collaborateurs">
 					<Button
 						text="Voir plus"
 						textColor="#2C254D"
