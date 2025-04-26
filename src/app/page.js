@@ -8,11 +8,10 @@ import Sandra from "../../public/images/sandra-bondon1.jpeg";
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
-import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
 import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import CardsAnimation from "@/sections/home/CardsAnimation";
+import HomeCardsAnimation from "@/sections/home/HomeCardsAnimation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,8 +106,7 @@ export default function Home() {
 			<main className="m-0 p-0 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
 				<section className="mt-4 pt-20 mb-20">
-					{/* <Gallery /> */}
-					<CardsAnimation />
+					<HomeCardsAnimation />
 				</section>
 				{/* Section image lumière */}
 				<section

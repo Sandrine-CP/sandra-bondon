@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import TherapiesCardsAnimation from "./TherapiesCardsAnimation";
 
 export default function TherapiesSection() {
 	const therapiesList = [
@@ -55,6 +56,7 @@ export default function TherapiesSection() {
 
 	return (
 		<>
+			{/* Section intro */}
 			<section id="approach" className="py-10 px-4 text-center bg-white ">
 				<h2 className="text-xl font-bold mb-6">
 					Techniques thérapeutiques adaptées
@@ -78,8 +80,10 @@ export default function TherapiesSection() {
 					dans un temps réduit.
 				</p>
 			</section>
-			<section>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
+			{/* Section cards animation */}
+			<div className="bg-primary">
+				<section>
+					{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
 					{therapiesList.map((therapy) => (
 						<Card
 							key={therapy.id}
@@ -87,26 +91,32 @@ export default function TherapiesSection() {
 							description={therapy.description}
 						/>
 					))}
-				</div>
-			</section>
-			<section>
-				<p className="text-center">
-					Vous souhaitez savoir comment une séance se déroule ?
-				</p>
-				<Link
-					href="/seances"
-					className=" flex flex-row justify-center text-center"
-				>
-					<Button
-						text="Voir plus"
-						textColor="#2C254D"
-						bgColor="#FFA500"
-						hoverTextColor="#2C254D"
-						hoverBgColor="#FFA500"
-						className="mt-6 mb-6"
-					/>
-				</Link>
-			</section>
+				</div> */}
+					<div>
+						<TherapiesCardsAnimation />
+					</div>
+				</section>
+
+				{/* Section avec CTA séances */}
+				<section className="bg-primary">
+					<p className="text-center text-white">
+						Vous souhaitez savoir comment une séance se déroule ?
+					</p>
+					<Link
+						href="/seances"
+						className=" flex flex-row justify-center text-center"
+					>
+						<Button
+							text="Voir plus"
+							textColor="#FFFFFF"
+							bgColor="#D110D5"
+							hoverTextColor="#FFFFFF"
+							hoverBgColor="#D110D5"
+							className="mt-6 mb-6"
+						/>
+					</Link>
+				</section>
+			</div>
 		</>
 	);
 }

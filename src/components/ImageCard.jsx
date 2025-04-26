@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
 
-export default function ImageCard({ title, description, imageSrc, imageAlt }) {
+export default function ImageCard({
+	title,
+	description,
+	imageSrc,
+	imageAlt,
+	background,
+}) {
 	return (
 		<div>
 			{/* Conteneur flottant */}
@@ -29,6 +35,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 						className="w-[295px] h-[195px] rounded-xl object-cover transition-all duration-500 ease-[cubic-bezier(0.23,1,0,32,1)] group-hover:scale-0 group-hover:rotate-[45deg]"
 						src={imageSrc}
 						alt={imageAlt}
+						background={background}
 					/>
 
 					{/* Contenu affiché au survol */}
@@ -41,7 +48,7 @@ export default function ImageCard({ title, description, imageSrc, imageAlt }) {
 			</motion.div>
 
 			{/* Titre sous la carte */}
-			<p className="mt-4 text-gray text-center text-lg text-gray-800">
+			<p className="mt-4 text-secondary text-center text-lg text-gray-800">
 				{title}
 			</p>
 		</div>
