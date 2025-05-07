@@ -3,20 +3,22 @@ import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 
 // 🔐 Headers de sécurité recommandés
+const isDev = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
 	{
 		key: "Content-Security-Policy",
 		value: `
-      default-src 'self';
-      script-src 'self' 'unsafe-inline';
-      style-src 'self' 'unsafe-inline';
-      img-src 'self' data:;
-      font-src 'self' https:;
-      object-src 'none';
-      frame-ancestors 'none';
-    `
+		  default-src 'self';
+		  script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval'" : ""};
+		  style-src 'self' 'unsafe-inline';
+		  img-src 'self' data:;
+		  font-src 'self' https:;
+		  object-src 'none';
+		  frame-ancestors 'none';
+		`
 			.replace(/\s{2,}/g, " ")
-			.trim(), // nettoyage des sauts de ligne
+			.trim(),
 	},
 	{
 		key: "Strict-Transport-Security",
@@ -52,10 +54,18 @@ const nextConfig = {
 	async headers() {
 		return [
 			{
-				source: "/(.*)", // Appliqué à toutes les routes
+				source: "/(.*)",
 				headers: securityHeaders,
 			},
 		];
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "maps.googleapis.com",
+			},
+		],
 	},
 };
 

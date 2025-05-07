@@ -72,7 +72,7 @@ export default function GoogleReviews() {
 							{"☆".repeat(5 - reviews[currentIndex].rating)}
 						</span>
 					</p>
-					<p className="italic">"{reviews[currentIndex].text}"</p>
+					<p className="italic">&quot;{reviews[currentIndex].text}&quot;</p>
 				</div>
 
 				{/* Flèches de navigation */}

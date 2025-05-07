@@ -1,5 +1,6 @@
 // Organisation des imports
 // React, hooks, librairies
+import Head from "next/head";
 // Bibliothèques tierces
 // Composants parents
 // Composants enfants

@@ -22,15 +22,15 @@ export default function ApproachSection() {
 					Je vous propose une approche personnalisée
 				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
-					En tant que psychopraticienne, je m'engage à écouter attentivement
-					votre besoin.
+					En tant que psychopraticienne, je m&apos;engage à écouter
+					attentivement votre besoin.
 					<br /> Ensemble, nous explorons vos difficultés et vos objectifs pour
 					établir une{" "}
 					<strong className="text-primary font-bold">
 						relation de confiance solide.
 					</strong>
-					<br /> Cette phase d'exploration est essentielle pour comprendre vos
-					attentes et concevoir une{" "}
+					<br /> Cette phase d&apos;exploration est essentielle pour comprendre
+					vos attentes et concevoir une{" "}
 					<strong className="text-primary font-bold">
 						approche thérapeutique entièrement personnalisée
 					</strong>
