@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import ImageCard from "@/components/ImageCard";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function TherapiesCardsAnimation() {
 	return (

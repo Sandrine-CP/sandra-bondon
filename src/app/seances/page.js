@@ -4,13 +4,10 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-
 // Bibliothèques tierces
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 // Composants parents
-
 // Composants enfants
 import IntroSection from "@/sections/seances/IntroSection";
 import FadeInSectionAnimation from "@/components/FadeInSectionAnimation";
@@ -19,9 +16,7 @@ import CabinetSection from "@/sections/seances/CabinetSection";
 import ReviewsSection from "@/sections/seances/ReviewsSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import SEO from "@/components/SEO";
-
 // Utilitaires et helpers
-
 // Styles et assets
 
 gsap.registerPlugin(ScrollTrigger);

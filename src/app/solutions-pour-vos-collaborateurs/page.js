@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import UnderConstruction from "@/components/UnderConstruction";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function SolutionsPourVosCollaborateurs() {
 	return (

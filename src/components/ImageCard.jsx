@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
 import { motion } from "framer-motion";
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function ImageCard({
 	title,

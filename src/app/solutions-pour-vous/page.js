@@ -1,19 +1,15 @@
 "use client";
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
-import { gsap } from "gsap";
-
 // Bibliothèques tierces
-
+import { gsap } from "gsap";
 // Composants parents
-
 // Composants enfants
 import ApproachSection from "@/sections/therapies/ApproachSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import TherapiesSection from "@/sections/therapies/TherapiesSection";
 import ClientTypeSection from "@/sections/therapies/ClientTypeSection";
 import FloatingList from "@/components/FloatingList";
-
 // Utilitaires et helpers
 // Styles et assets
 

@@ -1,5 +1,12 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 gsap.registerPlugin(ScrollTrigger);
 

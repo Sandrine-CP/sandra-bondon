@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function MentionsLegales() {
 	return (

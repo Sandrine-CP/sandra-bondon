@@ -1,10 +1,17 @@
+// Organisation des imports
+// React, hooks, librairies
 import Image from "next/image";
-import Office from "../../../public/images/collaborateurs2.jpg";
-import Button from "@/components/Button";
 import { useRef, useEffect } from "react";
+import Link from "next/link";
+// Bibliothèques tierces
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Link from "next/link";
+// Composants parents
+// Composants enfants
+import Button from "@/components/Button";
+// Utilitaires et helpers
+// Styles et assets
+import Office from "../../../public/images/collaborateurs2.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 

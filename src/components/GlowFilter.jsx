@@ -1,3 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
+
 export default function GlowFilter() {
 	return (
 		<svg width="0" height="0">

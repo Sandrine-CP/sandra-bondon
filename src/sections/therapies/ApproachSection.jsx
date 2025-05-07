@@ -2,14 +2,11 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import Link from "next/link";
-
 // Bibliothèques tierces
 // Composants parents
-
 // Composants enfants
 import FadeInSectionAnimation from "@/components/FadeInSectionAnimation";
 import Button from "@/components/Button";
-
 // Utilitaires et helpers
 // Styles et assets
 

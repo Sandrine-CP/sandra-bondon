@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import GoogleMap from "@/components/GoogleMap";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function Consultations() {
 	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];

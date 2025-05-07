@@ -2,18 +2,14 @@
 // Imports de base : React, hooks, libraries essentielles
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-
 // Bibliothèques tierces
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGsapAnimation } from "@/animations/useGsapAnimation";
-
 // Composants parents
-
 // Composants enfants
 import GoogleMap from "@/components/GoogleMap";
 import Cabinet from "@../../../public/images/cabinet.jpg";
-
 // Utilitaires et helpers
 // Styles et assets
 

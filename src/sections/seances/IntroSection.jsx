@@ -1,13 +1,11 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import Image from "next/image";
-
 // Bibliothèques tierces
 import { motion } from "framer-motion";
 // Composants parents
 // Composants enfants
 // Utilitaires et helpers
-
 // Styles et assets
 import Bagages from "@../../../public/images/seances.png";
 

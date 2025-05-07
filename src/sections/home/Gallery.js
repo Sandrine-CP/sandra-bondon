@@ -1,9 +1,15 @@
 "use client";
-import styles from "../home/styles/gallery.module.scss";
+// Organisation des imports
+// React, hooks, librairies
 import Image from "next/image";
 import { useRef } from "react";
+// Bibliothèques tierces
 import gsap from "gsap";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
+import styles from "../home/styles/gallery.module.scss";
 import {
 	floating1,
 	floating2,

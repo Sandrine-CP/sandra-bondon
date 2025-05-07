@@ -23,7 +23,7 @@ export default function HomeCardsAnimation() {
 				<div>
 					<ImageCard
 						title="Addiction"
-						imageSrc="/images/ChargeMentale.png"
+						imageSrc="/images/addiction.jpg"
 						imageAlt="XX"
 						description="Perte de contrôle face à une substance ou un comportement. L’addiction agit comme une réponse à une souffrance émotionnelle, souvent enfouie ou non exprimée."
 					/>
@@ -53,7 +53,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-2 lg:col-start-3">
 					<ImageCard
 						title="Charge Mentale"
-						imageSrc="/images/bagages.webp"
+						imageSrc="/images/ChargeMentale.png"
 						imageAlt="XX"
 						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
 					/>

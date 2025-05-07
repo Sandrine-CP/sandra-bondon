@@ -1,6 +1,13 @@
 /* From Uiverse.io by BaekCCI */
-import Link from "next/link";
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 import "../components/styles/button.css";
+
 export default function Button({
 	text,
 	className = "",

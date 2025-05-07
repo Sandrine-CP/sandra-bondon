@@ -1,4 +1,11 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function Solutions() {
 	return (

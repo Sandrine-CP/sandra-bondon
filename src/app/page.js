@@ -1,10 +1,14 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
-import Sandra from "../../public/images/sandra-bondon1.jpeg";
+// Bibliothèques tierces
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Composants parents
+// Composants enfants
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
@@ -12,6 +16,9 @@ import Professionals from "@/sections/home/Professionals";
 import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import HomeCardsAnimation from "@/sections/home/HomeCardsAnimation";
+// Utilitaires et helpers
+// Styles et assets
+import Sandra from "../../public/images/sandra-bondon1.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

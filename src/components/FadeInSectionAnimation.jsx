@@ -1,10 +1,9 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import React, { useEffect, useRef } from "react";
+// Bibliothèques tierces
 import { gsap } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Bibliothèques tierces
 // Composants parents
 // Composants enfants
 // Utilitaires et helpers

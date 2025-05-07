@@ -1,8 +1,14 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
-import Card from "@/components/Card";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import Button from "@/components/Button";
 import TherapiesCardsAnimation from "./TherapiesCardsAnimation";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function TherapiesSection() {
 	const therapiesList = [

@@ -1,16 +1,14 @@
+// Organisation des imports
 // React, hooks, librairies
 import Link from "next/link";
 import Image from "next/image";
-
 // Bibliothèques tierces
-
 // Composants parents
 import Button from "@/components/Button";
-
 // Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 import Sandra from "@../../../public/images/sandra-bondon2.jpeg";
-// Utilitaires
-// Styles
 
 export default function APropos() {
 	return (

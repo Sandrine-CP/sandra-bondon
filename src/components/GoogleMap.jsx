@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
 import { useState } from "react";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function GoogleMap({ addresses }) {
 	const [selectedAddress, setSelectedAddress] = useState(0);

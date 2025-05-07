@@ -1,3 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
+
 export default function SEO({ title, description, keywords, author }) {
 	return (
 		<Head>

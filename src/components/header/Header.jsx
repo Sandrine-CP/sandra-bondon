@@ -1,8 +1,15 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
 import { useState } from "react";
+// Bibliothèques tierces
 import { motion, AnimatePresence } from "framer-motion";
+// Composants parents
+// Composants enfants
 import Nav from "./Nav";
+// Utilitaires et helpers
+// Styles et assets
 
 // Animation pour l'opacité
 export const opacity = {

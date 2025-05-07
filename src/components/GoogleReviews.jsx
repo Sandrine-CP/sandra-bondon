@@ -1,4 +1,11 @@
+// Organisation des imports
+// React, hooks, librairies
 import { useEffect, useState } from "react";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function GoogleReviews() {
 	const [reviews, setReviews] = useState([]);
