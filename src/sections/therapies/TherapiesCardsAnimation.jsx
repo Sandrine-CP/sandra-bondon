@@ -2,8 +2,8 @@ import ImageCard from "@/components/ImageCard";
 
 export default function TherapiesCardsAnimation() {
 	return (
-		<div className="bg-[#22223b] flex justify-center mt-4 pt-20 mb-20">
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 place-items-center mb-20">
+		<div className="bg-[#22223b] flex justify-center mt-4 pt-20 mb-8">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 place-items-center max-w-[1300px] mx-auto">
 				{/* card 1 */}
 				<div>
 					<ImageCard
@@ -27,7 +27,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/mosaic.jpg"
 						imageAlt="XX"
-						title="MOSAIC®"
+						title="MOSAIC ®"
 						description="Lorem ipsum"
 					/>
 				</div>
@@ -43,8 +43,8 @@ export default function TherapiesCardsAnimation() {
 				{/* card 4-Title */}
 				<div
 					className="flex flex-col justify-center items-center w-[280px] h-[180px] rounded-lg shadow-lg
-    				sm:col-span-2 sm:col-start-1 sm:row-start-3
-    				md:col-span-1 md:col-start-2 md:row-start-2"
+					sm:col-span-2 sm:col-start-1 sm:row-start-3
+					lg:col-span-1 lg:col-start-2 lg:row-start-2 mx-auto"
 				>
 					<h1 className="text-secondary text-center text-2xl font-semibold">
 						Pour un accompagnement
@@ -66,7 +66,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/etatsMoi.jpg"
 						imageAlt="XX"
-						title="Etats du Moi®"
+						title="Etats du Moi ®"
 						description="Lorem ipsum"
 					/>
 				</div>

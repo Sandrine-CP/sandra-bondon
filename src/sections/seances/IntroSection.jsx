@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 // Utilitaires et helpers
 
 // Styles et assets
-import Bagages from "@../../../public/images/bagages.webp";
+import Bagages from "@../../../public/images/seances.png";
 
 export default function IntroSection() {
 	return (
@@ -21,7 +21,7 @@ export default function IntroSection() {
 					className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
 					initial={{ x: "-100vw", opacity: 0 }} // Position de départ
 					animate={{ x: 0, opacity: 1 }} // Position finale
-					transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
+					transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }} // Transition fluide
 				>
 					<h2 className="text-xl font-bold">Comment ça se passe ?</h2>
 					<p className="pt-4">

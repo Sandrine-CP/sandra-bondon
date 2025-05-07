@@ -3,7 +3,7 @@ import ImageCard from "@/components/ImageCard";
 export default function HomeCardsAnimation() {
 	return (
 		<div className="bg-[#22223b] flex justify-center">
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 place-items-center">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 place-items-center max-w-[1300px] mx-auto">
 				<div>
 					<ImageCard
 						title="Burn Out"
@@ -28,7 +28,7 @@ export default function HomeCardsAnimation() {
 						description="Perte de contrôle face à une substance ou un comportement. L’addiction agit comme une réponse à une souffrance émotionnelle, souvent enfouie ou non exprimée."
 					/>
 				</div>
-				<div className="md:row-start-2 md:col-start-1">
+				<div className="lg:row-start-2 lg:col-start-1">
 					<ImageCard
 						title="Traumatisme"
 						imageSrc="/images/trauma.jpg"
@@ -38,8 +38,8 @@ export default function HomeCardsAnimation() {
 				</div>
 				<div
 					className="flex flex-col justify-center items-center w-[280px] h-[180px] rounded-lg shadow-lg
-    				sm:col-span-2 sm:col-start-1 sm:row-start-3
-    				md:col-span-1 md:col-start-2 md:row-start-2"
+					sm:col-span-2 sm:col-start-1 sm:row-start-3
+					lg:col-span-1 lg:col-start-2 lg:row-start-2 mx-auto"
 				>
 					<h1 className="text-secondary text-center text-2xl font-semibold">
 						Mal être
@@ -50,7 +50,7 @@ export default function HomeCardsAnimation() {
 						Une solution existe pour vous
 					</p>
 				</div>{" "}
-				<div className="md:row-start-2 md:col-start-3">
+				<div className="lg:row-start-2 lg:col-start-3">
 					<ImageCard
 						title="Charge Mentale"
 						imageSrc="/images/bagages.webp"
@@ -58,7 +58,7 @@ export default function HomeCardsAnimation() {
 						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
 					/>
 				</div>
-				<div className="md:row-start-3 md:col-start-1">
+				<div className="lg:row-start-3 lg:col-start-1">
 					<ImageCard
 						title="Obsession"
 						imageSrc="/images/obsession.jpg"
@@ -66,7 +66,7 @@ export default function HomeCardsAnimation() {
 						description="Pensées intrusives, récurrentes, souvent anxiogènes. Elles s’imposent sans contrôle, et peuvent provoquer un mal-être profond, voire altérer la qualité de vie."
 					/>
 				</div>
-				<div className="md:row-start-3 md:col-start-3">
+				<div className="lg:row-start-3 lg:col-start-3">
 					<ImageCard
 						title="Anxiété"
 						imageSrc="/images/anxiete.jpg"
@@ -74,7 +74,7 @@ export default function HomeCardsAnimation() {
 						description="Inquiétude diffuse ou constante, parfois sans objet clair. L’anxiété agit comme une alarme permanente qui empêche la détente, la concentration, et le bien-être global."
 					/>
 				</div>
-				<div className="md:row-start-3 md:col-start-2">
+				<div className="lg:row-start-3 lg:col-start-2">
 					<ImageCard
 						imageSrc="/images/collaborateurs1.jpg"
 						imageAlt="XX"

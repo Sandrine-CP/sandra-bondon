@@ -74,7 +74,8 @@ export default function SolutionsPourVous() {
 
 	return (
 		<>
-			<main className="min-h-screen bg-white">
+			<main className="h-auto">
+				{/* Section intro */}
 				<section className="py-6 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
 						Solutions Pour Vous
@@ -104,15 +105,19 @@ export default function SolutionsPourVous() {
 						êtes.
 					</p>
 				</section>
+				{/* Section profils clients */}
 				<section className="py-10 px-4 text-center ">
 					<h2 className="text-xl font-bold mb-4">Que vous soyez</h2>
 					<FloatingList items={clients} />
 				</section>
+				{/* Section approche thérapeutique */}
 				<section className="py-10 px-4 text-center">
 					<ApproachSection />
 				</section>
-
-				<TherapiesSection />
+				{/* Section thérapies */}
+				<section>
+					<TherapiesSection />
+				</section>
 				<ScrollToTopButton />
 			</main>
 		</>

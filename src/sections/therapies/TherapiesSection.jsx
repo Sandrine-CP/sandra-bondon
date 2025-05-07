@@ -57,7 +57,7 @@ export default function TherapiesSection() {
 	return (
 		<>
 			{/* Section intro */}
-			<section id="approach" className="py-10 px-4 text-center bg-white ">
+			<section id="approach" className="py-10 px-4 mb-0 text-center bg-white">
 				<h2 className="text-xl font-bold mb-6">
 					Techniques thérapeutiques adaptées
 				</h2>
@@ -81,7 +81,7 @@ export default function TherapiesSection() {
 				</p>
 			</section>
 			{/* Section cards animation */}
-			<div className="bg-primary">
+			<div className="bg-primary mt-O">
 				<section>
 					{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
 					{therapiesList.map((therapy) => (

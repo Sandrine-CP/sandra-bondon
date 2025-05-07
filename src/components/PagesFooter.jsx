@@ -10,7 +10,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function PagesFooter() {
 	return (
-		<footer className="bg-[#ffd7ba] text-sm p-4 mt-4">
+		<footer className="bg-[#ffd7ba] text-sm p-4 mt-0">
 			{" "}
 			<section className="text-sm p-4 mt-4 grid grid-cols-1 md:grid-cols-4 gap-4">
 				<div className="mt-4 flex justify-center space-x-4">

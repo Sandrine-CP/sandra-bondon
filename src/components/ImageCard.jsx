@@ -48,7 +48,7 @@ export default function ImageCard({
 			</motion.div>
 
 			{/* Titre sous la carte */}
-			<p className="mt-4 text-secondary text-center text-lg text-gray-800">
+			<p className="mt-4 text-white text-center text-lg text-gray-800">
 				{title}
 			</p>
 		</div>
