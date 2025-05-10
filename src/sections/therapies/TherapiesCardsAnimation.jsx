@@ -62,36 +62,36 @@ export default function TherapiesCardsAnimation() {
 				{/* card 5 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/couple2.jpg"
-						imageAlt="XX"
-						title="Thérapie de couple"
-						description="Lorem ipsum"
-					/>
-				</div>
-				{/* card 6 */}
-				<div>
-					<ImageCard
 						imageSrc="/images/etatsMoi.jpg"
 						imageAlt="XX"
 						title="Etats du Moi ®"
 						description="Lorem ipsum"
 					/>
 				</div>
+				{/* card 6 */}
+				<div>
+					<ImageCard
+						imageSrc="/images/couple2.jpg"
+						imageAlt="XX"
+						title="Thérapie de couple"
+						description="Lorem ipsum"
+					/>
+				</div>
 				{/* card 7 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/tousAges.jpg"
+						imageSrc="/images/groupe2.jpg"
 						imageAlt="XX"
-						title="Thérapie individuelle : adulte, ado, enfant"
+						title="Thérapie de groupe"
 						description="Lorem ipsum"
 					/>
 				</div>
 				{/* card 8 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/groupe.jpg"
+						imageSrc="/images/tousAges.jpg"
 						imageAlt="XX"
-						title="Thérapie de groupe"
+						title="Thérapie individuelle : adulte, ado, enfant"
 						description="Lorem ipsum"
 					/>
 				</div>

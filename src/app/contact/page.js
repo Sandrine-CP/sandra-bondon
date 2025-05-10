@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 // Bibliothèques tierces
 // Composants parents
+import SEO from "@/components/SEO";
 // Composants enfants
 // Utilitaires et helpers
 // Styles et assets
@@ -26,6 +27,11 @@ export default function ContactPage() {
 			if (!emailRegex.test(value)) {
 				error = "L'adresse e-mail n'est pas valide.";
 			}
+		} else if (name === "telephone") {
+			const phoneRegex = /^[0-9\s\-()+]{10,}$/;
+			if (!phoneRegex.test(value)) {
+				error = "Le numéro de téléphone n'est pas valide.";
+			}
 		}
 
 		setErrors((prevErrors) => ({
@@ -42,6 +48,7 @@ export default function ContactPage() {
 		const name = form.name.value.trim();
 		const email = form.email.value.trim();
 		const text = form.text.value.trim();
+		const telephone = form.telephone.value.trim();
 
 		if (!name) formErrors.name = "Veuillez entrer votre nom.";
 		if (!email) formErrors.email = "Veuillez indiquer votre adresse e-mail.";
@@ -53,6 +60,15 @@ export default function ContactPage() {
 		}
 		if (!text)
 			formErrors.text = "Veuillez me préciser votre situation ou votre besoin.";
+
+		if (!telephone) {
+			formErrors.telephone = "Veuillez entrer votre numéro de téléphone.";
+		} else {
+			const phoneRegex = /^[0-9\s\-()+]{10,}$/;
+			if (!phoneRegex.test(telephone)) {
+				formErrors.telephone = "Le numéro de téléphone n'est pas valide.";
+			}
+		}
 
 		if (Object.keys(formErrors).length > 0) {
 			setErrors(formErrors);
@@ -74,6 +90,12 @@ export default function ContactPage() {
 
 	return (
 		<>
+			<SEO
+				title="Accueil - Sandra Bondon"
+				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
+				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				author="Sandrine Cazenave"
+			/>
 			<main className="min-h-screen bg-white">
 				<section className="py-4 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-2 p-4">
@@ -159,6 +181,30 @@ export default function ContactPage() {
 								/>
 								{errors.email && (
 									<p className="text-red-500 text-sm mt-1">{errors.email}</p>
+								)}
+							</div>
+							<div className="mb-4">
+								<label
+									className="block text-sm font-medium text-gray-600"
+									htmlFor="telephone"
+								>
+									Téléphone
+								</label>
+								<input
+									className={`mt-1 p-2 w-full border rounded-md ${
+										errors.telephone ? "border-red-500" : "border-gray-300"
+									}`}
+									type="tel"
+									name="telephone"
+									id="telephone"
+									onChange={handleChange}
+									autoComplete="tel"
+									placeholder="06 12 34 56 78"
+								/>
+								{errors.telephone && (
+									<p className="text-red-500 text-sm mt-1">
+										{errors.telephone}
+									</p>
 								)}
 							</div>
 							<div className="mb-4">

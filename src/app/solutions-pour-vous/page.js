@@ -4,6 +4,7 @@
 // Bibliothèques tierces
 import { gsap } from "gsap";
 // Composants parents
+import SEO from "@/components/SEO";
 // Composants enfants
 import ApproachSection from "@/sections/therapies/ApproachSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
@@ -70,6 +71,12 @@ export default function SolutionsPourVous() {
 
 	return (
 		<>
+			<SEO
+				title="Accueil - Sandra Bondon"
+				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
+				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				author="Sandrine Cazenave"
+			/>
 			<main className="h-auto">
 				{/* Section intro */}
 				<section className="py-6 px-4 text-center">

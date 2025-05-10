@@ -14,6 +14,7 @@ export default function SEO({ title, description, keywords, author }) {
 			<meta name="description" content={description} />
 			<meta name="keywords" content={keywords} />
 			<meta name="author" content={author} />
+			<meta name="robots" content="noindex, nofollow" />
 		</Head>
 	);
 }

@@ -15,7 +15,7 @@ import Cabinet from "@../../../public/images/cabinet.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CabinetSection({ addresses }) {
+export default function CabinetSection({ addresses, className }) {
 	const leftBlockRef = useRef(null); // Bloc gauche image cabinet
 	const rightBlockRef = useRef(null); // Bloc droit texte cabinet
 	const sectionRef = useRef(null); // Section Google cabinet et Google map
@@ -35,7 +35,10 @@ export default function CabinetSection({ addresses }) {
 	return (
 		<>
 			{/* Section Google cabinet et Google map */}
-			<section ref={sectionRef} className="py-6 px-4 text-center">
+			<section
+				ref={sectionRef}
+				className={`py-6 px-4 text-center ${className || ""}`}
+			>
 				<div className="flex flex-col lg:flex-row m-2">
 					{/* Bloc gauche : Image cabinet */}
 					<div

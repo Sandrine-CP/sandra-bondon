@@ -85,7 +85,7 @@ export default function Seances() {
 				<FadeInSectionAnimation
 					bgColor="#fafafc"
 					textColor="#000"
-					className="m-6"
+					className="my-16 px-6"
 				>
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
@@ -120,7 +120,7 @@ export default function Seances() {
 				</FadeInSectionAnimation>
 
 				{/* Section Cabinet et Google Maps */}
-				<CabinetSection addresses={addresses} />
+				<CabinetSection addresses={addresses} className="mb-12 lg:mb-20" />
 
 				{/* Section Avis Google */}
 				<ReviewsSection />

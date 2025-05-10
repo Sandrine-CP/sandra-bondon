@@ -47,9 +47,9 @@ export default function IntroSection() {
 						Généralement, une séance dure environ 60 minutes.
 					</p>
 				</motion.div>
-				{/* Bloc droit : Image bagages */}
+				{/* Bloc droit : Image */}
 				<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
-					<div style={{ width: 521, height: 366 }}>
+					<div style={{ width: 501, height: 346 }}>
 						<Image
 							src={Bagages}
 							alt="Illustration de valises pour symboliser le voyage intérieur"

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // Bibliothèques tierces
 // Composants parents
+import SEO from "@/components/SEO";
 import Button from "@/components/Button";
 // Composants enfants
 // Utilitaires et helpers
@@ -13,6 +14,12 @@ import Sandra from "@../../../public/images/sandra-bondon2.jpeg";
 export default function APropos() {
 	return (
 		<>
+			<SEO
+				title="Accueil - Sandra Bondon"
+				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
+				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				author="Sandrine Cazenave"
+			/>
 			<main>
 				<h1 className="text-2xl font-bold uppercase text-center m-6 p-5">
 					A Propos

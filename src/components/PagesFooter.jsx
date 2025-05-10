@@ -95,7 +95,7 @@ export default function PagesFooter() {
 				</div>
 			</section>
 			<section className="text-center">
-				<p>© 2025 Sandra Bondon - EI - Tous droits réservés.</p>
+				<p>© 2025 Sandra Bondon - Auto-entrepreneur - Tous droits réservés.</p>
 				<Link href="/mentions-legales" className="text-blue-500 underline">
 					Mentions légales
 				</Link>{" "}
