@@ -61,9 +61,9 @@ export default function GoogleReviews() {
 	return (
 		<section className="py-16 px-4 bg-white">
 			<h2 className="text-2xl font-bold mb-8 text-center">Avis Google</h2>
-			<div className="relative max-w-3xl mx-auto">
+			<div className="relative max-w-5xl mx-auto">
 				{/* Carte d'avis */}
-				<div className="p-4 border rounded-lg shadow-lg bg-gray-50 text-center">
+				<div className="p-6 md:p-8 border rounded-xl shadow-lg bg-gray-50 text-center min-h-[260px] flex flex-col justify-center">
 					<p className="font-semibold">{reviews[currentIndex].author_name}</p>
 					<p className="text-yellow-500">
 						{"★".repeat(reviews[currentIndex].rating)}{" "}
@@ -71,7 +71,7 @@ export default function GoogleReviews() {
 							{"☆".repeat(5 - reviews[currentIndex].rating)}
 						</span>
 					</p>
-					<p className="italic">&quot;{reviews[currentIndex].text}&quot;</p>
+					<p className="italic text-gray-700 leading-relaxed mt-4">&quot;{reviews[currentIndex].text}&quot;</p>
 				</div>
 
 				{/* Flèches de navigation */}
@@ -81,14 +81,32 @@ export default function GoogleReviews() {
 						onClick={handlePrev}
 						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
 					>
-						←
+						  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="w-5 h-5"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+  </svg>
 					</button>
 					<button
 						type="button"
 						onClick={handleNext}
 						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
 					>
-						→
+						  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    className="w-5 h-5"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round"  d="M9 5l7 7-7 7"  />
+  </svg>
 					</button>
 				</div>
 			</div>

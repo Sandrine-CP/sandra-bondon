@@ -23,7 +23,7 @@ export default function HomeCardsAnimation() {
 				<div>
 					<ImageCard
 						title="Addiction"
-						imageSrc="/images/addiction.jpg"
+						imageSrc="/images/addiction-istockphoto-2158966545-1024x1024.jpg"
 						imageAlt="XX"
 						description="Perte de contrôle face à une substance ou un comportement. L’addiction agit comme une réponse à une souffrance émotionnelle, souvent enfouie ou non exprimée."
 					/>
@@ -61,7 +61,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-3 lg:col-start-1">
 					<ImageCard
 						title="Obsession"
-						imageSrc="/images/obsession.jpg"
+						imageSrc="/images/obsession-istockphoto-1289053196-1024x1024.jpg"
 						imageAlt="XX"
 						description="Pensées intrusives, récurrentes, souvent anxiogènes. Elles s’imposent sans contrôle, et peuvent provoquer un mal-être profond, voire altérer la qualité de vie."
 					/>

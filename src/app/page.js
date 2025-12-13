@@ -125,9 +125,9 @@ export default function Home() {
 				{/* Section image lumière */}
 				<section
 					ref={lumiereRef}
-					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[400px]"
+					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[800px]"
 					style={{
-						backgroundImage: "url(/images/lumiere.jpg)",
+						backgroundImage: "url(/images/lumiere-istockphoto-1367357589-1024x1024.jpg)",
 					}}
 				/>
 				{/* Section Ressources */}

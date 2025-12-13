@@ -22,15 +22,15 @@ import SEO from "@/components/SEO";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Seances() {
-	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];
+	const addresses = ["6 Rue au Pain, 78100 Saint-Germain-en-Laye, France"];
 
 	return (
 		<>
 			<Head>
 				<SEO
 					title="Séances de Thérapie | Bien-être émotionnel et accompagnement personnalisé"
-					description="Découvrez nos séances de thérapie brève : individuelles, de couple ou en groupe. Accompagnement personnalisé pour retrouver équilibre et bien-être à Louveciennes, Yvelines."
-					keywords="thérapie brève, séances individuelles, thérapie de couple, bien-être émotionnel, cabinet psychopraticien Louveciennes, Yvelines"
+					description="Découvrez nos séances de thérapie brève : individuelles, de couple ou en groupe. Accompagnement personnalisé pour retrouver équilibre et bien-être à Saint-Germain-en-Laye, Yvelines."
+					keywords="thérapie brève, séances individuelles, thérapie de couple, bien-être émotionnel, cabinet psychopraticien Saint-Germain-en-Laye, Yvelines"
 					author="Sandra Bondon"
 				/>
 
@@ -90,8 +90,8 @@ export default function Seances() {
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">
-						Je vous accueille sur rendez-vous, du lundi au vendredi de 9h à 20h
-						et le samedi matin de 9h à 12h.
+						Je vous accueille sur rendez-vous, lundi, mercredi et samedi de 11h à 17h.<br />
+						Vendredi de 11h à 17h.
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>

@@ -41,7 +41,7 @@ export default function GoogleMap({ addresses }) {
 						{staticMapUrl ? (
 							<Image
 								src={staticMapUrl}
-								alt="Carte statique de l'emplacement à Louveciennes"
+								alt="Carte statique de l'emplacement à Saint-Germain-en-Laye"
 								width={400}
 								height={300}
 								className="w-full h-full object-cover rounded-lg"

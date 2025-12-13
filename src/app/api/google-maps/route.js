@@ -11,11 +11,10 @@ export async function GET() {
 			);
 		}
 
-		const location = "32 Bis rue de Montbuisson, Louveciennes, Yvelines";
+		const location = "6 Rue au Pain, 78100 Saint-Germain-en-Laye, France";
 		const encodedLocation = encodeURIComponent(location);
 		const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodedLocation}&zoom=15&size=400x300&maptype=roadmap&markers=color:red|${encodedLocation}&key=${GOOGLE_MAPS_API_KEY}`;
 
-		console.log("🗺️ Carte statique générée :", mapUrl);
 		return NextResponse.json({ mapUrl });
 	} catch (error) {
 		console.error("Erreur dans l'API Google Maps :", error);

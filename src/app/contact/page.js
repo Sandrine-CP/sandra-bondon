@@ -200,6 +200,7 @@ export default function ContactPage() {
 									onChange={handleChange}
 									autoComplete="tel"
 									placeholder="06 12 34 56 78"
+									required
 								/>
 								{errors.telephone && (
 									<p className="text-red-500 text-sm mt-1">

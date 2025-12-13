@@ -46,9 +46,9 @@ export default function PagesFooter() {
 					<h2 className="font-bold">Coordonnées</h2>
 					<p>Sandra Bondon - Auto-entrepreneur</p>
 					<address>
-						32 Bis rue de Montbuisson
+						6 rue au Pain
 						<br />
-						Louveciennes, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
@@ -87,7 +87,7 @@ export default function PagesFooter() {
 						className="hover:texte-primary hover:underline"
 						href="/a-propos"
 					>
-						A propos
+						À propos
 					</Link>
 					<Link className="hover:texte-primary hover:underline" href="/contact">
 						Contact

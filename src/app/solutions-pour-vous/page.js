@@ -92,11 +92,15 @@ export default function SolutionsPourVous() {
 						Venez déposer vos bagages.
 						<br />
 						Cela veut dire : <br />
-						<strong className="text-primary font-bold">
-							&quot;Ce que vous voulez vivre demain, vous le vivrez
-							aujourd&apos;hui&quot;
-						</strong>
-						.
+						<blockquote className="my-12 max-w-3xl mx-auto text-center">
+  							<p className="relative pl-10 italic text-lg leading-relaxed text-gray-800">
+    							<span className="absolute left-20 top-[-15px] text-6xl text-orange-400 leading-none">
+      							“
+    							</span>
+    							Ce que vous voulez vivre demain, vous le vivrez
+								aujourd&apos;hui.
+ 							 </p>
+						</blockquote>
 					</p>
 					<p className="pt-5">
 						A travers votre travail, nous allons{" "}

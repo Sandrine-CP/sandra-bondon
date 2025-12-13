@@ -47,7 +47,7 @@ export default function CabinetSection({ addresses, className }) {
 					>
 						<Image
 							src={Cabinet}
-							alt="Photo du cabinet à Louveciennes de Sandra Bondon"
+							alt="Photo du cabinet à Saint-Germain-en-Laye de Sandra Bondon"
 							width="auto" // Largeur explicite
 							height="auto" // Hauteur explicite
 							className="rounded-lg shadow-lg object-cover"

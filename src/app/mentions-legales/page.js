@@ -34,9 +34,9 @@ export default function MentionsLegales() {
 					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
 					<address>
-						32 Bis rue de Montbuisson
+						6 rue au Pain
 						<br />
-						Louveciennes, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
