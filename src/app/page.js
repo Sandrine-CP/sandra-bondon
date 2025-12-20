@@ -19,7 +19,6 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import HomeCardsAnimation from "@/sections/home/HomeCardsAnimation";
 // Utilitaires et helpers
 // Styles et assets
-import Sandra from "../../public/images/sandra-bondon1.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,7 +155,7 @@ export default function Home() {
 				>
 					<div className="absolute bottom-4 left-4">
 						<Image
-							src={Sandra}
+							src="/images/sandra-bondon1.jpeg"
 							alt="Sandra Bondon, psychopraticienne"
 							width={150} // Taille par défaut pour mobile
 							height={150} // Taille par défaut pour mobile

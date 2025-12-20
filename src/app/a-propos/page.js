@@ -9,7 +9,7 @@ import Button from "@/components/Button";
 // Composants enfants
 // Utilitaires et helpers
 // Styles et assets
-import Sandra from "@../../../public/images/sandra-bondon2.jpeg";
+
 
 export default function APropos() {
 	return (
@@ -27,7 +27,7 @@ export default function APropos() {
 				<section className="flex flex-row justify-center lg:flex-row m-2 gap-6">
 					<div className="flex flex-row lg:flex-row m-2">
 						<Image
-							src={Sandra}
+							src="/images/sandra-bondon2.jpeg"
 							alt="Sandra Bondon, psychopraticienne"
 							width={190}
 							height={200}

@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 // Composants enfants
 // Utilitaires et helpers
 // Styles et assets
-import Bagages from "@../../../public/images/seances.png";
 
 export default function IntroSection() {
 	return (
@@ -51,10 +50,11 @@ export default function IntroSection() {
 				<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
 					<div style={{ width: 501, height: 346 }}>
 						<Image
-							src={Bagages}
+							src="/images/seances.png"
 							alt="Illustration de valises pour symboliser le voyage intérieur"
 							className="rounded-lg shadow-lg object-cover"
-							placeholder="blur"
+							width={190}
+  							height={200}
 							// priority
 							// loading="eager"
 						/>

@@ -9,7 +9,6 @@ import { useGsapAnimation } from "@/animations/useGsapAnimation";
 // Composants parents
 // Composants enfants
 import GoogleMap from "@/components/GoogleMap";
-import Cabinet from "@../../../public/images/cabinet.jpg";
 // Utilitaires et helpers
 // Styles et assets
 
@@ -46,10 +45,10 @@ export default function CabinetSection({ addresses, className }) {
 						className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
 					>
 						<Image
-							src={Cabinet}
+							src="/images/cabinet.jpg"
 							alt="Photo du cabinet à Saint-Germain-en-Laye de Sandra Bondon"
-							width="auto" // Largeur explicite
-							height="auto" // Hauteur explicite
+							width={900} // Largeur explicite
+							height={600} // Hauteur explicite
 							className="rounded-lg shadow-lg object-cover"
 							priority
 						/>{" "}

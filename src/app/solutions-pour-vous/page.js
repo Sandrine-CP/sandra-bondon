@@ -2,7 +2,7 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 // Bibliothèques tierces
-import { gsap } from "gsap";
+
 // Composants parents
 import SEO from "@/components/SEO";
 // Composants enfants
@@ -67,7 +67,6 @@ const clients = [
 ];
 
 export default function SolutionsPourVous() {
-	const timeline = gsap.timeline();
 
 	return (
 		<>
@@ -78,31 +77,34 @@ export default function SolutionsPourVous() {
 				author="Sandrine Cazenave"
 			/>
 			<main className="h-auto">
+				<div style={{ background: "yellow", padding: 10 }}>
+    				DEBUG solutions-pour-vous OK
+  				</div>
 				{/* Section intro */}
 				<section className="py-6 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
 						Solutions Pour Vous
 					</h1>
-					<p className="pt-5">
+					<div className="pt-5">
 						Ma pratique est dite{" "}
 						<strong className="text-primary font-bold">brève</strong>, elle se
 						nomme approche solutionniste expérientielle.
-					</p>
-					<p className="pt-5">
-						Venez déposer vos bagages.
-						<br />
-						Cela veut dire : <br />
-						<blockquote className="my-12 max-w-3xl mx-auto text-center">
-  							<p className="relative pl-10 italic text-lg leading-relaxed text-gray-800">
-    							<span className="absolute left-20 top-[-15px] text-6xl text-orange-400 leading-none">
-      							“
-    							</span>
-    							Ce que vous voulez vivre demain, vous le vivrez
-								aujourd&apos;hui.
- 							 </p>
-						</blockquote>
-					</p>
-					<p className="pt-5">
+					</div>
+<p className="pt-5">
+  Venez déposer vos bagages.
+  <br />
+  Cela veut dire :
+</p>
+
+<blockquote className="my-12 max-w-3xl mx-auto text-center">
+  <p className="relative pl-10 italic text-lg leading-relaxed text-gray-800">
+    <span className="absolute left-20 top-[-15px] text-6xl text-orange-400 leading-none">
+      “
+    </span>
+    Ce que vous voulez vivre demain, vous le vivrez aujourd&apos;hui.
+  </p>
+</blockquote>
+					<div className="pt-5">
 						A travers votre travail, nous allons{" "}
 						<strong className="text-primary font-bold">ensemble</strong> trouver
 						vos ressources et les mettre en lumière.
@@ -110,7 +112,7 @@ export default function SolutionsPourVous() {
 						Vous permettre de Re-prendre confiance en vous, retrouver un juste
 						positionnement et la posture qui est en adéquation avec qui vous
 						êtes.
-					</p>
+					</div>
 				</section>
 				{/* Section profils clients */}
 				<section className="py-10 px-4 text-center ">
