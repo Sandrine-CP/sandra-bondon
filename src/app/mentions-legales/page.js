@@ -1,8 +1,22 @@
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
+// Bibliothèques tierces
+// Composants parents
+import SEO from "@/components/SEO";
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function MentionsLegales() {
 	return (
 		<>
+			<SEO
+				title="Accueil - Sandra Bondon"
+				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
+				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				author="Sandrine Cazenave"
+			/>
 			<main className="min-h-screen text-center bg-white">
 				<div className="container mx-auto p-6 text-primary">
 					<h1 className="text-2xl font-bold uppercase mb-6 p-5">
@@ -15,14 +29,14 @@ export default function MentionsLegales() {
 					</p>{" "}
 					<h2 className="text-xl font-bold mb-4">Présentation du site</h2>
 					<p>Statut du propriétaire : Profession Libérale</p>
-					<p>Propriétaire : Sandra Bondon - EI</p>
+					<p>Propriétaire : Sandra Bondon - Auto-entrepreneur</p>
 					<p>Statut : Entreprise Individuelle</p>
 					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
 					<address>
-						32 Bis rue de Montbuisson
+						6 rue au Pain
 						<br />
-						Louveciennes, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
@@ -30,7 +44,7 @@ export default function MentionsLegales() {
 					>
 						sandrabondon@gmail.com
 					</a>
-					<p>Tél : 0624182302</p>
+					<p>Tél : 06 24 18 23 02</p>
 					<p>Responsable de publication : Sandra Bondon</p>
 					<p>
 						Contacter le responsable de publication:{" "}

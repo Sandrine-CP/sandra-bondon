@@ -2,24 +2,19 @@
 // Imports de base : React, hooks, libraries essentielles
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-
 // Bibliothèques tierces
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGsapAnimation } from "@/animations/useGsapAnimation";
-
 // Composants parents
-
 // Composants enfants
 import GoogleMap from "@/components/GoogleMap";
-import Cabinet from "@../../../public/images/cabinet.jpg";
-
 // Utilitaires et helpers
 // Styles et assets
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CabinetSection({ addresses }) {
+export default function CabinetSection({ addresses, className }) {
 	const leftBlockRef = useRef(null); // Bloc gauche image cabinet
 	const rightBlockRef = useRef(null); // Bloc droit texte cabinet
 	const sectionRef = useRef(null); // Section Google cabinet et Google map
@@ -39,7 +34,10 @@ export default function CabinetSection({ addresses }) {
 	return (
 		<>
 			{/* Section Google cabinet et Google map */}
-			<section ref={sectionRef} className="py-6 px-4 text-center">
+			<section
+				ref={sectionRef}
+				className={`py-6 px-4 text-center ${className || ""}`}
+			>
 				<div className="flex flex-col lg:flex-row m-2">
 					{/* Bloc gauche : Image cabinet */}
 					<div
@@ -47,10 +45,10 @@ export default function CabinetSection({ addresses }) {
 						className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
 					>
 						<Image
-							src={Cabinet}
-							alt="Photo du cabinet à Louveciennes de Sandra Bondon"
-							width="auto" // Largeur explicite
-							height="auto" // Hauteur explicite
+							src="/images/cabinet.jpg"
+							alt="Photo du cabinet à Saint-Germain-en-Laye de Sandra Bondon"
+							width={900} // Largeur explicite
+							height={600} // Hauteur explicite
 							className="rounded-lg shadow-lg object-cover"
 							priority
 						/>{" "}

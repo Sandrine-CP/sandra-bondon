@@ -10,7 +10,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function PagesFooter() {
 	return (
-		<footer className="bg-secondary text-sm p-4 mt-4">
+		<footer className="bg-[#ffd7ba] text-sm p-4 mt-0">
 			{" "}
 			<section className="text-sm p-4 mt-4 grid grid-cols-1 md:grid-cols-4 gap-4">
 				<div className="mt-4 flex justify-center space-x-4">
@@ -33,14 +33,22 @@ export default function PagesFooter() {
 					>
 						<FaInstagram size={24} />
 					</a>
+					<Link
+						className="hover:texte-primary hover:underline"
+						href="https://www.psychologue.net/cabinets/sandra-bondon"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Psychologue.net
+					</Link>
 				</div>{" "}
 				<div>
 					<h2 className="font-bold">Coordonnées</h2>
-					<p>Sandra Bondon - EI</p>
+					<p>Sandra Bondon - Auto-entrepreneur</p>
 					<address>
-						32 Bis rue de Montbuisson
+						6 rue au Pain
 						<br />
-						Louveciennes, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
@@ -48,7 +56,7 @@ export default function PagesFooter() {
 					>
 						sandrabondon@gmail.com
 					</a>
-					<p>Tel : 0624182302</p>
+					<p>Tel : 06 24 18 23 02</p>
 				</div>
 				<div>
 					<h2 className="font-bold">Crédits</h2>
@@ -79,7 +87,7 @@ export default function PagesFooter() {
 						className="hover:texte-primary hover:underline"
 						href="/a-propos"
 					>
-						A propos
+						À propos
 					</Link>
 					<Link className="hover:texte-primary hover:underline" href="/contact">
 						Contact
@@ -87,7 +95,7 @@ export default function PagesFooter() {
 				</div>
 			</section>
 			<section className="text-center">
-				<p>© 2025 Sandra Bondon - EI - Tous droits réservés.</p>
+				<p>© 2025 Sandra Bondon - Auto-entrepreneur - Tous droits réservés.</p>
 				<Link href="/mentions-legales" className="text-blue-500 underline">
 					Mentions légales
 				</Link>{" "}

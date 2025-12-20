@@ -1,15 +1,12 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import Image from "next/image";
-
 // Bibliothèques tierces
 import { motion } from "framer-motion";
 // Composants parents
 // Composants enfants
 // Utilitaires et helpers
-
 // Styles et assets
-import Bagages from "@../../../public/images/bagages.webp";
 
 export default function IntroSection() {
 	return (
@@ -21,7 +18,7 @@ export default function IntroSection() {
 					className="flex flex-col justify-start items-center text-center lg:w-1/2 w-full"
 					initial={{ x: "-100vw", opacity: 0 }} // Position de départ
 					animate={{ x: 0, opacity: 1 }} // Position finale
-					transition={{ type: "tween", duration: 2, ease: "easeInOut" }} // Transition fluide
+					transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }} // Transition fluide
 				>
 					<h2 className="text-xl font-bold">Comment ça se passe ?</h2>
 					<p className="pt-4">
@@ -46,17 +43,18 @@ export default function IntroSection() {
 						personnels ou professionnels. <br />
 						La durée et la fréquence des séances varient en fonction de vos
 						besoins spécifiques. <br />
-						Généralement, une séance dure environ 60 minutes.
+						Généralement, une séance dure environ 50 minutes.
 					</p>
 				</motion.div>
-				{/* Bloc droit : Image bagages */}
+				{/* Bloc droit : Image */}
 				<div className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0">
-					<div style={{ width: 521, height: 366 }}>
+					<div style={{ width: 501, height: 346 }}>
 						<Image
-							src={Bagages}
+							src="/images/seances.png"
 							alt="Illustration de valises pour symboliser le voyage intérieur"
 							className="rounded-lg shadow-lg object-cover"
-							placeholder="blur"
+							width={190}
+  							height={200}
 							// priority
 							// loading="eager"
 						/>

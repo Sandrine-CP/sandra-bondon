@@ -1,5 +1,12 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import React, { useEffect } from "react";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function ClientTypeSection({ timeline }) {
 	useEffect(() => {

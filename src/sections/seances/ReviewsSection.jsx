@@ -4,7 +4,6 @@
 // Composants parents
 // Composants enfants
 import GoogleReviews from "@/components/GoogleReviews";
-
 // Utilitaires et helpers
 // Styles et assets
 

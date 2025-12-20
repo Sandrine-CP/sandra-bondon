@@ -1,8 +1,15 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
 import { useState } from "react";
+// Bibliothèques tierces
 import { motion, AnimatePresence } from "framer-motion";
+// Composants parents
+// Composants enfants
 import Nav from "./Nav";
+// Utilitaires et helpers
+// Styles et assets
 
 // Animation pour l'opacité
 export const opacity = {
@@ -15,7 +22,7 @@ export default function Header() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<header className="bg-secondary fixed top-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center">
+		<header className="bg-[#ffd7ba] fixed top-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center">
 			{/* Logo aligné à gauche */}
 			<div className="flex items-center space-x-2">
 				<Link

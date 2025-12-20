@@ -1,12 +1,20 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import GoogleMap from "@/components/GoogleMap";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function Consultations() {
-	const addresses = ["32 Bis rue de Montbuisson, Louveciennes, Yvelines"];
+	const addresses = ["6 rue au Pain, 78100 Saint-Germain-en-Laye, Yvelines"];
 	return (
 		<section className="py-16 px-4">
 			<h2 className="text-2xl font-bold mb-4 text-center">Consultations</h2>
 			<p className="max-w-2xl mx-auto mb-4 text-center font-semibold">
-				Horaires : 9h00 - 20h00
+				Horaires :<br /> Lundi, mercredi et samedi de 11h à 17h.<br />
+				Vendredi de 11h à 17h.
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-7 gap-4 text-center">
 				{/* Bloc Cabinet */}
@@ -14,7 +22,7 @@ export default function Consultations() {
 					<div className="bg-primary text-secondary rounded-full py-2 px-4">
 						Cabinet
 					</div>
-					<p className="text-gray-500 mt-2 text-sm">3 emplacements</p>
+					<p className="text-gray-500 mt-2 text-sm">Saint-Germain-en-Laye</p>
 				</div>
 				{/* Bloc Téléphone */}
 				<div className="col-start-1 md:col-start-4 col-span-1 max-w-xs mx-auto">

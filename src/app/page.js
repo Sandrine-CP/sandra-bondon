@@ -1,17 +1,24 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
-import Sandra from "../../public/images/sandra-bondon.webp";
+// Bibliothèques tierces
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Composants parents
+import SEO from "@/components/SEO";
+// Composants enfants
 import Button from "@/components/Button";
 import GoogleReviews from "@/components/GoogleReviews";
 import Consultations from "@/sections/home/Consultations";
-import Gallery from "@/sections/home/Gallery";
 import Professionals from "@/sections/home/Professionals";
 import FloatingList from "@/components/FloatingList";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import HomeCardsAnimation from "@/sections/home/HomeCardsAnimation";
+// Utilitaires et helpers
+// Styles et assets
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,21 +110,27 @@ export default function Home() {
 
 	return (
 		<>
-			<main className="m-0 p-0 bg-black">
+			<SEO
+				title="Accueil - Sandra Bondon"
+				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
+				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				author="Sandrine Cazenave"
+			/>
+			<main className="m-0 p-0 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
-				<section className="h-screen mt-0 pt-0 mb-10">
-					<Gallery />
+				<section className="mt-4 pt-20 mb-20">
+					<HomeCardsAnimation />
 				</section>
 				{/* Section image lumière */}
 				<section
 					ref={lumiereRef}
-					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[400px]"
+					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[800px]"
 					style={{
-						backgroundImage: "url(/images/lumiere.jpg)",
+						backgroundImage: "url(/images/lumiere-istockphoto-1367357589-1024x1024.jpg)",
 					}}
 				/>
 				{/* Section Ressources */}
-				<section className="flex flex-col items-center justify-center my-0 bg-black text-white py-10 md:py-20">
+				<section className="flex flex-col items-center justify-center my-0 bg-[#22223b] text-white py-10 md:py-20">
 					<p
 						ref={textRef}
 						className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight"
@@ -142,11 +155,11 @@ export default function Home() {
 				>
 					<div className="absolute bottom-4 left-4">
 						<Image
-							src={Sandra}
+							src="/images/sandra-bondon1.jpeg"
 							alt="Sandra Bondon, psychopraticienne"
 							width={150} // Taille par défaut pour mobile
 							height={150} // Taille par défaut pour mobile
-							className="rounded-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
+							className="rounded-e-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
 						/>
 					</div>{" "}
 					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">

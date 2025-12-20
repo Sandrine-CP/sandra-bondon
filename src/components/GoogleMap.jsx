@@ -1,24 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function GoogleMap({ addresses }) {
+	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_EMBED_KEY;
 	const [selectedAddress, setSelectedAddress] = useState(0);
-	const [showMap, setShowMap] = useState(false); // État pour afficher la carte interactive
+	const [showMap, setShowMap] = useState(false);
+	const [staticMapUrl, setStaticMapUrl] = useState("");
+
+	useEffect(() => {
+		async function fetchMapUrl() {
+			try {
+				const response = await fetch("/api/google-maps");
+				const data = await response.json();
+				setStaticMapUrl(data.mapUrl);
+			} catch (error) {
+				console.error("Erreur lors du chargement de la carte :", error);
+			}
+		}
+		fetchMapUrl();
+	}, []);
 
 	const handleSwitchAddress = (index) => {
 		setSelectedAddress(index);
 	};
 
-	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY;
-	// URL de l'image statique de la carte
-	const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=32+Bis+rue+de+Montbuisson,Louveciennes,Yvelines&zoom=15&size=400x300&maptype=roadmap&markers=color:red|32+Bis+rue+de+Montbuisson,Louveciennes,Yvelines&key=${apiKey}`;
-	if (!apiKey) {
-		console.error("Clé d'API Google Maps manquante !");
-		return <p>Erreur : La clé d'API Google Maps est manquante.</p>;
-	}
-
 	return (
 		<div className="map-container">
-			{/* Facade avec une image statique ou un bouton */}
 			{!showMap ? (
 				<button
 					type="button"
@@ -31,23 +38,26 @@ export default function GoogleMap({ addresses }) {
 					className="relative cursor-pointer w-full h-auto bg-transparent border-0"
 				>
 					<div className="relative w-[400px] h-[300px] mx-auto">
-						<img
-							src={staticMapUrl}
-							alt="Carte statique de l'emplacement à Louveciennes"
-							className="w-full h-full object-cover rounded-lg"
-						/>
+						{staticMapUrl ? (
+							<Image
+								src={staticMapUrl}
+								alt="Carte statique de l'emplacement à Saint-Germain-en-Laye"
+								width={400}
+								height={300}
+								className="w-full h-full object-cover rounded-lg"
+							/>
+						) : (
+							<p>Chargement de la carte...</p>
+						)}
 						<span className="absolute inset-0 flex justify-center items-start bg-gray-800 bg-opacity-90 text-black px-4 py-2 rounded-md">
 							Cliquez pour afficher la carte interactive
 						</span>
-					</div>{" "}
+					</div>
 				</button>
 			) : (
-				/* Carte interactive */
 				<iframe
 					title="Carte-Google maps"
-					src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(
-						addresses[selectedAddress],
-					)}`}
+					src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(addresses[selectedAddress])}`}
 					className="w-full h-64 rounded-lg border-0"
 					allowFullScreen
 					loading="lazy"
@@ -55,7 +65,6 @@ export default function GoogleMap({ addresses }) {
 				/>
 			)}
 
-			{/* Liste des adresses */}
 			<div className="address-list mt-4 text-center">
 				{addresses.map((address, index) => (
 					<div key={address} className="mb-2">

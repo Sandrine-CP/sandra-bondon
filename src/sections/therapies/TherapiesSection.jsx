@@ -1,7 +1,14 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
-import Card from "@/components/Card";
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import Button from "@/components/Button";
+import TherapiesCardsAnimation from "./TherapiesCardsAnimation";
+// Utilitaires et helpers
+// Styles et assets
 
 export default function TherapiesSection() {
 	const therapiesList = [
@@ -25,13 +32,13 @@ export default function TherapiesSection() {
 		},
 		{
 			id: 4,
-			title: "Psychodrame",
+			title: "Thérapie des états du Moi®",
 			description:
 				"Une méthode basée sur la mise en scène pour explorer et résoudre des conflits internes.",
 		},
 		{
 			id: 5,
-			title: "Thérapie stratégique",
+			title: "Thérapie brève",
 			description:
 				"Une approche ciblée et orientée vers la résolution rapide des problèmes.",
 		},
@@ -41,11 +48,22 @@ export default function TherapiesSection() {
 			description:
 				"Une approche innovante pour débloquer des schémas émotionnels grâce à des techniques expérimentales.",
 		},
+		{
+			id: 7,
+			title: "Thérapie de couple",
+			description: "Lorem ipsum doloris.",
+		},
+		{
+			id: 8,
+			title: "Therapie individuelle<br /> (adulte,ado,enfant",
+			description: "Lorem ipsum doloris.",
+		},
 	];
 
 	return (
 		<>
-			<section id="approach" className="py-10 px-4 text-center bg-white ">
+			{/* Section intro */}
+			<section id="approach" className="py-10 px-4 mb-0 text-center bg-white">
 				<h2 className="text-xl font-bold mb-6">
 					Techniques thérapeutiques adaptées
 				</h2>
@@ -68,8 +86,10 @@ export default function TherapiesSection() {
 					dans un temps réduit.
 				</p>
 			</section>
-			<section>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
+			{/* Section cards animation */}
+			<div className="bg-primary mt-O">
+				<section>
+					{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
 					{therapiesList.map((therapy) => (
 						<Card
 							key={therapy.id}
@@ -77,26 +97,32 @@ export default function TherapiesSection() {
 							description={therapy.description}
 						/>
 					))}
-				</div>
-			</section>
-			<section>
-				<p className="text-center">
-					Vous souhaitez savoir comment une séance se déroule ?
-				</p>
-				<Link
-					href="/seances"
-					className=" flex flex-row justify-center text-center"
-				>
-					<Button
-						text="Voir plus"
-						textColor="#2C254D"
-						bgColor="#FFA500"
-						hoverTextColor="#2C254D"
-						hoverBgColor="#FFA500"
-						className="mt-6 mb-6"
-					/>
-				</Link>
-			</section>
+				</div> */}
+					<div>
+						<TherapiesCardsAnimation />
+					</div>
+				</section>
+
+				{/* Section avec CTA séances */}
+				<section className="bg-primary">
+					<p className="text-center text-white">
+						Vous souhaitez savoir comment une séance se déroule ?
+					</p>
+					<Link
+						href="/seances"
+						className=" flex flex-row justify-center text-center"
+					>
+						<Button
+							text="Voir plus"
+							textColor="#FFFFFF"
+							bgColor="#D110D5"
+							hoverTextColor="#FFFFFF"
+							hoverBgColor="#D110D5"
+							className="mt-6 mb-6"
+						/>
+					</Link>
+				</section>
+			</div>
 		</>
 	);
 }

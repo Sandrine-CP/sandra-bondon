@@ -1,6 +1,25 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 export default function Card({ title, description }) {
+	const renderTitle = (title) => {
+		if (title === "Thérapie individuelle (adulte, ado, enfant)") {
+			return (
+				<>
+					Thérapie individuelle
+					<br />
+					(adulte, ado, enfant)
+				</>
+			);
+		}
+		return title;
+	};
 	return (
 		<div className="relative overflow-hidden w-80 h-40 rounded-xl cursor-pointer text-lg font-bold bg-primary text-secondary flex items-center justify-center transition-all duration-500">
 			{/* Couche interactive */}
@@ -19,7 +38,7 @@ export default function Card({ title, description }) {
 
 			{/* Recto */}
 			<div className="absolute inset-0 flex items-center justify-center uppercase transition-all duration-500 peer-hover:translate-x-full">
-				{title}
+				{renderTitle(title)}
 			</div>
 		</div>
 	);

@@ -1,5 +1,12 @@
+// Organisation des imports
+// React, hooks, librairies
+// Bibliothèques tierces
+// Composants parents
+// Composants enfants
 import Header from "@/components/header/Header";
 import PagesFooter from "@/components/PagesFooter";
+// Utilitaires et helpers
+// Styles et assets
 import "../styles/globals.css";
 
 export const metadata = {

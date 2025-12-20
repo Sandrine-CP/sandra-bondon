@@ -1,7 +1,14 @@
 "use client";
+// Organisation des imports
+// React, hooks, librairies
 import Link from "next/link";
 import { useState } from "react";
+// Bibliothèques tierces
 import { motion } from "framer-motion";
+// Composants parents
+// Composants enfants
+// Utilitaires et helpers
+// Styles et assets
 
 const variants = {
 	initial: { opacity: 0, y: 20 },
