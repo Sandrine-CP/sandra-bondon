@@ -19,7 +19,7 @@ export default function SolutionsPourVosCollaborateurs() {
 			/>
 			<main>
 				{/* Container */}
-				<div className="max-w-5xl mx-auto">
+				<div className="max-w-5xl mx-auto px-4 py-10">
 						<h1 className="text-2xl font-bold uppercase text-center m-6 p-5">
 							Accompagnement professionnel et coaching
 						</h1>
@@ -54,12 +54,12 @@ export default function SolutionsPourVosCollaborateurs() {
 							</h2>
 
 							<p className="mt-3 text-center md:text-left">
-								En tant que praticienne en psychothérapie, j’accompagne les professionnels confrontés à des situations de stress, de surcharge émotionnelle ou de perte de repères dans leur environnement de travail.
+								En tant que praticienne en psychothérapie, j’accompagne les professionnels confrontés à des situations de stress, de surcharge émotionnelle ou de perte de repères dans leur environnement de travail.<br/>
 								Ma pratique s’adresse aux cadres, managers, dirigeants, équipes et indépendants qui souhaitent retrouver un équilibre, renforcer leur posture professionnelle et traverser les périodes de changement avec plus de sérénité.
 							</p>
 						</div>
 					</section>
-				</div>
+
 
 				{/* Section 2: Accompagnement thérapeutique en contexte professionnel */}
 				<section>
@@ -70,7 +70,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						<p>	
 							Le monde professionnel peut être source de fortes tensions émotionnelles. Lorsqu’elles ne sont pas prises en compte, ces tensions peuvent conduire à :
 						</p>
-						<ul className="list-disc pl-5 mx-auto w-fit text-left">
+						<ul className="list-disc pl-5 space-y-1">
 							<li>Stress chronique</li>
 							<li>Burn-out</li>
 							<li>Perte de confiance en soi</li>
@@ -80,7 +80,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						<p>
 						J’accompagne notamment les personnes confrontées à :
 						</p>
-						<ul className="list-disc pl-5 mx-auto w-fit text-left">
+						<ul className="list-disc pl-5 space-y-1">
 							<li>Des situations de stress intense ou de surcharge émotionnelle</li>
 							<li>Des périodes de transition professionnelle (changement de poste, réorganisation, etc.)</li>
 							<li>Des difficultés relationnelles au sein de l’équipe ou avec la hiérarchie</li>
@@ -100,7 +100,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						<h4 className="text-lg font-semibold m-4 p-4">
 							Coaching individuel
 						</h4>
-							<ul className="list-disc pl-5 mx-auto w-fit text-lef">
+							<ul className="list-disc pl-5 space-y-1">
 								<li>Coaching de vie</li>
 								<li>Coaching en développement de carrière</li>
 								<li>Gestion du changement</li>
@@ -110,7 +110,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						<h4 className="text-lg font-semibold m-4 p-4">
 							Coaching de cadres et accompagnement collectif
 						</h4>
-							<ul className="list-disc pl-5 mx-auto w-fit text-lef">
+							<ul className="list-disc pl-5 space-y-1">
 								<li>Coaching de cadres</li>
 								<li>Consolidation d’équipe</li>
 								<li>Accompagnement des dynamiques relationnelles</li>
@@ -141,7 +141,7 @@ export default function SolutionsPourVosCollaborateurs() {
 					<p>
 						Je suis formée et certifiée aux approches suivantes :
 					</p>
-					<ul className="list-disc pl-5 mx-auto w-fit text-left">
+					<ul className="list-disc pl-5 space-y-1">
 						<li>États du moi</li>
 						<li>MOSAIC® / EMDR solutionniste</li>
 						<li>PNL</li>
@@ -158,12 +158,12 @@ export default function SolutionsPourVosCollaborateurs() {
 						<p>
 							L’accompagnement vise notamment à :
 						</p>
-						<ul className="list-disc pl-5 mx-auto w-fit text-left">
-							<li>apaiser la charge émotionnelle liée au travail</li>
-							<li>retrouver confiance et stabilité</li>
-							<li>mieux gérer le stress et les transitions</li>
-							<li>renforcer les ressources personnelles et professionnelles</li>
-							<li>soutenir des changements durables et choisis</li>
+						<ul className="list-disc pl-5 space-y-1">
+							<li>Apaiser la charge émotionnelle liée au travail</li>
+							<li>Retrouver confiance et stabilité</li>
+							<li>Mieux gérer le stress et les transitions</li>
+							<li>Renforcer les ressources personnelles et professionnelles</li>
+							<li>Soutenir des changements durables et choisis</li>
 						</ul>
 					</div>
 				</section>	
@@ -178,7 +178,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						Je vous propose un premier échange afin de comprendre vos besoins et de définir ensemble l’accompagnement le plus adapté.					</p>
 					</div>
 				</section>	
-
+				</div>
 			</main>
 		</>
 	);

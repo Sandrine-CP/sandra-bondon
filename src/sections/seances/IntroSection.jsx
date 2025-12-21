@@ -53,8 +53,8 @@ export default function IntroSection() {
 							src="/images/seances.png"
 							alt="Illustration de valises pour symboliser le voyage intérieur"
 							className="rounded-lg shadow-lg object-cover"
-							width={190}
-  							height={200}
+							width={390}
+  							height={400}
 							// priority
 							// loading="eager"
 						/>
