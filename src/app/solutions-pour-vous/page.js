@@ -77,9 +77,6 @@ export default function SolutionsPourVous() {
 				author="Sandrine Cazenave"
 			/>
 			<main className="h-auto">
-				<div style={{ background: "yellow", padding: 10 }}>
-    				DEBUG solutions-pour-vous OK
-  				</div>
 				{/* Section intro */}
 				<section className="py-6 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
