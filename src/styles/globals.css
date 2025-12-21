@@ -2,9 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body,
-html {
+
+/* Base typographique du site */
+@layer base {
+  body {
+    @apply font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+
+    p {
+    @apply leading-relaxed;
+  }
+}
+
+/* Reset basique + box-sizing global */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
