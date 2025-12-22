@@ -5,16 +5,15 @@ export default function SolutionsPourVosCollaborateurs() {
 	return (
 		<>
 			<SEO
-				title="Business coach & accompagnement professionnel | Sandra Bondon (approche solutionniste)"
-				description="Business coach et psychopraticienne solutionniste : coaching de cadres dirigeants, synergie d’équipe, posture professionnelle, gestion du stress, burn-out, confiance en soi. Approche expérientielle (MOSAIC®/EMDR, PNL, hypnose)."
-				keywords="business coach, coaching cadres dirigeants, coaching professionnel, synergie d’équipe, procrastination, posture professionnelle, stress, burn-out, confiance en soi, psychopraticienne solutionniste, MOSAIC, EMDR solutionniste, PNL, hypnose, TCA, traumatismes"
-				author="Sandrine Cazenave"
+  				title="Business coach & accompagnement professionnel à Saint-Germain-en-Laye | Sandra Bondon"
+  				description="Business coach et psychopraticienne solutionniste à Saint-Germain-en-Laye. Accompagnement des cadres, dirigeants, équipes et particuliers : stress, burn-out, posture professionnelle, confiance en soi. Approche solutionniste expérientielle."
+  				keywords="business coach Saint-Germain-en-Laye, accompagnement professionnel, coaching cadres dirigeants, coaching équipes, posture professionnelle, stress au travail, burn-out, confiance en soi, psychopraticienne solutionniste, MOSAIC, EMDR solutionniste, PNL, hypnose"
+  				author="Sandra Bondon"
 			/>
-
 			<main>
 				<div className="max-w-5xl mx-auto px-4 py-10">
 					<h1 className="text-2xl font-bold uppercase text-center mb-4">
-						Accompagnement professionnel et coaching
+						Accompagnement professionnel & business coaching à Saint-Germain-en-Laye
 					</h1>
 
 					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
@@ -47,6 +46,7 @@ export default function SolutionsPourVosCollaborateurs() {
 								alt="Accompagnement professionnel et coaching avec Sandra Bondon"
 								fill
 								priority
+								sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 200px"
 								className="object-cover"
 							/>
 						</div>

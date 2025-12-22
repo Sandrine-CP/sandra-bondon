@@ -41,6 +41,7 @@ export default function APropos() {
     						alt="Sandra Bondon, psychopraticienne"
     						fill
     						priority
+							sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 200px"
     						className="object-cover"
   							/>
 						</div>
