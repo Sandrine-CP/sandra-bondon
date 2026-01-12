@@ -170,7 +170,20 @@ export default function Home() {
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B
 						</p>
+						<Link 
+							className="text-center"
+							href="/solutions-pour-vos-collaborateurs">
+						<Button
+							text="Voir mon parcours"
+							textColor="#FFFFFF"
+							bgColor="#4961E1"
+							hoverTextColor="#FFFFFF"
+							hoverBgColor="#4961E1"
+							className="mt-6 mb-6"
+						/>
+						</Link>
 					</div>
+
 				</section>
 				{/* Section Spécialités */}
 				<section className="bg-white">

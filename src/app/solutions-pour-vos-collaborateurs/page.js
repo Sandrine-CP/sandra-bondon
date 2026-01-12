@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SEO from "@/components/SEO";
+import ProForm from "@/components/ProForm";
 
 export default function SolutionsPourVosCollaborateurs() {
 	return (
@@ -182,6 +183,15 @@ export default function SolutionsPourVosCollaborateurs() {
 								vos besoins et définir ensemble l’accompagnement le plus adapté (pro ou
 								particulier).
 							</p>
+						</div>
+						<div>
+							                    <div className="mb-4">
+                        <p>
+                            Merci de remplir ce formulaire afin que nous puissions mieux comprendre vos besoins en matière d'accompagnement. Nous vous contacterons rapidement pour discuter des prochaines étapes.
+                        </p>
+                    </div>
+
+							<ProForm />
 						</div>
 					</section>
 				</div>
