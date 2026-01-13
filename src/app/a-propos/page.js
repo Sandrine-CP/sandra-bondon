@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SEO from "@/components/SEO";
 import Button from "@/components/Button";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function APropos() {
 	return (
@@ -251,6 +252,8 @@ export default function APropos() {
 					</section>
 				</div>
 			</main>
+						<ScrollToTopButton />
+			
 		</>
 	);
 }

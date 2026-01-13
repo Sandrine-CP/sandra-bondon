@@ -172,7 +172,7 @@ export default function Home() {
 						</p>
 						<Link 
 							className="text-center"
-							href="/solutions-pour-vos-collaborateurs">
+							href="/a-propos">
 						<Button
 							text="Voir mon parcours"
 							textColor="#FFFFFF"

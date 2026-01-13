@@ -9,7 +9,7 @@
 
 export default function ProForm() {
 
-    const formActionUrl = process.env.NEXT_PUBLIC_FORMSPREE_URL_PRO;
+    const formActionUrl = process.env.FORMSPREE_URL_PRO;
 
     return (
 
@@ -57,7 +57,7 @@ export default function ProForm() {
                         type="text" 
                         name="position" 
                         id="position"
-                        required />
+                         />
                     </div>
                     <div className="mb-4">
                     <label
@@ -68,7 +68,6 @@ export default function ProForm() {
                         type="text" 
                         name="coachedPosition" 
                         id="coachedPosition"
-                        required
                          />
                     </div>
                     <div className="mb-4">

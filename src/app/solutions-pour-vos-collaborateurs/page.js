@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SEO from "@/components/SEO";
 import ProForm from "@/components/ProForm";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function SolutionsPourVosCollaborateurs() {
 	return (
@@ -187,7 +188,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						<div>
 							                    <div className="mb-4">
                         <p>
-                            Merci de remplir ce formulaire afin que nous puissions mieux comprendre vos besoins en matière d'accompagnement. Nous vous contacterons rapidement pour discuter des prochaines étapes.
+                            Merci de remplir ce formulaire afin que nous puissions mieux comprendre vos besoins en matière d&apos;accompagnement. Nous vous contacterons rapidement pour discuter des prochaines étapes.
                         </p>
                     </div>
 
@@ -196,6 +197,8 @@ export default function SolutionsPourVosCollaborateurs() {
 					</section>
 				</div>
 			</main>
+						<ScrollToTopButton />
+			
 		</>
 	);
 }
