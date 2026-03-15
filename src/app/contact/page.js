@@ -10,7 +10,7 @@ import SEO from "@/components/SEO";
 // Styles et assets
 
 export default function ContactPage() {
-	const formActionUrl = process.env.NEXT_PUBLIC_FORMSPREE_URL_CONTACT;
+	const formActionUrl = process.env.FORMSPREE_URL_CONTACT;
 
 	const [errors, setErrors] = useState({});
 

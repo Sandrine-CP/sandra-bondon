@@ -17,7 +17,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/pnl.jpg"
 						imageAlt="XX"
 						title="PNL"
-						description="Lorem ipsum"
+						description="Programmation Neurolinguistique Elle est mise en œuvre dans de nombreux secteurs d'activité pour améliorer la communication mais aussi dépasser les formes de blocages inconscients."
 					/>
 				</div>
 				{/* card 2 */}
@@ -25,8 +25,8 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/hypnose.jpg"
 						imageAlt="XX"
-						title="Hypnose"
-						description="Un état modifié de conscience pour accéder à vos ressources profondes et favoriser le changement."
+						title="Hypnose ericksonienne"
+						description="Forme d'hypnose douce et non directive. Elle repose sur la collaboration entre le conscient et l'inconscient pour accéder aux ressources internes du patient, permettant de surmonter des obstacles personnels."
 					/>
 				</div>
 				{/* card 3 */}
@@ -34,8 +34,8 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/mosaic.jpg"
 						imageAlt="XX"
-						title="MOSAIC ®"
-						description="Lorem ipsum"
+						title="MOSAIC®"
+						description="(mouvements oculaires et stimulations alternées pour l’intégration cérébrale) est une méthode thérapeutique innovante qui utilise les propriétés neurophysiologiques des Stimulations Bilatérales Alternées (auditives, tactiles ou mouvements oculaires) dans une approche solutionniste expérientielle® pour accompagner La transformation profonde. Cette approche thérapeutique, basée sur des recherches scientifiques validées, a l’avantage de s’adresser à tous les profis psychologiques et donc à toutes les pathologies. Elle permet de vivre rapidement et de façon durable dans le corps la solution désirée par la personne."
 					/>
 				</div>
 				{/* card 3 */}
@@ -64,8 +64,8 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/etatsMoi.jpg"
 						imageAlt="XX"
-						title="Etats du Moi ®"
-						description="Lorem ipsum"
+						title="Thérapie des états du Moi® (ESTI)"
+						description="Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques."
 					/>
 				</div>
 				{/* card 6 */}

@@ -12,15 +12,15 @@ export default function MentionsLegales() {
 	return (
 		<>
 			<SEO
-				title="Accueil - Sandra Bondon"
-				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
-				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				title="Mentions légales et médiation - Sandra Bondon"
+				description="Mentions légales, médiation de la consommation et informations relatives à la protection des données du site de Sandra Bondon, psychopraticienne."
+				keywords="mentions légales, médiation, protection des données, psychopraticienne, Sandra Bondon"
 				author="Sandrine Cazenave"
 			/>
-			<main className="min-h-screen text-center bg-white">
-				<div className="container mx-auto p-6 text-primary">
+			<main className="min-h-screen bg-white">
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h1 className="text-2xl font-bold uppercase mb-6 p-5">
-						Mentions Légales
+						Mentions Légales et médiation 
 					</h1>
 					<p className="mb-6">
 						Ce site est édité par Sandra Bondon, exerçant sous le statut
@@ -34,13 +34,15 @@ export default function MentionsLegales() {
 					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
 					<address>
-						6 rue au Pain
+						4 chemin Benigne May
 						<br />
-						78100 Saint-Germain-en-Laye, Yvelines
+						78290 Croissy sur Seine, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
 						className="text-blue-500 underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						sandrabondon@gmail.com
 					</a>
@@ -55,14 +57,16 @@ export default function MentionsLegales() {
 							sandrabondon@gmail.com
 						</a>
 					</p>
-				</div>
-				<div>
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">Responsabilités</h2>
 					<p>
 						Les informations fournies sur le site{" "}
 						<a
 							href="https://www.sandra.bondon.fr/"
 							className="text-blue-500 underline"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							https://www.sandra.bondon.fr/
 						</a>{" "}
@@ -75,13 +79,13 @@ export default function MentionsLegales() {
 						Bondon ne contrôle pas le contenu. Elle décline toute responsabilité
 						concernant les informations publiées sur ces sites tiers.
 					</p>
-				</div>
-				<div className="container mx-auto p-6 text-primary">
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">Crédits</h2>
-					<p>Crédits photos : Unsplash</p>
+					<p>Crédits photos : iStock</p>
 					<p>Conception et réalisation du site : Sandrine Cazenave</p>
-				</div>
-				<div className="container mx-auto p-6 text-primary">
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">Hébergement</h2>
 					<p>Le site est hébergé par :</p>
 					<p>Vercel Inc.</p>
@@ -103,8 +107,41 @@ export default function MentionsLegales() {
 							vercel.com
 						</a>
 					</p>
-				</div>
-				<div>
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
+					<h2 className="text-xl font-bold mb-4">
+					Propriété intellectuelle
+					</h2>
+
+					<p>
+					L’ensemble du contenu présent sur le site
+					<a
+					href="https://www.sandra.bondon.fr/"
+					className="text-blue-500 underline"
+					target="_blank"
+					rel="noopener noreferrer"				
+					>
+					{" "}
+					https://www.sandra.bondon.fr/
+					</a>{" "}
+					(textes, images, illustrations, logos, éléments graphiques, structure du
+					site) est protégé par les lois en vigueur relatives à la propriété
+					intellectuelle.
+					</p>
+
+					<p>
+					Toute reproduction, représentation, modification, publication,
+					transmission ou adaptation de tout ou partie du site, quel que soit le
+					moyen ou le procédé utilisé, est interdite sans l’autorisation écrite
+					préalable de Sandra Bondon.
+					</p>
+
+					<p>
+					Les photographies utilisées sur le site proviennent de la plateforme
+					iStock et sont utilisées conformément à leur licence d’utilisation.
+					</p>
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">
 						Conditions d&apos;utilisation
 					</h2>
@@ -113,19 +150,72 @@ export default function MentionsLegales() {
 						<a
 							href="https://www.sandra.bondon.fr/"
 							className="text-blue-500 underline"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							https://www.sandra.bondon.fr/
 						</a>{" "}
 						implique l&apos;acceptation pleine et entière des conditions
 						générales d&apos;utilisation décrites dans ces mentions légales.
 					</p>
-				</div>
-				{/* <div className="container mx-auto p-6 text-primary">
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">
-						Formation et titres professionnels
+					Médiation de la consommation
 					</h2>
-				</div> */}
-				<div className="container mx-auto p-6 text-primary">
+
+					<p>
+					Conformément aux articles L.616-1 et R.616-1 du Code de la consommation,
+					notre société a mis en place un dispositif de médiation de la consommation.
+					</p>
+
+					<p>
+					Si vous n’êtes pas parvenu à résoudre votre litige après nous avoir adressé
+					une réclamation écrite (courrier ou courriel), datée, rappelant les
+					circonstances qui ont donné lieu au différend et ce que vous réclamez, vous
+					pourrez saisir le médiateur de la consommation désigné ci-dessous si vous
+					avez reçu une réponse écrite négative de notre part ou si vous n’avez pas
+					reçu de réponse deux mois après l’envoi de votre réclamation.
+					</p>
+
+					<p>
+					L’entité de médiation retenue est :
+					</p>
+
+					<p className="font-semibold">
+						MEDIATION CONSOMMATION DÉVELOPPEMENT / MED CONSO DEV
+					</p>
+
+					<p>
+						En cas de litige, vous pouvez déposer votre réclamation sur son site :
+					</p>
+
+					<p>
+						<a
+						href="https://www.medconsodev.eu"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-blue-500 underline"
+						>
+						https://www.medconsodev.eu
+						</a>
+					</p>
+
+					<p>ou par voie postale en écrivant à :</p>
+
+					<address>
+					MEDIATION CONSOMMATION DÉVELOPPEMENT / MED CONSO DEV
+					<br />
+					Centre d’Affaires Stéphanois SAS
+					<br />
+					IMMEUBLE L’HORIZON – ESPLANADE DE FRANCE
+					<br />
+					3, rue J. Constant Milleret
+					<br />
+					42000 Saint-Étienne
+					</address>
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">
 						Protection des données personnelles
 					</h2>
@@ -134,6 +224,8 @@ export default function MentionsLegales() {
 						<a
 							href="https://www.sandra.bondon.fr/"
 							className="text-blue-500 underline"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							https://www.sandra.bondon.fr/
 						</a>
@@ -154,11 +246,15 @@ export default function MentionsLegales() {
 							sandrabondon@gmail.com
 						</a>
 					</p>{" "}
-				</div>
-
-				<Link className="hover:texte-primary underline" href="/">
-					Retour à l&apos;accueil
-				</Link>
+				</section>
+				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
+					<Link
+						href="/"
+						className="inline-block mt-4 text-blue-600 hover:text-blue-800 underline"
+					>
+					← Retour à l’accueil
+					</Link>
+				</section>
 			</main>
 		</>
 	);

@@ -14,7 +14,7 @@ export default function Consultations() {
 			<h2 className="text-2xl font-bold mb-4 text-center">Consultations</h2>
 			<p className="max-w-2xl mx-auto mb-4 text-center font-semibold">
 				Horaires :<br /> Lundi, mercredi et samedi de 11h à 17h.<br />
-				Vendredi de 11h à 17h.
+				Vendredi de 11h à 17h et en visio.
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-7 gap-4 text-center">
 				{/* Bloc Cabinet */}
@@ -29,7 +29,7 @@ export default function Consultations() {
 					<div className="bg-primary text-secondary rounded-full py-2 px-4">
 						Téléphone
 					</div>
-					<p className="text-gray-500 mt-2 text-sm">06 01 02 03 04</p>
+					<p className="text-gray-500 mt-2 text-sm">06 24 18 23 02</p>
 				</div>
 				{/* Bloc En Ligne */}
 				<div className="col-start-1 md:col-start-6 col-span-1 max-w-xs mx-auto">
@@ -43,7 +43,7 @@ export default function Consultations() {
 			<div className="text-center mt-8">
 				<p className="text-gray-500 text-sm">Tarifs</p>
 				<p className="text-gray-500 text-sm">Prix moyen à titre indicatif</p>
-				<p className="text-gray-500 text-sm">80 à 110 euros</p>
+				<p className="text-gray-500 text-sm">85 à 110 euros</p>
 			</div>
 			<div className="mt-8">
 				<GoogleMap addresses={addresses} />

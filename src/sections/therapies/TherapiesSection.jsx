@@ -14,15 +14,15 @@ export default function TherapiesSection() {
 	const therapiesList = [
 		{
 			id: 1,
-			title: "Hypnose",
+			title: "Hypnose ericksonienne",
 			description:
-				"Un état modifié de conscience pour accéder à vos ressources profondes et favoriser le changement.",
+				"Forme d'hypnose douce et non directive. Elle repose sur la collaboration entre le conscient et l'inconscient pour accéder aux ressources internes du patient, permettant de surmonter des obstacles personnels.",
 		},
 		{
 			id: 2,
 			title: "PNL",
 			description:
-				"Programmation Neuro-Linguistique : une méthode pour comprendre et modifier les schémas comportementaux.",
+				"Programmation Neurolinguistique. Elle est mise en œuvre dans de nombreux secteurs d'activité pour améliorer la communication mais aussi dépasser les formes de blocages inconscients.",
 		},
 		{
 			id: 3,
@@ -32,9 +32,9 @@ export default function TherapiesSection() {
 		},
 		{
 			id: 4,
-			title: "Thérapie des états du Moi®",
+			title: "Thérapie des états du Moi® (ESTI)",
 			description:
-				"Une méthode basée sur la mise en scène pour explorer et résoudre des conflits internes.",
+				"Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques.",
 		},
 		{
 			id: 5,
@@ -46,7 +46,7 @@ export default function TherapiesSection() {
 			id: 6,
 			title: "MOSAIC®",
 			description:
-				"Une approche innovante pour débloquer des schémas émotionnels grâce à des techniques expérimentales.",
+				"(Mouvements Oculaires et Stimulations Alternées pour l’Intégration Cérébrale) est une méthode thérapeutique innovante qui utilise les propriétés neurophysiologiques des Stimulations Bilatérales Alternées (auditives, tactiles ou mouvements oculaires) dans une approche solutionniste expérientielle® pour accompagner La transformation profonde. Cette approche thérapeutique, basée sur des recherches scientifiques validées, a l’avantage de s’adresser à tous les profis psychologiques et donc à toutes les pathologies. Elle permet de vivre rapidement et de façon durable dans le corps la solution désirée par la personne..",
 		},
 		{
 			id: 7,
@@ -76,8 +76,8 @@ export default function TherapiesSection() {
 					<br /> Contrairement aux thérapies traditionnelles, elle se concentre
 					sur le présent et le futur, en mobilisant vos ressources pour
 					atteindre vos objectifs.
-					<br /> La durée de ce type de thérapie varie généralement entre XX et
-					XX séances, selon la nature de la problématique et les besoins
+					<br /> La durée de ce type de thérapie varie généralement entre 6 mois et
+					3 ans, selon la nature de la problématique et les besoins
 					individuels.
 					<br /> Grâce à des techniques adaptées et ciblées, elle offre des{" "}
 					<strong className="text-primary font-bold">

@@ -46,9 +46,9 @@ export default function PagesFooter() {
 					<h2 className="font-bold">Coordonnées</h2>
 					<p>Sandra Bondon - Auto-entrepreneur</p>
 					<address>
-						6 rue au Pain
+						4 chemin Benigne May
 						<br />
-						78100 Saint-Germain-en-Laye, Yvelines
+						78290 Croissy sur Seine, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"
@@ -60,7 +60,7 @@ export default function PagesFooter() {
 				</div>
 				<div>
 					<h2 className="font-bold">Crédits</h2>
-					<p>Crédits photos : Unsplash</p>
+					<p>Crédits photos : iStock</p>
 					<p>Conception et réalisation du site : Sandrine Cazenave</p>
 				</div>
 				<div className="flex flex-col ">
@@ -97,7 +97,7 @@ export default function PagesFooter() {
 			<section className="text-center">
 				<p>© 2025 Sandra Bondon - Auto-entrepreneur - Tous droits réservés.</p>
 				<Link href="/mentions-legales" className="text-blue-500 underline">
-					Mentions légales
+					Mentions légales et médiation
 				</Link>{" "}
 			</section>
 		</footer>

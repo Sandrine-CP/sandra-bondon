@@ -95,9 +95,10 @@ export default function Seances() {
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>
-						<li>Séance individuelle : 80 à 110 €</li>
+						<li>Séance individuelle : 85 à 110 €</li>
 						<li>Séance de couple : 160 €</li>
 						<li>Séance de groupe (minimum 3 personnes) : me contacter</li>
+						<li>Séance famille : 180 €</li>
 					</ul>
 					<p className="pt-5">
 						Les séances peuvent se faire en cabinet ou en visioconférence
@@ -105,7 +106,7 @@ export default function Seances() {
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
 						à me contacter via le formulaire en ligne ou par téléphone au
-						0624182302.
+						06 24 18 23 02.
 					</p>
 					<Link href="/contact">
 						<Button
