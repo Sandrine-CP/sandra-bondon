@@ -14,7 +14,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 1 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/pnl.jpg"
+						imageSrc="/images/pnl_v2.webp"
 						imageAlt="XX"
 						title="PNL"
 						description="Programmation Neurolinguistique Elle est mise en œuvre dans de nombreux secteurs d'activité pour améliorer la communication mais aussi dépasser les formes de blocages inconscients."
@@ -62,7 +62,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 5 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/etatsMoi.jpg"
+						imageSrc="/images/etatsMoi2.webp"
 						imageAlt="XX"
 						title="Thérapie des états du Moi® (ESTI)"
 						description="Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques."

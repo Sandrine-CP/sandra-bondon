@@ -53,7 +53,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-2 lg:col-start-3">
 					<ImageCard
 						title="Charge Mentale"
-						imageSrc="/images/ChargeMentale.png"
+						imageSrc="/images/ChargeMentale2.webp"
 						imageAlt="XX"
 						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
 					/>
@@ -69,7 +69,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-3 lg:col-start-3">
 					<ImageCard
 						title="Anxiété"
-						imageSrc="/images/anxiete.jpg"
+						imageSrc="/images/anxiete2.webp"
 						imageAlt="XX"
 						description="Inquiétude diffuse ou constante, parfois sans objet clair. L’anxiété agit comme une alarme permanente qui empêche la détente, la concentration, et le bien-être global."
 					/>

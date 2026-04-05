@@ -4,8 +4,8 @@ import floating3 from "../public/images/trauma.jpg";
 import floating4 from "../public/images/burnOut_chargeMentale_depression.jpg";
 import floating5 from "../public/images/obsession.jpg";
 import floating6 from "../public/images/stress.jpg";
-import floating7 from "../public/images/anxiete.jpg";
-import floating8 from "../public/images/ChargeMentale.png";
+import floating7 from "../public/images/anxiete2.webp";
+import floating8 from "../public/images/ChargeMentale2.webp";
 
 export {
 	floating1,
