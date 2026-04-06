@@ -28,32 +28,42 @@ export default function GoogleMap({ addresses }) {
 		<div className="map-container">
 			{!showMap ? (
 				<button
-					type="button"
-					onClick={() => setShowMap(true)}
-					onKeyDown={(e) => {
-						if (e.key === "Enter" || e.key === " ") {
-							setShowMap(true);
-						}
-					}}
-					className="relative cursor-pointer w-full h-auto bg-transparent border-0"
-				>
-					<div className="relative w-[400px] h-[300px] mx-auto">
-						{staticMapUrl ? (
-							<Image
-								src={staticMapUrl}
-								alt="Carte statique de l'emplacement à Saint-Germain-en-Laye"
-								width={400}
-								height={300}
-								className="w-full h-full object-cover rounded-lg"
-							/>
-						) : (
-							<p>Chargement de la carte...</p>
-						)}
-						<span className="absolute inset-0 flex justify-center items-start bg-gray-800 bg-opacity-90 text-black px-4 py-2 rounded-md">
-							Cliquez pour afficher la carte interactive
-						</span>
-					</div>
-				</button>
+	type="button"
+	onClick={() => setShowMap(true)}
+	onKeyDown={(e) => {
+		if (e.key === "Enter" || e.key === " ") {
+			setShowMap(true);
+		}
+		}}
+	className="relative w-full border-0 bg-transparent group"
+	>
+		<div className="relative w-full max-w-[400px] aspect-[4/3] mx-auto overflow-hidden rounded-lg">
+		{/* Image */}
+		{staticMapUrl ? (
+			<Image
+				src={staticMapUrl}
+				alt="Carte statique de l'emplacement à Saint-Germain-en-Laye"
+				width={400}
+				height={300}
+				className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+			/>
+		) : (
+			<p>Chargement de la carte...</p>
+		)}
+
+		{/* Overlay */}
+			<div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition duration-300">
+
+				<div className="flex items-center gap-2 text-white text-sm font-medium">
+
+				{/* Icône simple */}
+				<span className="text-lg">📍</span>
+
+				<span>Afficher la carte</span>
+			</div>
+		</div>
+		</div>
+			</button>
 			) : (
 				<iframe
 					title="Carte-Google maps"
@@ -64,21 +74,20 @@ export default function GoogleMap({ addresses }) {
 					referrerPolicy="no-referrer-when-downgrade"
 				/>
 			)}
+		<div className="mt-4 text-center">
+			<p className="mb-2 text-gray-600">
+				6 rue au Pain, 78100 Saint-Germain-en-Laye
+			</p>
 
-			<div className="address-list mt-4 text-center">
-				{addresses.map((address, index) => (
-					<div key={address} className="mb-2">
-						<p className="mb-2 text-gray-600">{address}</p>
-						<button
-							type="button"
-							onClick={() => handleSwitchAddress(index)}
-							className="text-blue-500 hover:underline text-sm"
-						>
-							Voir sur la carte
-						</button>
-					</div>
-				))}
-			</div>
+				<a
+					href="https://www.google.com/maps?q=6+rue+au+Pain+78100+Saint-Germain-en-Laye"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-blue-500 hover:underline text-sm"
+			>
+					Ouvrir dans Google Maps
+				</a>
+		</div>
 		</div>
 	);
 }

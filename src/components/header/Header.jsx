@@ -22,9 +22,7 @@ export default function Header() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
-		<header className="bg-[#ffd7ba] fixed top-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center">
-			{/* Logo aligné à gauche */}
-			<div className="flex items-center space-x-2">
+<header className="bg-[#ffd7ba] fixed top-0 left-0 right-0 w-full p-4 sm:p-6 z-50 flex justify-between items-center shadow-[0_1px_0_0_#22223b]">			<div className="flex items-center space-x-2">
 				<Link
 					href="/"
 					className="text-black uppercase font-bold text-base sm:text-lg"

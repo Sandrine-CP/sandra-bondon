@@ -116,9 +116,9 @@ export default function Home() {
 				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
 				author="Sandrine Cazenave"
 			/>
-			<main className="m-0 p-0 bg-[#22223b]">
+			<main className="m-0 pt-20 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
-				<section className="mt-4 pt-20 mb-20">
+				<section className="mb-20">
 					<HomeCardsAnimation />
 				</section>
 				{/* Section image lumière */}

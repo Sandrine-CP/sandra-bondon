@@ -11,7 +11,7 @@ export default function APropos() {
 				title="Psychopraticienne solutionniste à Saint-Germain-en-Laye | Sandra Bondon"
 				description="Découvrez le parcours de Sandra Bondon, psychopraticienne solutionniste à Saint-Germain-en-Laye, et son approche thérapeutique centrée sur le corps, l’écoute et les ressources intérieures."
 				keywords="psychopraticienne, thérapie brève, solutionniste, MOSAIC, hypnose, PNL, Saint-Germain-en-Laye, Sandra Bondon"
-				author="Sandrine Cazenave"
+				author="Sandra Bondon"
 			/>
 
 			<main className="px-4 py-10">
@@ -134,7 +134,7 @@ export default function APropos() {
 									pour offrir un accompagnement complet et ajusté :
 								</p>
 
-								<ul className="list-disc pl-5 mx-auto w-fit text-left">
+								<ul className="list-disc pl-6 text-left">
 									<li>Relation d&apos;aide</li>
 									<li>Coaching</li>
 									<li>PNL</li>
@@ -154,43 +154,74 @@ export default function APropos() {
 
 						<section>
 							<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-								Ma méthode en quelques mots
+								Ma méthode en quelques mots : la Thérapie Solutionniste Expérientielle®
 							</h3>
 							<p className="font-semibold mb-6">
-  							Ma méthode repose sur une approche solutionniste expérientielle, centrée sur
-  							le corps, les ressentis et les ressources déjà présentes en chaque personne.
+								Ma pratique repose sur la <strong>Thérapie Solutionniste Expérientielle® (TSE)</strong>,
+								une approche centrée sur les ressources, les ressentis corporels et l’expérience vécue
+								dans l’instant présent.
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
-								<p>
-									Je suis psychopraticienne <strong>solutionniste</strong> : j’aide
-									chaque personne à <strong>mettre en lumière</strong> la solution
-									déjà présente en elle, en l’aidant à ressentir ce qui se passe dans
-									son corps.
-								</p>
-								<p>
-									Tout part du <strong>corps</strong>, avant même que le cerveau ne
-									mette des mots sur ce qui est vécu. C’est en modifiant les
-									sensations corporelles que l’on transforme durablement les anciens
-									schémas.
-								</p>
+							<p>
+								Créée par le Dr G. Poupard en 2012, la <strong>Thérapie Solutionniste Expérientielle®</strong>
+								s’inscrit dans le courant des <strong>thérapies humanistes</strong>, troisième grand courant
+								de la psychologie et de la thérapie.
+							</p>
 
-								<blockquote className="px-6 py-4 border-l-4 border-orange-400 bg-gray-50 italic text-left rounded-md">
-									<p>
-										« Ce que vous souhaitez vivre demain, vous allez commencer à le
-										vivre aujourd’hui. »
-									</p>
-								</blockquote>
+							<p>
+								Son principe fondamental est simple : <strong>analyser le problème ne suffit pas à faire émerger
+								la solution</strong>. Il s’agit plutôt de la créer, de l’activer et de la vivre <strong>ici et maintenant</strong>.
+								Si les ressources nécessaires sont déjà présentes en chacun de nous, alors le travail thérapeutique
+								consiste à les remettre en mouvement, notamment à travers les <strong>sensations</strong>.
+							</p>
 
-								<p>
-									La thérapie solutionniste expérientielle est une approche profonde,
-									efficiente, et brève : les premiers changements apparaissent souvent
-									dans les 6 premiers mois. La durée d’un accompagnement varie selon
-									chacun, entre 8 mois et 2 ans.
-								</p>
+							<p>
+								Je suis psychopraticienne <strong>solutionniste</strong> : j’aide chaque personne à
+								<strong> mettre en lumière</strong> ce qui est déjà là en elle, pour lui permettre d’avancer,
+								de faire de nouveaux choix et d’incarner le changement qu’elle souhaite vivre aujourd’hui.
+							</p>
+
+							<p>
+								Tout part du <strong>corps</strong>, avant même que le cerveau ne mette des mots sur ce qui est vécu.
+								C’est en modifiant les sensations corporelles que l’on peut transformer durablement certains schémas,
+								soulager les tensions, mobiliser ses forces et retrouver un nouvel élan.
+							</p>
+
+							<blockquote className="px-6 py-4 border-l-4 border-orange-400 bg-gray-50 italic text-left rounded-md">
+							<p>
+								« Ce que vous souhaitez vivre demain, vous allez commencer à le vivre aujourd’hui. »
+							</p>
+							</blockquote>
+
+							<p>
+								Dans ce modèle thérapeutique, on considère que <strong>le patient n’est pas malade</strong>.
+								Il ne s’agit ni de réparer, ni d’ajouter, ni d’enlever, mais de permettre à la personne de
+								se reconnecter à ses potentiels intérieurs, à ses forces disponibles, puis de les amplifier
+								pour que le changement puisse advenir de façon à la fois <strong>rapide, durable et vivante</strong>.
+							</p>
+
+							<p>
+								C’est aussi pour cette raison que la TSE® est parfois qualifiée de
+								<strong> « thérapie de la joie »</strong> : elle invite à s’appuyer sur ce qui fonctionne,
+								à créer, à jouer, à rêver au-delà des possibles, à rire de soi parfois, et à laisser se déployer
+								ce qui est bon pour soi.
+							</p>
+
+							<p>
+								Cette approche trouve également une résonance avec la <strong>thérapie transpersonnelle</strong>,
+								en considérant que l’être humain s’inscrit dans un ensemble plus vaste : la nature, l’art,
+								la spiritualité, l’énergie, et plus largement tout ce qui dépasse l’individu seul.
+								Cela ouvre une vision plus <strong>holistique</strong> de l’accompagnement.
+							</p>
+
+							<p>
+								La thérapie solutionniste expérientielle est une approche profonde, efficiente et brève :
+								les premiers changements apparaissent souvent dans les 6 premiers mois. La durée d’un accompagnement
+								varie selon chacun, entre 8 mois et 2 ans.
+							</p>
 							</div>
 						</section>
-
-						<section>
+						<section className="mt-12 space-y-6">
 							<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 								Pourquoi je fais ce métier
 							</h3>
@@ -218,7 +249,7 @@ export default function APropos() {
 						</section>
 
 						<section className="bg-gray-100 py-8 rounded-lg">							
-							<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
+							<h3 className="mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 								Un message pour vous
 							</h3>
 							<div className="space-y-4 text-left leading-relaxed">
@@ -232,7 +263,7 @@ export default function APropos() {
 									je serai heureuse de vous accompagner.
 								</p>
 								<p className="italic font-semibold">
-									Tarif des séances : à partir de 80 €.
+									Tarif des séances : à partir de 85 €.
 								</p>
 							</div>
 
