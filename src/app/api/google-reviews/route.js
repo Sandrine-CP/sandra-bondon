@@ -17,7 +17,7 @@ export async function GET(request) {
 
 		// Si non en cache, fais une requête à l'API Google
 		const { GOOGLE_API_KEY, PLACE_ID } = process.env;
-		const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&key=${GOOGLE_API_KEY}`;
+		const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&language=fr&key=${GOOGLE_API_KEY}`;
 
 		const response = await axios.get(url);
 

@@ -118,7 +118,7 @@ export default function Home() {
 			/>
 			<main className="m-0 pt-20 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
-				<section className="mb-20">
+				<section className="pt-20 mb-20">
 					<HomeCardsAnimation />
 				</section>
 				{/* Section image lumière */}
@@ -162,7 +162,8 @@ export default function Home() {
 							className="rounded-e-full md:w-60 md:h-55" // Taille ajustée pour tablette et plus
 						/>
 					</div>{" "}
-					<div className="relative z-10 text-white flex flex-col justify-between h-full p-4 md:p-10 mix-blend-difference">
+					<div className="relative z-10 h-full p-4 md:p-10">
+					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
 						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
 							Sandra Bondon : Psychopraticienne - Business Coach -
 							Hypnothérapeute
@@ -170,18 +171,20 @@ export default function Home() {
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B
 						</p>
-						<Link 
-							className="text-center"
-							href="/a-propos">
-						<Button
-							text="Voir mon parcours"
-							textColor="#FFFFFF"
-							bgColor="#4961E1"
-							hoverTextColor="#FFFFFF"
-							hoverBgColor="#4961E1"
-							className="mt-6 mb-6"
-						/>
-						</Link>
+					</div>
+
+					<div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 text-center">
+						<Link className="text-center" href="/a-propos">
+							<Button
+								text="Voir mon parcours"
+								textColor="#FFFFFF"
+								bgColor="#4961E1"
+								hoverTextColor="#FFFFFF"
+								hoverBgColor="#4961E1"
+								className="mt-6 mb-6"
+							/>
+						</Link>	
+					</div>
 					</div>
 
 				</section>
