@@ -126,7 +126,7 @@ export default function Home() {
 					ref={lumiereRef}
 					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[800px]"
 					style={{
-						backgroundImage: "url(/images/lumiere-istockphoto-1367357589-1024x1024.jpg)",
+						backgroundImage: "url(/images/lumiere-therapie-chemin-apaisement.webp)",
 					}}
 				/>
 				{/* Section Ressources */}
@@ -151,7 +151,7 @@ export default function Home() {
 				{/* Section Sandra Bondon */}
 				<section
 					className="h-[75vh] bg-cover bg-center relative"
-					style={{ backgroundImage: "url(/images/fondHomeAbout.jpg)" }}
+					style={{ backgroundImage: "url(/images/fondHomeAbout.webp)" }}
 				>
 					<div className="absolute bottom-4 left-4">
 						<Image

@@ -71,7 +71,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 6 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/couple2.jpg"
+						imageSrc="/images/couple-PriscillaDuPreez-Unsplash.jpg"
 						imageAlt="XX"
 						title="Thérapie de couple"
 						description="Lorem ipsum"
@@ -80,7 +80,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 7 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/groupe2.jpg"
+						imageSrc="/images/therapie_groupe.webp"
 						imageAlt="XX"
 						title="Thérapie de groupe"
 						description="Lorem ipsum"
@@ -89,7 +89,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 8 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/tousAges.jpg"
+						imageSrc="/images/famille-JosueMichel-Unsplash.jpg"
 						imageAlt="XX"
 						title="Thérapie individuelle : adulte, ado, enfant"
 						description="Lorem ipsum"

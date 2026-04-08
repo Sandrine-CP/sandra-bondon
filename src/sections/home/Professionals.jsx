@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/Button";
 // Utilitaires et helpers
 // Styles et assets
-import Office from "../../../public/images/collaborateurs2.jpg";
+import Office from "../../../public/images/accompagnement-professionnels-entreprise-reseau.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
