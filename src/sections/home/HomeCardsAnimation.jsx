@@ -7,7 +7,7 @@ export default function HomeCardsAnimation() {
 				<div>
 					<ImageCard
 						title="Phobie"
-						imageSrc="/images/phobie_flou.webp"
+						imageSrc="/images/home/phobie-peur-gestion-emotions.webp"
 						imageAlt="XX"
 						description="Peur intense, irrationnelle et persistante d’un objet, d’une situation ou d’un contexte. Les phobies peuvent paralyser la vie quotidienne si elles ne sont pas prises en charge."
 					/>
@@ -15,7 +15,7 @@ export default function HomeCardsAnimation() {
 				<div>
 					<ImageCard
 						title="Burn Out"
-						imageSrc="/images/burnout_card.webp"
+						imageSrc="/images/home/burnout-epuisement-mental.webp"
 						imageAlt="XX"
 						description="Épuisement émotionnel, mental et physique dû à une surcharge prolongée. Il affecte souvent les professionnels investis, jusqu’à remettre en question leur sens au travail."
 					/>
@@ -23,7 +23,7 @@ export default function HomeCardsAnimation() {
 				<div>
 					<ImageCard
 						title="Addiction"
-						imageSrc="/images/sortie_addiction.webp"
+						imageSrc="/images/home/addiction-liberation-apaisement.webp"
 						imageAlt="XX"
 						description="Perte de contrôle face à une substance ou un comportement. L’addiction agit comme une réponse à une souffrance émotionnelle, souvent enfouie ou non exprimée."
 					/>
@@ -31,7 +31,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-2 lg:col-start-1">
 					<ImageCard
 						title="Traumatisme"
-						imageSrc="/images/trauma2.webp"
+						imageSrc="/images/home/traumatisme-therapie-liberation.webp"
 						imageAlt="XX"
 						description="Marque psychique profonde laissée par un événement vécu comme violent, injuste ou dangereux. Le traumatisme peut ressurgir longtemps après, sous forme d’angoisses, d’images ou de blocages."
 					/>
@@ -53,7 +53,7 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-2 lg:col-start-3">
 					<ImageCard
 						title="Charge Mentale"
-						imageSrc="/images/ChargeMentale2.webp"
+						imageSrc="/images/home/charge-mentale-surcharge-esprit.webp"
 						imageAlt="XX"
 						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
 					/>
@@ -61,14 +61,14 @@ export default function HomeCardsAnimation() {
 				<div className="lg:row-start-3 lg:col-start-1">
 					<ImageCard
 						title="Obsession"
-						imageSrc="/images/obsession_card.webp"
+						imageSrc="/images/home/obsession-pensees-intrusives.webp"
 						description="Pensées intrusives, récurrentes, souvent anxiogènes. Elles s’imposent sans contrôle, et peuvent provoquer un mal-être profond, voire altérer la qualité de vie."
 					/>
 				</div>
 				<div className="lg:row-start-3 lg:col-start-3">
 					<ImageCard
 						title="Anxiété"
-						imageSrc="/images/anxiete2.webp"
+						imageSrc="/images/home/anxiete-stress-apaisement.webp"
 						imageAlt="XX"
 						description="Inquiétude diffuse ou constante, parfois sans objet clair. L’anxiété agit comme une alarme permanente qui empêche la détente, la concentration, et le bien-être global."
 					/>

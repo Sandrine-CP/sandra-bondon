@@ -21,7 +21,7 @@ export const metadata = {
 		description:
 			"Des solutions pour votre bien-être et votre équilibre mental.",
 		url: "https://www.sandrabondon.fr",
-		images: "/images/preview-image.webp",
+		images: "/images/sandra-bondon-preview-image.webp",
 		type: "website",
 	},
 	twitter: {
@@ -29,7 +29,7 @@ export const metadata = {
 		title: "Sandra Bondon - Psychopraticienne Coach Hypnothérapeute",
 		description:
 			"Des solutions adaptées pour surmonter vos difficultés relationnelles et émotionnelles.",
-		images: "/images/preview-image.webp",
+		images: "/images/sandra-bondon-preview-image.webp",
 	},
 };
 

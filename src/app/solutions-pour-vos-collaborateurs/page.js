@@ -44,7 +44,7 @@ export default function SolutionsPourVosCollaborateurs() {
               "
 						>
 							<Image
-								src="/images/accompagner_collaborateurs.webp"
+								src="/images/professionnels/accompagner_collaborateurs.webp"
 								alt="Accompagnement professionnel et coaching avec Sandra Bondon"
 								fill
 								priority

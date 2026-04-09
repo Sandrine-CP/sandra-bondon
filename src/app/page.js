@@ -126,7 +126,7 @@ export default function Home() {
 					ref={lumiereRef}
 					className="h-[300px] bg-cover bg-center sm:h-[250px] md:h-[800px]"
 					style={{
-						backgroundImage: "url(/images/lumiere-therapie-chemin-apaisement.webp)",
+						backgroundImage: "url(/images/home/lumiere-therapie-chemin-apaisement.webp)",
 					}}
 				/>
 				{/* Section Ressources */}
@@ -151,11 +151,11 @@ export default function Home() {
 				{/* Section Sandra Bondon */}
 				<section
 					className="h-[75vh] bg-cover bg-center relative"
-					style={{ backgroundImage: "url(/images/fondHomeAbout.webp)" }}
+					style={{ backgroundImage: "url(/images/home/fondHomeAbout.webp)" }}
 				>
 					<div className="absolute bottom-4 left-4">
 						<Image
-							src="/images/sandra-bondon1.jpeg"
+							src="/images/home/sandra-bondon-home.jpeg"
 							alt="Sandra Bondon, psychopraticienne"
 							width={150} // Taille par défaut pour mobile
 							height={150} // Taille par défaut pour mobile

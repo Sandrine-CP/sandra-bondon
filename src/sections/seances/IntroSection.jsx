@@ -56,7 +56,7 @@ export default function IntroSection() {
 >
 <div className="w-full max-w-[420px] md:max-w-[520px] lg:max-w-[700px] mx-auto">
 	<Image
-		src="/images/seances.png"
+		src="/images/seances/ressources-interieures-message.webp"
 		alt="Illustration de valises pour symboliser le voyage intérieur"
 		width={1080}
 		height={971}

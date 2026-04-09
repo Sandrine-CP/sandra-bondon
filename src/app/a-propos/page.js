@@ -38,7 +38,7 @@ export default function APropos() {
   							"
 	                    >
   							<Image
-    						src="/images/sandra-bondon2.jpeg"
+    						src="/images/apropos/sandra-bondon-a-propos.jpeg"
     						alt="Sandra Bondon, psychopraticienne"
     						fill
     						priority
