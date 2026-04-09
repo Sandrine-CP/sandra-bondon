@@ -75,7 +75,7 @@ export default function HomeCardsAnimation() {
 				</div>
 				<div className="lg:row-start-3 lg:col-start-2">
 					<ImageCard
-						imageSrc="/images/accompagner_collaborateurs.webp"
+						imageSrc="/images/professionnels/accompagner_collaborateurs.webp"
 						imageAlt="XX"
 						title="Accompagner ses collaborateurs"
 						description="Soutenir la santé mentale en milieu professionnel : accompagner les équipes face au stress, au burnout, aux conflits relationnels ou à la perte de sens. Une intervention bienveillante pour restaurer l’équilibre individuel et collectif dans l’entreprise."
