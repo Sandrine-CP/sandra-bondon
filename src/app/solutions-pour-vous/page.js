@@ -87,20 +87,18 @@ export default function SolutionsPourVous() {
 						<strong className="text-primary font-bold">brève</strong>, elle se
 						nomme approche solutionniste expérientielle.
 					</div>
-<p className="pt-5">
-  Venez déposer vos bagages.
-  <br />
-  Cela veut dire :
-</p>
+					<p className="pt-5">
+  						Venez déposer vos bagages.<br />Cela veut dire :
+					</p>
 
-<blockquote className="my-12 max-w-3xl mx-auto text-center">
-  <p className="relative pl-10 italic text-lg leading-relaxed text-gray-800">
-    <span className="absolute left-20 top-[-15px] text-6xl text-orange-400 leading-none">
-      “
-    </span>
-    Ce que vous voulez vivre demain, vous le vivrez aujourd&apos;hui.
-  </p>
-</blockquote>
+					<blockquote className="my-12 max-w-3xl mx-auto px-4 text-center">
+  					<p className="relative inline-block italic text-lg leading-relaxed text-gray-800 sm:text-xl">
+    				<span className="absolute -left-3 -top-5 text-5xl text-orange-400 leading-none sm:-left-6 sm:-top-6 sm:text-6xl">
+     				 “
+    				</span>
+    				Ce que vous voulez vivre demain, vous le vivrez aujourd&apos;hui.
+  					</p>
+					</blockquote>
 					<div className="pt-5">
 						A travers votre travail, nous allons{" "}
 						<strong className="text-primary font-bold">ensemble</strong> trouver

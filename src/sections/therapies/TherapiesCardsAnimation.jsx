@@ -17,7 +17,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/pnl-programmation-neurolinguistique.webp"
 						imageAlt="XX"
 						title="PNL"
-						description="Programmation Neurolinguistique Elle est mise en œuvre dans de nombreux secteurs d'activité pour améliorer la communication mais aussi dépasser les formes de blocages inconscients."
+						description="Approche centrée sur la communication et les mécanismes inconscients pour dépasser blocages et schémas limitants."
 					/>
 				</div>
 				{/* card 2 */}
@@ -26,7 +26,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/hypnose-ericksonienne-etat-modifie-conscience.webp"
 						imageAlt="XX"
 						title="Hypnose ericksonienne"
-						description="Forme d'hypnose douce et non directive. Elle repose sur la collaboration entre le conscient et l'inconscient pour accéder aux ressources internes du patient, permettant de surmonter des obstacles personnels."
+						description="Hypnose douce et non directive permettant d’accéder à vos ressources internes pour dépasser vos blocages."
 					/>
 				</div>
 				{/* card 3 */}
@@ -35,7 +35,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-mosaic.webp"
 						imageAlt="XX"
 						title="MOSAIC®"
-						description="(mouvements oculaires et stimulations alternées pour l’intégration cérébrale) est une méthode thérapeutique innovante qui utilise les propriétés neurophysiologiques des Stimulations Bilatérales Alternées (auditives, tactiles ou mouvements oculaires) dans une approche solutionniste expérientielle® pour accompagner La transformation profonde. Cette approche thérapeutique, basée sur des recherches scientifiques validées, a l’avantage de s’adresser à tous les profis psychologiques et donc à toutes les pathologies. Elle permet de vivre rapidement et de façon durable dans le corps la solution désirée par la personne."
+						description="Méthode innovante utilisant des stimulations bilatérales pour favoriser une transformation profonde, durable et centrée sur la solution."
 					/>
 				</div>
 				{/* card 3 */}
@@ -44,7 +44,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-breve-parcours-solution.webp"
 						imageAlt="XX"
 						title="Thérapie brève"
-						description="Lorem ipsum"
+						description="Approche ciblée et orientée solution, pour avancer rapidement face à une difficulté précise."
 					/>
 				</div>
 				{/* card 4-Title */}
@@ -74,7 +74,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-couple-accompagnement-cabinet.webp"
 						imageAlt="XX"
 						title="Thérapie de couple"
-						description="Lorem ipsum"
+						description="Un espace pour mieux se comprendre, apaiser les tensions et retrouver une relation plus sereine."
 					/>
 				</div>
 				{/* card 7 */}
@@ -83,7 +83,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-groupe.webp"
 						imageAlt="XX"
 						title="Thérapie de groupe"
-						description="Lorem ipsum"
+						description="Un cadre d’échange et de soutien pour partager, se sentir compris et avancer ensemble."
 					/>
 				</div>
 				{/* card 8 */}
@@ -91,8 +91,8 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/therapies/therapie-individuelle-adulte-ado-enfant.webp"
 						imageAlt="XX"
-						title="Thérapie individuelle : adulte, ado, enfant"
-						description="Lorem ipsum"
+						title="Thérapie individuelle"
+						description="Un accompagnement personnalisé, à chaque âge, adulte, ado, enfant,pour avancer à votre rythme selon vos besoins."
 					/>
 				</div>
 			</div>

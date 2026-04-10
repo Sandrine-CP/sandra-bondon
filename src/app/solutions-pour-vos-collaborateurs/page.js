@@ -31,18 +31,7 @@ export default function SolutionsPourVosCollaborateurs() {
 
 					{/* Section 1 : Hero */}
 					<section className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10 md:justify-start">
-						<div
-							className="
-                relative
-                w-[200px] h-[240px]
-                md:w-[260px] md:h-[320px]
-                lg:w-[300px] lg:h-[360px]
-                overflow-hidden
-                rounded-xl
-                md:rounded-s-full
-                shrink-0
-              "
-						>
+						<div className="relative w-[200px] h-[240px]md:w-[260px] md:h-[320px]lg:w-[300px] lg:h-[360px]overflow-hidden rounded-xl md:rounded-s-full shrink-0">
 							<Image
 								src="/images/professionnels/accompagner_collaborateurs.webp"
 								alt="Accompagnement professionnel et coaching avec Sandra Bondon"

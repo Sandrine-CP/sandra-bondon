@@ -11,54 +11,6 @@ import TherapiesCardsAnimation from "./TherapiesCardsAnimation";
 // Styles et assets
 
 export default function TherapiesSection() {
-	const therapiesList = [
-		{
-			id: 1,
-			title: "Hypnose ericksonienne",
-			description:
-				"Forme d'hypnose douce et non directive. Elle repose sur la collaboration entre le conscient et l'inconscient pour accéder aux ressources internes du patient, permettant de surmonter des obstacles personnels.",
-		},
-		{
-			id: 2,
-			title: "PNL",
-			description:
-				"Programmation Neurolinguistique. Elle est mise en œuvre dans de nombreux secteurs d'activité pour améliorer la communication mais aussi dépasser les formes de blocages inconscients.",
-		},
-		{
-			id: 3,
-			title: "Thérapie de groupe",
-			description:
-				"Un espace collectif d'échange et de soutien pour explorer des problématiques communes.",
-		},
-		{
-			id: 4,
-			title: "Thérapie des états du Moi® (ESTI)",
-			description:
-				"Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques.",
-		},
-		{
-			id: 5,
-			title: "Thérapie brève",
-			description:
-				"Une approche ciblée et orientée vers la résolution rapide des problèmes.",
-		},
-		{
-			id: 6,
-			title: "MOSAIC®",
-			description:
-				"(Mouvements Oculaires et Stimulations Alternées pour l’Intégration Cérébrale) est une méthode thérapeutique innovante qui utilise les propriétés neurophysiologiques des Stimulations Bilatérales Alternées (auditives, tactiles ou mouvements oculaires) dans une approche solutionniste expérientielle® pour accompagner La transformation profonde. Cette approche thérapeutique, basée sur des recherches scientifiques validées, a l’avantage de s’adresser à tous les profis psychologiques et donc à toutes les pathologies. Elle permet de vivre rapidement et de façon durable dans le corps la solution désirée par la personne..",
-		},
-		{
-			id: 7,
-			title: "Thérapie de couple",
-			description: "Lorem ipsum doloris.",
-		},
-		{
-			id: 8,
-			title: "Therapie individuelle<br /> (adulte,ado,enfant",
-			description: "Lorem ipsum doloris.",
-		},
-	];
 
 	return (
 		<>
@@ -89,15 +41,6 @@ export default function TherapiesSection() {
 			{/* Section cards animation */}
 			<div className="bg-primary mt-O">
 				<section>
-					{/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center mt-10 mb-10">
-					{therapiesList.map((therapy) => (
-						<Card
-							key={therapy.id}
-							title={therapy.title}
-							description={therapy.description}
-						/>
-					))}
-				</div> */}
 					<div>
 						<TherapiesCardsAnimation />
 					</div>
