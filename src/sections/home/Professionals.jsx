@@ -84,7 +84,7 @@ export default function Professionals() {
 						<div className="w-full max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
 							<Image
 								src={Office}
-								alt="Personnes travaillant dans un bureau"
+								alt="Illustration de l'accompagnement des collaborateurs en entreprise et du bien-être au travail"
 								width={640} // Largeur explicite
 								height={480} // Hauteur explicite pour ratio 4:3
 								className="rounded-lg shadow-lg object-cover w-full"

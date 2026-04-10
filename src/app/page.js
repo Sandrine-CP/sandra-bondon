@@ -111,9 +111,9 @@ export default function Home() {
 	return (
 		<>
 			<SEO
-				title="Accueil - Sandra Bondon"
-				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
-				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				title="Psychopraticienne à Saint-Germain-en-Laye - Sandra Bondon"
+				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, vous accompagne avec l’hypnose ericksonienne, la PNL, MOSAIC® et la thérapie brève pour dépasser anxiété, burn-out, traumatismes et difficultés relationnelles."
+				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
 				author="Sandrine Cazenave"
 			/>
 			<main className="m-0 pt-20 bg-[#22223b]">
@@ -156,7 +156,7 @@ export default function Home() {
 					<div className="absolute left-4 top-1/2 -translate-y-1/2 md:top-auto md:bottom-4 md:translate-y-0">
 						<Image
 							src="/images/home/sandra-bondon-home.jpeg"
-							alt="Sandra Bondon, psychopraticienne"
+							alt="Portrait de Sandra Bondon, psychopraticienne, business coach et hypnothérapeute"
 							width={120}
 							height={120}
 							className="rounded-e-full w-[120px] h-auto md:w-60 md:h-auto"

@@ -63,7 +63,9 @@ export default function GoogleReviews() {
 			<h2 className="text-2xl font-bold mb-8 text-center">Avis Google</h2>
 			<div className="relative max-w-5xl mx-auto">
 				{/* Carte d'avis */}
-				<div className="p-6 md:p-8 border rounded-xl shadow-lg bg-gray-50 text-center min-h-[260px] flex flex-col justify-center">
+				<div className="p-6 md:p-8 border rounded-xl shadow-lg bg-gray-50 text-center min-h-[260px] flex flex-col justify-center"
+					aria-live="polite">
+					
 					<p className="font-semibold">{reviews[currentIndex].author_name}</p>
 					<p className="text-yellow-500">
 						{"★".repeat(reviews[currentIndex].rating)}{" "}
@@ -79,34 +81,36 @@ export default function GoogleReviews() {
 					<button
 						type="button"
 						onClick={handlePrev}
+						aria-label="Afficher l'avis Google précédent"
 						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
 					>
 						  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="currentColor"
-    className="w-5 h-5"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-  </svg>
+   							 xmlns="http://www.w3.org/2000/svg"
+    						fill="none"
+   							viewBox="0 0 24 24"
+    						strokeWidth={2}
+    						stroke="currentColor"
+    						className="w-5 h-5"
+  							>
+    				<path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+   						</svg>
 					</button>
 					<button
 						type="button"
 						onClick={handleNext}
+						aria-label="Afficher l'avis Google suivant"
 						className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
 					>
 						  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="currentColor"
-    className="w-5 h-5"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round"  d="M9 5l7 7-7 7"  />
-  </svg>
+    						xmlns="http://www.w3.org/2000/svg"
+    						fill="none"
+    						viewBox="0 0 24 24"
+    						strokeWidth={2}
+    						stroke="currentColor"
+    						className="w-5 h-5"
+  							>
+    						<path strokeLinecap="round" strokeLinejoin="round"  d="M9 5l7 7-7 7"  />
+  						</svg>
 					</button>
 				</div>
 			</div>
