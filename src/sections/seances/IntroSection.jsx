@@ -20,9 +20,9 @@ export default function IntroSection() {
 					animate={{ x: 0, opacity: 1 }} // Position finale
 					transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }} // Transition fluide
 				>
-					<h2 className="text-xl font-bold">Comment ça se passe ?</h2>
+					<h2 className="text-xl font-bold">Déroulement d’une séance de thérapie</h2>
 					<p className="pt-4">
-						Chaque séance est un moment dédié à vous et à votre bien-être.{" "}
+						Chaque séance de thérapie est un moment dédié à votre bien-être et à votre équilibre émotionnel.{" "}
 						<br />
 						Lors de notre première rencontre, nous prenons le temps{" "}
 						<strong className="text-primary font-bold">
@@ -57,7 +57,7 @@ export default function IntroSection() {
 				<div className="w-full max-w-[420px] md:max-w-[520px] lg:max-w-[700px] mx-auto">
 				<Image
 					src="/images/seances/ressources-interieures-message.webp"
-					alt="Illustration de valises pour symboliser le voyage intérieur"
+					alt="Illustration du voyage intérieur et du processus thérapeutique en psychothérapie"
 					width={1080}
 					height={971}
 					priority

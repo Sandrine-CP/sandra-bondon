@@ -15,7 +15,7 @@ export default function TherapiesSection() {
 	return (
 		<>
 			{/* Section intro */}
-			<section id="approach" className="py-10 px-4 mb-0 text-center bg-white">
+			<section id="therapies" className="py-10 px-4 mb-0 text-center bg-white">
 				<h2 className="text-xl font-bold mb-6">
 					Techniques thérapeutiques adaptées
 				</h2>

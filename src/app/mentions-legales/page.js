@@ -1,4 +1,5 @@
 // Organisation des imports
+import { SITE_URL } from "@/config/site";
 // React, hooks, librairies
 import Link from "next/link";
 // Bibliothèques tierces
@@ -12,15 +13,15 @@ export default function MentionsLegales() {
 	return (
 		<>
 			<SEO
-				title="Mentions légales et médiation - Sandra Bondon"
-				description="Mentions légales, médiation de la consommation et informations relatives à la protection des données du site de Sandra Bondon, psychopraticienne."
-				keywords="mentions légales, médiation, protection des données, psychopraticienne, Sandra Bondon"
+				title="Mentions légales | Sandra Bondon"
+				description="Mentions légales, médiation de la consommation et informations relatives à la protection des données du site de Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye."
+				keywords="mentions légales, médiation de la consommation, protection des données, Sandra Bondon"
 				author="Sandra Bondon"
 			/>
-			<main className="min-h-screen bg-white">
+				<main className="min-h-screen bg-white">
 				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h1 className="text-2xl font-bold uppercase mb-6 p-5">
-						Mentions Légales et médiation 
+						Mentions légales et médiation 
 					</h1>
 					<p className="mb-6">
 						Ce site est édité par Sandra Bondon, exerçant sous le statut
@@ -63,12 +64,12 @@ export default function MentionsLegales() {
 					<p>
 						Les informations fournies sur le site{" "}
 						<a
-							href="https://www.sandra.bondon.fr/"
+							href={SITE_URL}
 							className="text-blue-500 underline"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							https://www.sandra.bondon.fr/
+							{SITE_URL}
 						</a>{" "}
 						le sont à titre indicatif.
 						<br /> Sandra Bondon s&apos;efforce de les tenir à jour et exactes,
@@ -114,15 +115,14 @@ export default function MentionsLegales() {
 					</h2>
 
 					<p>
-					L’ensemble du contenu présent sur le site
+					L’ensemble du contenu présent sur le site {" "}
 					<a
-					href="https://www.sandra.bondon.fr/"
-					className="text-blue-500 underline"
-					target="_blank"
-					rel="noopener noreferrer"				
+						href={SITE_URL}
+						className="text-blue-500 underline"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
-					{" "}
-					https://www.sandra.bondon.fr/
+						{SITE_URL}
 					</a>{" "}
 					(textes, images, illustrations, logos, éléments graphiques, structure du
 					site) est protégé par les lois en vigueur relatives à la propriété
@@ -148,13 +148,13 @@ export default function MentionsLegales() {
 					<p>
 						L&apos;utilisation du site{" "}
 						<a
-							href="https://www.sandra.bondon.fr/"
-							className="text-blue-500 underline"
-							target="_blank"
-							rel="noopener noreferrer"
+						href={SITE_URL}
+						className="text-blue-500 underline"
+						target="_blank"
+						rel="noopener noreferrer"
 						>
-							https://www.sandra.bondon.fr/
-						</a>{" "}
+						{SITE_URL}
+					</a>{" "}
 						implique l&apos;acceptation pleine et entière des conditions
 						générales d&apos;utilisation décrites dans ces mentions légales.
 					</p>
@@ -220,17 +220,26 @@ export default function MentionsLegales() {
 						Protection des données personnelles
 					</h2>
 					<p>
+						Le site peut utiliser des services tiers nécessaires à son fonctionnement ou à
+						l’affichage de certains contenus, notamment Google Maps et Google Reviews.
+					</p>
+					<p>
 						Lorsque vous remplissez le formulaire de contact sur le site{" "}
 						<a
-							href="https://www.sandra.bondon.fr/"
+							href={SITE_URL}
 							className="text-blue-500 underline"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							https://www.sandra.bondon.fr/
+							{SITE_URL}
 						</a>
-						, vos données personnelles (adresse e-mail, numéro de téléphone)
-						sont collectées uniquement pour répondre à votre demande.
+						certaines données personnelles peuvent être collectées, notamment votre nom, prénom, adresse e-mail,
+						numéro de téléphone et le contenu de votre message, uniquement afin de répondre à
+						votre demande.
+					</p>
+					<p>
+						Les données transmises via le formulaire de contact sont conservées uniquement
+						pendant la durée nécessaire au traitement de votre demande, sauf obligation légale contraire.
 					</p>
 					<p>
 						Conformément à la réglementation en vigueur (RGPD), vous disposez

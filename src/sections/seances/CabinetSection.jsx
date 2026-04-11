@@ -50,7 +50,6 @@ export default function CabinetSection({ addresses, className }) {
 							width={900} // Largeur explicite
 							height={600} // Hauteur explicite
 							className="rounded-lg shadow-lg object-cover"
-							priority
 						/>{" "}
 					</div>
 					{/* Bloc droit : titre et texte cabinet */}
@@ -62,7 +61,7 @@ export default function CabinetSection({ addresses, className }) {
 							Trouvez facilement mon cabinet
 						</h2>
 						<p>
-							Le cabinet est situé au cœur de [ville ou quartier], dans un
+							Le cabinet est situé au cœur de Saint-Germain-en-Laye, dans un
 							espace calme et facilement accessible. <br />
 							Vous pouvez consulter la carte ci-dessous pour trouver
 							l’itinéraire le plus pratique depuis votre emplacement. <br />

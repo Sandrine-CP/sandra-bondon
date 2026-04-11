@@ -8,9 +8,9 @@ export default function APropos() {
 	return (
 		<>
 			<SEO
-				title="Psychopraticienne solutionniste à Saint-Germain-en-Laye | Sandra Bondon"
-				description="Découvrez le parcours de Sandra Bondon, psychopraticienne solutionniste à Saint-Germain-en-Laye, et son approche thérapeutique centrée sur le corps, l’écoute et les ressources intérieures."
-				keywords="psychopraticienne, thérapie brève, solutionniste, MOSAIC, hypnose, PNL, Saint-Germain-en-Laye, Sandra Bondon"
+				title="À propos – Psychopraticienne à Saint-Germain-en-Laye | Sandra Bondon"
+				description="Découvrez le parcours de Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, et son approche thérapeutique centrée sur les ressources, le corps et l’expérience pour retrouver équilibre et bien-être."
+				keywords="psychopraticienne Saint-Germain-en-Laye, thérapie brève, approche solutionniste, MOSAIC®, hypnose, PNL, parcours thérapeute, accompagnement émotionnel"
 				author="Sandra Bondon"
 			/>
 
@@ -39,7 +39,7 @@ export default function APropos() {
 	                    >
   							<Image
     						src="/images/apropos/sandra-bondon-a-propos.jpeg"
-    						alt="Sandra Bondon, psychopraticienne"
+    						alt="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye"
     						fill
     						priority
 							sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 200px"
@@ -49,11 +49,11 @@ export default function APropos() {
 
 						<div className="w-full md:w-2/3 text-center md:text-left">
 							<h2 className="font-bold text-xl text-center md:text-left">
-								Sandra Bondon
+								Présentation de Sandra Bondon
 							</h2>
 
 							<p className="mt-3 text-center md:text-left">
-								Psychopraticienne solutionniste à Saint-Germain-en-Laye.<br/>{" "}
+								Sandra Bondon est psychopraticienne solutionniste à Saint-Germain-en-Laye, spécialisée dans l’accompagnement émotionnel, les traumatismes, l’anxiété et le développement personnel.<br/>{" "}
 								<strong>À vos côtés pour révéler vos ressources intérieures.</strong>
 							</p>
 
@@ -68,11 +68,12 @@ export default function APropos() {
 					{/* Sections text */}
 					<section className="mt-12 space-y-10">
 						<section>
-							<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
+							<h2 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 								Introduction
-							</h3>
+							</h2>
 							<p className="font-semibold mb-6">
-  							Cette page présente mon parcours personnel et professionnel, ainsi que la
+  							J’accompagne des adultes, adolescents et enfants à Saint-Germain-en-Laye, en cabinet ou à distance, pour les aider à retrouver un équilibre émotionnel durable.
+							<br/>Cette page présente mon parcours personnel et professionnel, ainsi que la
   							vision thérapeutique qui guide aujourd’hui mon accompagnement.
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
@@ -270,7 +271,7 @@ export default function APropos() {
 							<div className="mt-6 flex justify-center lg:justify-start">
 								<Link href="/contact">
 									<Button
-										text="Me contacter"
+										text="Prendre rendez-vous"
 										textColor="#2C254D"
 										bgColor="#FFA500"
 										hoverTextColor="#2C254D"

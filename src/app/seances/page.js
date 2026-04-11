@@ -2,8 +2,8 @@
 // Organisation des imports
 // Imports de base : React, hooks, libraries essentielles
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
+import { SITE_URL  } from "@/config/site";
 // Bibliothèques tierces
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -27,13 +27,13 @@ export default function Seances() {
 	return (
 		<>
 			<SEO
-				title="Séances de thérapie à Saint-Germain-en-Laye | Sandra Bondon"
+				title="Séances de thérapie | Sandra Bondon - Saint-Germain-en-Laye"
 				description="Découvrez les séances de thérapie brève proposées par Sandra Bondon : accompagnement individuel, couple, famille ou groupe, en cabinet à Saint-Germain-en-Laye ou en visio."
 				keywords="séances de thérapie, thérapie brève, thérapie individuelle, thérapie de couple, thérapie de groupe, psychopraticienne Saint-Germain-en-Laye, visio, cabinet"
 				author="Sandra Bondon"
-				canonical="https://www.sandra-bondon.com/seances"
-				ogUrl="https://www.sandra-bondon.com/seances"
-				ogImage="https://www.sandra-bondon.com/images/seances/ressources-interieures-message.webp"
+				canonical={`${SITE_URL}/seances`}
+				ogUrl={`${SITE_URL}/seances`}
+				ogImage={`${SITE_URL}/images/seances/ressources-interieures-message.webp`}
 			/>
 			<main className="min-h-screen bg-white">
 				{/* Section présentation */}

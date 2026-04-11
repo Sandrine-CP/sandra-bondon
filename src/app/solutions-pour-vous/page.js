@@ -9,7 +9,6 @@ import SEO from "@/components/SEO";
 import ApproachSection from "@/sections/therapies/ApproachSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import TherapiesSection from "@/sections/therapies/TherapiesSection";
-import ClientTypeSection from "@/sections/therapies/ClientTypeSection";
 import FloatingList from "@/components/FloatingList";
 // Utilitaires et helpers
 // Styles et assets
@@ -71,9 +70,9 @@ export default function SolutionsPourVous() {
 	return (
 		<>
 			<SEO
-				title="Accueil - Sandra Bondon"
-				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
-				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
+				title="Thérapies et accompagnement personnalisé | Sandra Bondon"
+				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, propose un accompagnement personnalisé en thérapie brève, hypnose ericksonienne, PNL, MOSAIC® et thérapie de couple, individuelle ou de groupe."
+				keywords="thérapie brève, hypnose ericksonienne, PNL, MOSAIC®, thérapie de couple, thérapie individuelle, psychopraticienne Saint-Germain-en-Laye"
 				author="Sandra Bondon"
 			/>
 			<main className="h-auto">
@@ -85,7 +84,7 @@ export default function SolutionsPourVous() {
 					<div className="pt-5">
 						Ma pratique est dite{" "}
 						<strong className="text-primary font-bold">brève</strong>, elle se
-						nomme approche solutionniste expérientielle.
+						nomme approche solutionniste expérientielle.<br/>Elle est centrée sur des solutions concrètes, adaptées à votre situation et à votre rythme.
 					</div>
 					<p className="pt-5">
   						Venez déposer vos bagages.<br />Cela veut dire :

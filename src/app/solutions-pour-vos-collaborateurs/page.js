@@ -7,9 +7,9 @@ export default function SolutionsPourVosCollaborateurs() {
 	return (
 		<>
 			<SEO
-  				title="Business coach & accompagnement professionnel à Saint-Germain-en-Laye | Sandra Bondon"
-  				description="Business coach et psychopraticienne solutionniste à Saint-Germain-en-Laye. Accompagnement des cadres, dirigeants, équipes et particuliers : stress, burn-out, posture professionnelle, confiance en soi. Approche solutionniste expérientielle."
-  				keywords="business coach Saint-Germain-en-Laye, accompagnement professionnel, coaching cadres dirigeants, coaching équipes, posture professionnelle, stress au travail, burn-out, confiance en soi, psychopraticienne solutionniste, MOSAIC, EMDR solutionniste, PNL, hypnose"
+  				title="Business coach à Saint-Germain-en-Laye | Sandra Bondon"
+				description="Business coach et psychopraticienne à Saint-Germain-en-Laye. Accompagnement des dirigeants, équipes et particuliers : stress, burn-out, posture professionnelle et confiance en soi."	  				
+				keywords="business coach Saint-Germain-en-Laye, coaching professionnel, stress au travail, burn-out, posture professionnelle, confiance en soi, psychopraticienne"
   				author="Sandra Bondon"
 			/>
 			<main>
@@ -21,9 +21,12 @@ export default function SolutionsPourVosCollaborateurs() {
 					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
 						Sandra Bondon | Psychopraticienne solutionniste & Business Coach
 					</p>
+					<p className="text-center font-semibold mb-12">
+  						Sandra Bondon, business coach et psychopraticienne à Saint-Germain-en-Laye, accompagne professionnels et particuliers.
+					</p>
 
 					{/* Chapeau SEO (résumé page) */}
-					<p className="text-center font-semibold mb-12">
+					<p className="text-center mb-12">
 						Il n’y a pas de hasard, tout est possible. Je vous accompagne, en individuel ou en
 						collectif, pour vous reconnecter à vous-même, retrouver du sens et mobiliser vos
 						ressources — grâce à une approche orientée solutions et expériences.
@@ -31,10 +34,10 @@ export default function SolutionsPourVosCollaborateurs() {
 
 					{/* Section 1 : Hero */}
 					<section className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10 md:justify-start">
-						<div className="relative w-[200px] h-[240px]md:w-[260px] md:h-[320px]lg:w-[300px] lg:h-[360px]overflow-hidden rounded-xl md:rounded-s-full shrink-0">
+						<div className="relative w-[200px] h-[240px] md:w-[260px] md:h-[320px] lg:w-[300px] lg:h-[360px] overflow-hidden rounded-xl md:rounded-s-full shrink-0">
 							<Image
 								src="/images/professionnels/accompagner_collaborateurs.webp"
-								alt="Accompagnement professionnel et coaching avec Sandra Bondon"
+								alt="Coaching professionnel en entreprise avec Sandra Bondon à Saint-Germain-en-Laye"
 								fill
 								priority
 								sizes="(min-width: 1024px) 300px, (min-width: 768px) 260px, 200px"
@@ -133,7 +136,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						</div>
 					</section>
 
-					{/* Section 5 : Approche solutionniste (MOSAIC/EMDR, PNL, hypnose) */}
+					{/* Section 5 : Approche solutionniste (MOSAIC®/EMDR, PNL, hypnose) */}
 					<section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 							Une approche solutionniste expérientielle

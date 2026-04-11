@@ -110,12 +110,11 @@ export default function ContactPage() {
 	return (
 		<>
 			<SEO
-				title="Contact - Sandra Bondon"
-				description="Contactez Sandra Bondon, psychopraticienne solutionniste à Saint-Germain-en-Laye, pour échanger sur votre situation et vos besoins."
-				keywords="contact Sandra Bondon, psychopraticienne, accompagnement, hypnose, MOSAIC, Saint-Germain-en-Laye"
+				title="Contact psychopraticienne à Saint-Germain-en-Laye | Sandra Bondon"
+				description="Contactez Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, pour échanger sur votre situation, vos besoins et l’accompagnement thérapeutique le plus adapté."
+				keywords="contact Sandra Bondon, psychopraticienne Saint-Germain-en-Laye, accompagnement thérapeutique, hypnose, MOSAIC®, prise de rendez-vous"
 				author="Sandra Bondon"
 			/>
-
 			<main className="min-h-screen bg-white">
 				<section className="py-4 px-4 text-center">
 					<h1 className="text-2xl font-bold uppercase mb-2 p-4">
@@ -123,7 +122,7 @@ export default function ContactPage() {
 					</h1>
 					<div className="container mx-auto px-4">
 						<p className="text-lg mb-4">
-							Remplissez le formulaire ci-dessous ou envoyez un email à :{" "}
+							Remplissez le formulaire ci-dessous pour contacter Sandra Bondon ou envoyez un email à :{" "}
 							<a
 								href="mailto:sandrabondon@gmail.com"
 								className="text-blue-500 underline"
@@ -140,7 +139,7 @@ export default function ContactPage() {
 						before:w-24 before:h-24 before:absolute before:bg-orange before:rounded-full before:-z-10 before:blur-2xl
 						after:w-32 after:h-32 after:absolute after:bg-blue after:rounded-full after:-z-10 after:blur-xl after:top-24 after:-right-12"
 					>
-						<h2 className="text-2xl text-primary font-bold mb-6">Contact</h2>
+						<h2 className="text-2xl text-primary font-bold mb-6">Formulaire de contact</h2>
 
 						{successMessage ? (
 							<div
@@ -175,6 +174,7 @@ export default function ContactPage() {
 											type="text"
 											name="name"
 											id="name"
+											required
 											autoComplete="family-name"
 											aria-invalid={Boolean(errors.name)}
 											aria-describedby={errors.name ? "name-error" : undefined}
@@ -216,6 +216,7 @@ export default function ContactPage() {
 											type="email"
 											name="email"
 											id="email"
+											required
 											autoComplete="email"
 											aria-invalid={Boolean(errors.email)}
 											aria-describedby={
@@ -243,6 +244,7 @@ export default function ContactPage() {
 											type="tel"
 											name="telephone"
 											id="telephone"
+											required
 											autoComplete="tel"
 											placeholder="06 12 34 56 78"
 											aria-invalid={Boolean(errors.telephone)}
@@ -274,6 +276,7 @@ export default function ContactPage() {
 											rows="3"
 											name="text"
 											id="text"
+											required
 											autoComplete="off"
 											aria-invalid={Boolean(errors.text)}
 											aria-describedby={errors.text ? "text-error" : undefined}
