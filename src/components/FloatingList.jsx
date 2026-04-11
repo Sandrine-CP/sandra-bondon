@@ -31,6 +31,12 @@ export default function FloatingList({ items, title, description, className }) {
 					</motion.div>
 				))}
 			</div>
+			{/* Liste SEO / accessibilité (invisible visuellement) */}
+			<ul className="sr-only">
+  				{items.map((item, index) => (
+    			<li key={item.id || index}>{item.text}</li>
+  				))}
+			</ul>
 		</section>
 	);
 }

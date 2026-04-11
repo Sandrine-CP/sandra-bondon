@@ -137,6 +137,7 @@ export default function Home() {
 					>
 						Toutes les ressources sont en vous
 					</p>
+					<p className="pt-5 text-2xl text-center">Psychopraticienne spécialisée en thérapie brève, hypnose et accompagnement émotionnel.</p>
 					<Link href="/solutions-pour-vous">
 						<Button
 							text="Voir plus"
@@ -165,8 +166,7 @@ export default function Home() {
 					<div className="relative z-10 h-full p-4 md:p-10">
 					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
 						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
-							Sandra Bondon : Psychopraticienne - Business Coach -
-							Hypnothérapeute
+							Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye<br/>Business Coach - Hypnothérapeute
 						</h1>
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B
