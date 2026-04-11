@@ -111,10 +111,9 @@ export default function Home() {
 	return (
 		<>
 			<SEO
-				title="Psychopraticienne à Saint-Germain-en-Laye - Sandra Bondon"
-				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, vous accompagne avec l’hypnose ericksonienne, la PNL, MOSAIC® et la thérapie brève pour dépasser anxiété, burn-out, traumatismes et difficultés relationnelles."
-				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
-				author="Sandrine Cazenave"
+				title="Psychopraticienne à Saint-Germain-en-Laye | Hypnose, PNL - Sandra Bondon"
+				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, vous accompagne avec l’hypnose ericksonienne, la PNL, MOSAIC® et la thérapie brève pour dépasser anxiété, burn-out, traumatismes et retrouver équilibre et bien-être durable."				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
+				author="Sandra Bondon"
 			/>
 			<main className="m-0 pt-20 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
@@ -164,10 +163,10 @@ export default function Home() {
 					</div>{" "}
 					<div className="relative z-10 h-full p-4 md:p-10">
 					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
-						<p className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
+						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
 							Sandra Bondon : Psychopraticienne - Business Coach -
 							Hypnothérapeute
-						</p>
+						</h1>
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B
 						</p>
@@ -193,9 +192,15 @@ export default function Home() {
 					<FloatingList
 						items={specialties}
 						title="Spécialités"
-						description="Difficultés relationnelles : Lorsque la communication est difficile avec l'Autre. 
-						Que ce soit au travail ou en famille. 
-						Que les mots vous manquent, car les émotions sont trop présentes voire que vous ne savez pas comment exprimer ce qu'il se passe pour vous. Mal Etre : un état général sans savoir vraiment quoi, pourquoi, comment mais avec l'envie de vous sentir plus en adéquation avec vous-même. Comme trouver du sens à ce que vous faites."
+						description="Difficultés relationnelles :
+							- communication difficile
+							- émotions envahissantes
+							- difficulté à s’exprimer
+
+							Mal-être :
+							- perte de sens
+							- inconfort intérieur
+							- besoin de se reconnecter à soi"
 					/>
 					<Link
 						href="/contact"

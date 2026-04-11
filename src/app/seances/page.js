@@ -26,57 +26,15 @@ export default function Seances() {
 
 	return (
 		<>
-			<Head>
-				<SEO
-					title="Séances de Thérapie | Bien-être émotionnel et accompagnement personnalisé"
-					description="Découvrez nos séances de thérapie brève : individuelles, de couple ou en groupe. Accompagnement personnalisé pour retrouver équilibre et bien-être à Saint-Germain-en-Laye, Yvelines."
-					keywords="thérapie brève, séances individuelles, thérapie de couple, bien-être émotionnel, cabinet psychopraticien Saint-Germain-en-Laye, Yvelines"
-					author="Sandra Bondon"
-				/>
-
-				{/* <!-- Canonical link (éviter le contenu dupliqué si la page est accessible via plusieurs URLs) --> */}
-				<link rel="canonical" href="https://www.sandra-bondon.com/seances" />
-
-				{/* <!-- Open Graph (pour partager sur les réseaux sociaux) --> */}
-				<meta
-					property="og:title"
-					content="Séances de Thérapie | Bien-être émotionnel et accompagnement personnalisé"
-				/>
-				<meta
-					property="og:description"
-					content="Explorez nos séances de thérapie brève pour retrouver confiance et bien-être. Rendez-vous disponibles en ligne ou en cabinet à [ville]."
-				/>
-				<meta
-					property="og:url"
-					content="https://www.sandrabondon.com/seances"
-				/>
-				<meta property="og:type" content="website" />
-				<meta
-					property="og:image"
-					content="https://www.sandrabondon.com/images/illustration-seances.jpg"
-				/>
-
-				{/* <!-- Twitter Card --> */}
-				<meta name="twitter:card" content="summary_large_image" />
-				<meta
-					name="twitter:title"
-					content="Séances de Thérapie | Bien-être émotionnel et accompagnement personnalisé"
-				/>
-				<meta
-					name="twitter:description"
-					content="Thérapie brève et personnalisée : séances individuelles, de couple ou en groupe. Accompagnement professionnel à [ville]."
-				/>
-				<meta
-					name="twitter:image"
-					content="https://www.sandrabondon.com/images/illustration-seances.jpg"
-				/>
-				<link
-					rel="preload"
-					href="/images/bagages.webp"
-					as="image"
-					type="image/webp"
-				/>
-			</Head>
+			<SEO
+				title="Séances de thérapie à Saint-Germain-en-Laye | Sandra Bondon"
+				description="Découvrez les séances de thérapie brève proposées par Sandra Bondon : accompagnement individuel, couple, famille ou groupe, en cabinet à Saint-Germain-en-Laye ou en visio."
+				keywords="séances de thérapie, thérapie brève, thérapie individuelle, thérapie de couple, thérapie de groupe, psychopraticienne Saint-Germain-en-Laye, visio, cabinet"
+				author="Sandra Bondon"
+				canonical="https://www.sandra-bondon.com/seances"
+				ogUrl="https://www.sandra-bondon.com/seances"
+				ogImage="https://www.sandra-bondon.com/images/seances/ressources-interieures-message.webp"
+			/>
 			<main className="min-h-screen bg-white">
 				{/* Section présentation */}
 				<IntroSection />

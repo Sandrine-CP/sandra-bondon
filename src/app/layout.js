@@ -10,7 +10,7 @@ import PagesFooter from "@/components/PagesFooter";
 import "../styles/globals.css";
 
 export const metadata = {
-	metadataBase: new URL("https://www.sandrabondon.fr"), // Remplace par ton domaine en production
+	metadataBase: new URL("https://www.sandra-bondon.com"), // Remplace par ton domaine en production
 	title: "Sandra Bondon - Psychopraticienne, Coach et Hypnothérapeute",
 	description:
 		"Découvrez les solutions proposées par Sandra Bondon pour surmonter vos difficultés relationnelles et émotionnelles.",
@@ -20,7 +20,7 @@ export const metadata = {
 		title: "Sandra Bondon - Psychopraticienne Coach Hypnothérapeute",
 		description:
 			"Des solutions pour votre bien-être et votre équilibre mental.",
-		url: "https://www.sandrabondon.fr",
+		url: "https://www.sandra-bondon.com",
 		images: "/images/sandra-bondon-preview-image.webp",
 		type: "website",
 	},

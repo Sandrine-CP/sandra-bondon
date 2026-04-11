@@ -15,7 +15,7 @@ export default function MentionsLegales() {
 				title="Mentions légales et médiation - Sandra Bondon"
 				description="Mentions légales, médiation de la consommation et informations relatives à la protection des données du site de Sandra Bondon, psychopraticienne."
 				keywords="mentions légales, médiation, protection des données, psychopraticienne, Sandra Bondon"
-				author="Sandrine Cazenave"
+				author="Sandra Bondon"
 			/>
 			<main className="min-h-screen bg-white">
 				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">

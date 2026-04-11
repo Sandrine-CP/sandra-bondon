@@ -48,21 +48,24 @@ export default function IntroSection() {
 				</motion.div>
 				{/* Bloc droit : Image */}
 				<div className="flex justify-center items-center m-2 lg:max-w-[700px] w-full mt-4 lg:mt-0">
-<motion.div
-	className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
-	initial={{ x: "100vw", opacity: 0 }}
-	animate={{ x: 0, opacity: 1 }}
-	transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }}
->
-<div className="w-full max-w-[420px] md:max-w-[520px] lg:max-w-[700px] mx-auto">
-	<Image
-		src="/images/seances/ressources-interieures-message.webp"
-		alt="Illustration de valises pour symboliser le voyage intérieur"
-		width={1080}
-		height={971}
-		className="w-full h-auto rounded-lg shadow-lg"
-	/>
-</div></motion.div>				</div>
+				<motion.div
+					className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
+					initial={{ x: "100vw", opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{ type: "tween", duration: 0.8, ease: "easeInOut" }}
+				>
+				<div className="w-full max-w-[420px] md:max-w-[520px] lg:max-w-[700px] mx-auto">
+				<Image
+					src="/images/seances/ressources-interieures-message.webp"
+					alt="Illustration de valises pour symboliser le voyage intérieur"
+					width={1080}
+					height={971}
+					priority
+					className="w-full h-auto rounded-lg shadow-lg"
+				/>
+				</div>
+				</motion.div>				
+				</div>
 			</div>{" "}
 		</section>
 	);

@@ -18,7 +18,8 @@ export default function GoogleReviews() {
 			try {
 				const response = await fetch("/api/google-reviews");
 				const data = await response.json();
-				setReviews(data);
+				const sorted = [...data].sort((a, b) => a.text.length - b.text.length);
+				setReviews(sorted);
 			} catch (error) {
 				console.error("Erreur lors de la récupération des avis :", error);
 			} finally {

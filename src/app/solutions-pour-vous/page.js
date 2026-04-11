@@ -74,7 +74,7 @@ export default function SolutionsPourVous() {
 				title="Accueil - Sandra Bondon"
 				description="Site vitrine de Sandra Bondon, psychopraticienne spécialisée en hypnose, PNL et méthode MOSAIC®."
 				keywords="thérapie, hypnose, MOSAIC, burn out, anxiété, Sandra Bondon"
-				author="Sandrine Cazenave"
+				author="Sandra Bondon"
 			/>
 			<main className="h-auto">
 				{/* Section intro */}
