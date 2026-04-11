@@ -131,12 +131,12 @@ export default function Home() {
 				/>
 				{/* Section Ressources */}
 				<section className="flex flex-col items-center justify-center my-0 bg-[#22223b] text-white py-10 md:py-20">
-					<p
+					<h2
 						ref={textRef}
 						className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight"
 					>
 						Toutes les ressources sont en vous
-					</p>
+					</h2>
 					<p className="pt-5 text-2xl text-center">Psychopraticienne spécialisée en thérapie brève, hypnose et accompagnement émotionnel.</p>
 					<Link href="/solutions-pour-vous">
 						<Button

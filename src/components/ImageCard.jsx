@@ -12,7 +12,6 @@ export default function ImageCard({
 	description,
 	imageSrc,
 	imageAlt,
-	background,
 }) {
 	return (
 		<div>
@@ -42,7 +41,6 @@ export default function ImageCard({
 						className="w-[295px] h-[195px] rounded-xl object-cover transition-all duration-500 ease-[cubic-bezier(0.23,1,0,32,1)] group-hover:scale-0 group-hover:rotate-[45deg]"
 						src={imageSrc}
 						alt={imageAlt}
-						background={background}
 					/>
 
 					{/* Contenu affiché au survol */}
@@ -55,9 +53,9 @@ export default function ImageCard({
 			</motion.div>
 
 			{/* Titre sous la carte */}
-			<p className="mt-4 text-white text-center text-lg text-gray-800">
+			<h3 className="mt-4 text-white text-center text-lg">
 				{title}
-			</p>
+			</h3>
 		</div>
 	);
 }

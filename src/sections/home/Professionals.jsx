@@ -66,7 +66,7 @@ export default function Professionals() {
 						ref={leftBlockRef} // Référence ici
 						className="flex flex-col justify-center items-center text-center lg:w-1/2"
 					>
-						<h3 className="text-l font-bold mb-4">Accompagner</h3>
+						<h3 className="text-l font-bold mb-4">Accompagnement en entreprise</h3>
 						<p className="leading-relaxed">
 							Nous identifions ensemble vos besoins. <br />
 							Nous pouvons travailler sur la gestion du changement, la charge

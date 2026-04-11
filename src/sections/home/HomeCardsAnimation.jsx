@@ -41,11 +41,11 @@ export default function HomeCardsAnimation() {
 					sm:col-span-2 sm:col-start-1 sm:row-start-3
 					lg:col-span-1 lg:col-start-2 lg:row-start-2 mx-auto"
 				>
-					<h1 className="text-secondary text-center text-2xl font-semibold">
+					<p className="text-secondary text-center text-2xl font-semibold">
 						Mal être
 						<br />
 						Difficultés relationnelles
-					</h1>
+					</p>
 					<p className="text-secondary text-lg text-center mt-2">
 						Une solution existe pour vous
 					</p>
