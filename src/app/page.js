@@ -112,7 +112,8 @@ export default function Home() {
 		<>
 			<SEO
 				title="Psychopraticienne à Saint-Germain-en-Laye | Hypnose, PNL - Sandra Bondon"
-				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, vous accompagne avec l’hypnose ericksonienne, la PNL, MOSAIC® et la thérapie brève pour dépasser anxiété, burn-out, traumatismes et retrouver équilibre et bien-être durable."				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
+				description="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye, vous accompagne avec l’hypnose ericksonienne, la PNL, MOSAIC® et la thérapie brève pour dépasser anxiété, burn-out, traumatismes et retrouver équilibre et bien-être durable."				
+				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
 				author="Sandra Bondon"
 			/>
 			<main className="m-0 pt-20 bg-[#22223b]">
@@ -192,15 +193,7 @@ export default function Home() {
 					<FloatingList
 						items={specialties}
 						title="Spécialités"
-						description="Difficultés relationnelles :
-							- communication difficile
-							- émotions envahissantes
-							- difficulté à s’exprimer
-
-							Mal-être :
-							- perte de sens
-							- inconfort intérieur
-							- besoin de se reconnecter à soi"
+						description="Difficultés relationnelles : communication difficile, émotions envahissantes, difficulté à s’exprimer. Mal-être : perte de sens, inconfort intérieur, besoin de se reconnecter à soi."
 					/>
 					<Link
 						href="/contact"
