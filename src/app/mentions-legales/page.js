@@ -83,7 +83,7 @@ export default function MentionsLegales() {
 				</section>
 				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
 					<h2 className="text-xl font-bold mb-4">Crédits</h2>
-					<p>Crédits photos : iStock</p>
+					<p>Crédits visuels : photographies, illustrations sous licence et créations visuelles adaptées pour le site.</p>
 					<p>Conception et réalisation du site : Sandrine Cazenave</p>
 				</section>
 				<section className="container mx-auto max-w-4xl p-6 text-primary text-left">
