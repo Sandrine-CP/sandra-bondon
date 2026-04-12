@@ -3,6 +3,7 @@
 import Head from "next/head";
 // Bibliothèques tierces
 // Composants parents
+import { SITE_URL } from "@/config/site";
 // Composants enfants
 // Utilitaires et helpers
 // Styles et assets
@@ -18,6 +19,8 @@ export default function SEO({ title,
 	ogType = "website",
 	twitterCard = "summary_large_image",
 }) {
+	const defaultCanonical = canonical || SITE_URL;
+
 	return (
 		<Head>
 			<title>{title}</title>
@@ -26,7 +29,7 @@ export default function SEO({ title,
 			{author && <meta name="author" content={author} />}
 			<meta name="robots" content={robots} />
 
-			{canonical && <link rel="canonical" href={canonical} />}
+			<link rel="canonical" href={defaultCanonical} />
 
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
