@@ -15,11 +15,9 @@ export default function Button({
 	bgColor = "#F2E9E4",
 	hoverTextColor = "#F2E9E4",
 	hoverBgColor = "#2C254D",
-	href = "#",
 }) {
 	return (
-		<button
-			type="button"
+		<span
 			className={`cta relative ${className}`}
 			style={{
 				"--bg-color": bgColor,
@@ -34,6 +32,6 @@ export default function Button({
 				<path d="M1,5 L11,5" />
 				<polyline points="8 1 12 5 8 9" />
 			</svg>
-		</button>
+		</span>
 	);
 }
