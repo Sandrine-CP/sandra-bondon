@@ -11,7 +11,7 @@ export async function GET() {
 			);
 		}
 
-		const location = "6 Rue au Pain, 78100 Saint-Germain-en-Laye, France";
+		const location = "6 rue Saint Léger, 78100 Saint-Germain-en-Laye, France";
 		const encodedLocation = encodeURIComponent(location);
 		const mapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodedLocation}&zoom=15&size=400x300&maptype=roadmap&markers=color:red|${encodedLocation}&key=${GOOGLE_MAPS_API_KEY}`;
 

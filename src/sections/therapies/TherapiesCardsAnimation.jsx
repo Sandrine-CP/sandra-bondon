@@ -35,7 +35,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-mosaic.webp"
 						imageAlt="Illustration de la méthode MOSAIC® et du processus de transformation émotionnelle"
 						title="MOSAIC®"
-						description="Méthode innovante utilisant des stimulations bilatérales pour favoriser une transformation profonde, durable et centrée sur la solution."
+						description="Méthode innovante utilisant des stimulations bilatérales pour favoriser une transformation profonde, durable et centrée sur la sensation qui conduit vers la solution."
 					/>
 				</div>
 				{/* card 3 */}

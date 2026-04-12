@@ -72,11 +72,11 @@ export default function GoogleMap({ addresses }) {
 			)}
 		<div className="mt-4 text-center">
 			<p className="mb-2 text-gray-600">
-				6 rue au Pain, 78100 Saint-Germain-en-Laye
+				6 rue Saint Léger, 78100 Saint-Germain-en-Laye
 			</p>
 
 				<a
-					href="https://www.google.com/maps?q=6+rue+au+Pain+78100+Saint-Germain-en-Laye"
+					href="https://www.google.com/maps?q=6+rue+Saint+Léger+78100+Saint-Germain-en-Laye"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="text-blue-500 hover:underline text-sm"

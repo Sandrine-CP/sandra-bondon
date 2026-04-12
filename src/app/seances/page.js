@@ -22,7 +22,7 @@ import SEO from "@/components/SEO";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Seances() {
-	const addresses = ["6 Rue au Pain, 78100 Saint-Germain-en-Laye, France"];
+	const addresses = ["6 rue Saint Léger, 78100 Saint-Germain-en-Laye, France"];
 
 	return (
 		<>
@@ -48,8 +48,7 @@ export default function Seances() {
 					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
 					<h3 className="text-l font-bold">Horaires</h3>
 					<p className="pt-5">
-						Je vous accueille sur rendez-vous, lundi, mercredi et samedi de 11h à 17h.<br />
-						Vendredi de 11h à 17h.
+						Je vous accueille sur rendez-vous, lundi, mercredi, vendredi et samedi de 11h à 17h.<br />
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>
@@ -64,7 +63,7 @@ export default function Seances() {
 						<br />
 						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
 						à me contacter via le formulaire en ligne ou par téléphone au
-						06 24 18 23 02.
+						<br/>06 24 18 23 02.
 					</p>
 					<Link href="/contact">
 						<Button

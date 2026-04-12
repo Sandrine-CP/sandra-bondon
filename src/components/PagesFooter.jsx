@@ -16,7 +16,7 @@ export default function PagesFooter() {
 				<div className="mt-4 flex justify-center space-x-4">
 					{" "}
 					<a
-						href="https://www.linkedin.com/in/sandrine-cazenave-peyrasson"
+						href="https://www.linkedin.com/in/sandrabondon"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="LinkedIn"
@@ -46,9 +46,9 @@ export default function PagesFooter() {
 					<h2 className="font-bold">Coordonnées</h2>
 					<p>Sandra Bondon - Auto-entrepreneur</p>
 					<address>
-						4 chemin Benigne May
+						6 rue Saint Léger
 						<br />
-						78290 Croissy sur Seine, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"

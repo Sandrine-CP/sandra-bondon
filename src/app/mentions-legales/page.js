@@ -35,9 +35,9 @@ export default function MentionsLegales() {
 					<p>Numéro d&apos;immatriculation : Siret 91211783500013 </p>
 					<p>Adresse postale : </p>
 					<address>
-						4 chemin Benigne May
+						6 rue Saint Léger
 						<br />
-						78290 Croissy sur Seine, Yvelines
+						78100 Saint-Germain-en-Laye, Yvelines
 					</address>
 					<a
 						href="mailto:sandrabondon@gmail.com"

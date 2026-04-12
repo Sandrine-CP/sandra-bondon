@@ -20,14 +20,14 @@ export default function TherapiesSection() {
 					Techniques thérapeutiques adaptées
 				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
-					La thérapie brève est une approche centrée sur la recherche de{" "}
+					La thérapie solutionniste expérientielle, est une approche centrée sur la recherche de{" "}
 					<strong className="text-primary font-bold">
 						solutions concrètes et rapides
 					</strong>{" "}
 					pour surmonter des difficultés spécifiques.
 					<br /> Contrairement aux thérapies traditionnelles, elle se concentre
-					sur le présent et le futur, en mobilisant vos ressources pour
-					atteindre vos objectifs.
+					sur le présent donc votre futur, en mobilisant vos ressources pour
+					atteindre vos besoins.
 					<br /> La durée de ce type de thérapie varie généralement entre 6 mois et
 					3 ans, selon la nature de la problématique et les besoins
 					individuels.
@@ -35,7 +35,7 @@ export default function TherapiesSection() {
 					<strong className="text-primary font-bold">
 						résultats significatifs
 					</strong>{" "}
-					dans un temps réduit.
+					dans un temps qui est le vôtre.
 				</p>
 			</section>
 			{/* Section cards animation */}

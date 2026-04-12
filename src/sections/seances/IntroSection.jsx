@@ -26,7 +26,7 @@ export default function IntroSection() {
 						<br />
 						Lors de notre première rencontre, nous prenons le temps{" "}
 						<strong className="text-primary font-bold">
-							d’explorer vos besoins, vos attentes, et vos objectifs.
+							d’explorer vos besoins.
 						</strong>{" "}
 						<br />
 						Cette étape est essentielle pour établir une relation de{" "}

@@ -61,11 +61,10 @@ export default function CabinetSection({ addresses, className }) {
 							Trouvez facilement mon cabinet
 						</h2>
 						<p>
-							Le cabinet est situé au cœur de Saint-Germain-en-Laye, dans un
-							espace calme et facilement accessible. <br />
+							Le cabinet est situé à Saint-Germain-en-Laye, dans un espace calme et facilement accessible. <br />
 							Vous pouvez consulter la carte ci-dessous pour trouver
 							l’itinéraire le plus pratique depuis votre emplacement. <br />
-							Un parking gratuit est disponible à proximité.
+							Places disponibles à proximité.
 						</p>
 					</div>
 				</div>{" "}

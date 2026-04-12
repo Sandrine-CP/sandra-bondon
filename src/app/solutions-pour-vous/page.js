@@ -84,10 +84,10 @@ export default function SolutionsPourVous() {
 					<div className="pt-5">
 						Ma pratique est dite{" "}
 						<strong className="text-primary font-bold">brève</strong>, elle se
-						nomme approche solutionniste expérientielle.<br/>Elle est centrée sur des solutions concrètes, adaptées à votre situation et à votre rythme.
+						nomme thérapie solutionniste expérientielle.<br/>Elle est centrée sur des solutions concrètes, adaptées à votre situation et à votre rythme.
 					</div>
 					<p className="pt-5">
-  						Venez déposer vos bagages.<br />Cela veut dire :
+  						Venez déposer vos fardeaux.<br />Cela veut dire :
 					</p>
 
 					<blockquote className="my-12 max-w-3xl mx-auto px-4 text-center">
@@ -95,7 +95,7 @@ export default function SolutionsPourVous() {
     				<span className="absolute -left-3 -top-5 text-5xl text-orange-400 leading-none sm:-left-6 sm:-top-6 sm:text-6xl">
      				 “
     				</span>
-    				Ce que vous voulez vivre demain, vous le vivrez aujourd&apos;hui.
+    				Toutes les ressources sont en vous, venez les rencontrer. <br/>Ce que vous voulez vivre demain, vous le vivrez dès aujourd&apos;hui.
   					</p>
 					</blockquote>
 					<div className="pt-5">

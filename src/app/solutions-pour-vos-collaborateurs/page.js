@@ -15,14 +15,14 @@ export default function SolutionsPourVosCollaborateurs() {
 			<main>
 				<div className="max-w-5xl mx-auto px-4 py-10">
 					<h1 className="text-2xl font-bold uppercase text-center mb-4">
-						Accompagnement professionnel & business coaching à Saint-Germain-en-Laye
+						Accompagnement professionnel & business coaching en cabinet à Saint-Germain-en-Laye ou sur site
 					</h1>
 
 					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
 						Sandra Bondon | Psychopraticienne solutionniste & Business Coach
 					</p>
 					<p className="text-center font-semibold mb-12">
-  						Sandra Bondon, business coach et psychopraticienne à Saint-Germain-en-Laye, accompagne professionnels et particuliers.
+  						Sandra Bondon, business coach et psychopraticienne, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
 					</p>
 
 					{/* Chapeau SEO (résumé page) */}
@@ -68,7 +68,7 @@ export default function SolutionsPourVosCollaborateurs() {
 					{/* Section 2 : Pro — Business Coach */}
 					<section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-							Pro : Business Coach (cadres dirigeants, managers, équipes)
+							Pro : Business Coach - cadres dirigeants, managers, équipes
 						</h3>
 
 						<div className="space-y-4 text-left leading-relaxed">
@@ -93,7 +93,7 @@ export default function SolutionsPourVosCollaborateurs() {
 					{/* Section 3 : Particulier — Coaching */}
 					<section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-							Particulier : Coaching (confiance, estime, émotions)
+							Particulier : Coaching - confiance, estime, émotions...
 						</h3>
 
 						<div className="space-y-4 text-left leading-relaxed">
@@ -158,7 +158,7 @@ export default function SolutionsPourVosCollaborateurs() {
 								<li>MOSAIC® / EMDR solutionniste</li>
 								<li>PNL</li>
 								<li>Hypnose</li>
-								<li>États du moi</li>
+								<li>États du moi (ESTI®)</li>
 								<li>Relation d’aide</li>
 							</ul>
 						</div>

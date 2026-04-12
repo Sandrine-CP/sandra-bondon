@@ -89,7 +89,7 @@ export default function APropos() {
 								</p>
 								<p>
 									J’aime dire ce que je ressens… mais je me sens souvent incomprise.
-									On me donne des conseils, alors que je voulais simplement{" "}
+									Des conseils me sont donnés, alors que je souhaitais simplement {" "}
 									<strong>être entendue et vue</strong>. Je ne le savais pas encore,
 									mais tout cela allait façonner ma vocation.
 								</p>
@@ -114,7 +114,7 @@ export default function APropos() {
 								<p>
 									À la suite de mes études, la vie me conduit vers le domaine des{" "}
 									<strong>ressources humaines</strong>. Je progresse, j’apprends,
-									j’observe… jusqu’à devenir responsable RH dans une startup.
+									j’observe… jusqu’à devenir responsable RH.
 								</p>
 								<p>
 									Cette aventure renforce mon envie profonde :{" "}
@@ -123,27 +123,27 @@ export default function APropos() {
 									l’accompagnement thérapeutique se fait plus fort.
 								</p>
 								<p>
-									Puis survient un moment déterminant. Après un avortement, j’entame
-									une psychothérapie qui durera 13 ans. Un espace précieux, neutre,
+									Puis survient un moment déterminant, j’entame
+									une psychothérapie qui dure 15 ans. Un espace précieux, neutre,
 									où je peux me raconter, comprendre qui je suis et transformer ce
-									qui demande à l’être. Cette thérapie me révèle, comme une{" "}
-									<strong>chenille qui devient papillon.</strong>
+									qui demande à l’être. Cette thérapie me révèle, telle{" "}
+									<strong>une chenille qui devient papillon.</strong>
 								</p>
 								<p>
-									En 2020, je suis prête. Je bascule vers un nouveau monde :{" "}
+									Puis 2020 arrive, ma décision est prise, je reviens à mes premières amours : la psychologie. Je bascule donc vers un nouveau monde :{" "}
 									<strong>l’aide à la personne</strong>. Je me forme intensivement
 									pour offrir un accompagnement complet et ajusté :
 								</p>
 
 								<ul className="list-disc pl-6 text-left">
+									<li>Psychopraticienne</li>
+									<li>Psychopathologie</li>
 									<li>Relation d&apos;aide</li>
+									<li>Hypnose</li>
+									<li>MOSAIC® / EMDR solutionniste</li>
 									<li>Coaching</li>
 									<li>PNL</li>
-									<li>Hypnose</li>
-									<li>Psychopathologie</li>
-									<li>MOSAIC® / EMDR solutionniste</li>
-									<li>États du moi</li>
-									<li>Psychopraticienne solutionniste</li>
+									<li>États du moi (ESTI®)</li>
 								</ul>
 
 								<p>
@@ -232,18 +232,17 @@ export default function APropos() {
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
 								<p>
-									Parce que je sais ce que c’est que de chercher un espace où l’on
-									peut être vraiment entendu, sans jugement, sans conseils imposés.
+									Je sais l&apos;importance d&apos;avoir un espace où on peut être entendu(e), écouté(e) sans jugement, dans la bienveillance.
 								</p>
 								<p>
-									Parce que je crois profondément en la capacité de chacun à se
-									transformer. Et parce que chaque personne que j’accompagne
+									Je crois profondément en la capacité de chacun à se
+									transformer, car chaque personne que j’accompagne
 									m’émerveille par ses prises de conscience, ses avancées, sa
 									résilience.
 								</p>
 								<p>
 									Aujourd’hui, j’accompagne des personnes de tous âges et de tous
-									horizons, en tant que psychopraticienne solutionniste à Saint-Germain-en-Laye, et je les vois évoluer, se libérer, se reconstruire…
+									horizons, en tant que psychopraticienne à Saint-Germain-en-Laye, je les vois évoluer, se libérer, se reconstruire…
 									parfois même se révéler totalement.
 								</p>
 							</div>
@@ -257,11 +256,11 @@ export default function APropos() {
 								<p>
 									Vous possédez déjà en vous les ressources nécessaires pour avancer.
 									Mon rôle est de vous aider à les reconnaître, à les ressentir et à
-									les faire grandir — avec bienveillance, écoute et présence.
+									les faire grandir, avec écoute et présence.
 								</p>
 								<p>
 									Si vous ressentez qu’il est temps d’entamer un chemin vers vous-même,
-									je serai heureuse de vous accompagner.
+									je serais heureuse de vous accompagner.
 								</p>
 								<p className="italic font-semibold">
 									Tarif des séances : à partir de 85 €.
