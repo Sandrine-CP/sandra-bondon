@@ -43,7 +43,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/therapies/therapie-breve-parcours-solution.webp"
 						imageAlt="Illustration de la thérapie brève orientée vers la résolution de problèmes"
-						title="Thérapie brève"
+						title="Thérapie transpersonnelle"
 						description="Approche ciblée et orientée solution, pour avancer rapidement face à une difficulté précise."
 					/>
 				</div>
@@ -73,7 +73,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/therapies/therapie-couple-accompagnement-cabinet.webp"
 						imageAlt="Illustration de la thérapie de couple dans un cadre d'accompagnement en cabinet"
-						title="Thérapie de couple"
+						title="Thérapie fammile/couple - Coaching"
 						description="Un espace pour mieux se comprendre, apaiser les tensions et retrouver une relation plus sereine."
 					/>
 				</div>

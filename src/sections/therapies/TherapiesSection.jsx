@@ -14,6 +14,14 @@ export default function TherapiesSection() {
 
 	return (
 		<>
+			{/* Section cards animation */}
+			<div className="bg-primary mt-O">
+				<section>
+					<div>
+						<TherapiesCardsAnimation />
+					</div>
+				</section>
+
 			{/* Section intro */}
 			<section id="therapies" className="py-10 px-4 mb-0 text-center bg-white">
 				<h2 className="text-xl font-bold mb-6">
@@ -38,17 +46,9 @@ export default function TherapiesSection() {
 					dans un temps qui est le vôtre.
 				</p>
 			</section>
-			{/* Section cards animation */}
-			<div className="bg-primary mt-O">
-				<section>
-					<div>
-						<TherapiesCardsAnimation />
-					</div>
-				</section>
-
 				{/* Section avec CTA séances */}
-				<section className="bg-primary">
-					<p className="text-center text-white">
+				<section className="bg-white py-10 px-4 text-center">
+					<p className="text-center text-primary">
 						Vous souhaitez savoir comment une séance se déroule ?
 					</p>
 					<Link
@@ -57,9 +57,9 @@ export default function TherapiesSection() {
 					>
 						<Button
 							text="Voir plus"
-							textColor="#FFFFFF"
+							textColor="#2C254D"
 							bgColor="#D110D5"
-							hoverTextColor="#FFFFFF"
+							hoverTextColor="#2C254D"
 							hoverBgColor="#D110D5"
 							className="mt-6 mb-6"
 						/>
