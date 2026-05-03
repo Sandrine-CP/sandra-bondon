@@ -116,26 +116,26 @@ export default function Home() {
 				keywords="psychopraticienne Saint-Germain-en-Laye, hypnose ericksonienne, PNL, MOSAIC®, thérapie brève, anxiété, burn-out, traumatisme, charge mentale, thérapie de couple"
 				author="Sandra Bondon"
 			/>
-			<main className="m-0 pt-20 bg-[#22223b]">
+			<main className="m-0 pt-5 bg-[#22223b]">
 				{/* Section Gallerie d'images */}
 				<section className="pt-20 mb-20">
 					<HomeCardsAnimation />
 				</section>
-				{/* Section image lumière */}
+				{/* Section image lumière 
 				<section
 					ref={lumiereRef}
 					className="h-[260px] bg-cover bg-center sm:h-[500px] md:h-[420px] lg:h-[800px]"
 					style={{
 						backgroundImage: "url(/images/home/lumiere-therapie-chemin-apaisement.webp)",
 					}}
-				/>
+				/>*/}
 				{/* Section Ressources */}
 				<section className="flex flex-col items-center justify-center my-0 bg-[#22223b] text-white py-10 md:py-20">
 					<h2
-						ref={textRef}
+						ref={lumiereRef}
 						className="text-[8vw] sm:text-[6vw] md:max-w-[60vw] text-center leading-tight"
 					>
-						Toutes les ressources sont en vous
+						Toutes les ressources et solutions <br/>sont en vous !
 					</h2>
 					<p className="pt-5 text-2xl text-center">Psychopraticienne spécialisée en thérapie brève, hypnose et accompagnement émotionnel.</p>
 					<Link href="/solutions-pour-vous">
@@ -154,10 +154,10 @@ export default function Home() {
 					className="h-[520px] sm:h-[480px] md:h-[500px] lg:h-[75vh] bg-cover bg-center relative"
 					style={{ backgroundImage: "url(/images/home/fondHomeAbout.webp)" }}
 				>
-					<div className="absolute left-4 top-1/2 -translate-y-1/2 md:top-auto md:bottom-4 md:translate-y-0">
+					<div className="absolute left-4 top-1/2 -translate-y-1/2">							
 						<Image
 							src="/images/home/sandra-bondon-home.jpeg"
-							alt="Portrait de Sandra Bondon, psychopraticienne, business coach et hypnothérapeute"
+							alt="Portrait de Sandra Bondon, psychopraticienne, hypnothérapeute et business coach"
 							width={120}
 							height={120}
 							className="rounded-e-full w-[120px] h-auto md:w-60 md:h-auto"
@@ -165,8 +165,8 @@ export default function Home() {
 					</div>{" "}
 					<div className="relative z-10 h-full p-4 md:p-10">
 					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
-						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] uppercase self-end">
-							Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye<br/>Business Coach - Hypnothérapeute
+						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] self-center text-center leading-tight max-w-3xl mx-auto">
+							Sandra Bondon<br/>Psychopraticienne Hypnothérapeute - Coach<br/> À Saint-Germain-en-Laye
 						</h1>
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B

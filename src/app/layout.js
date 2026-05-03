@@ -12,13 +12,13 @@ import "../styles/globals.css";
 
 export const metadata = {
 	metadataBase: new URL(SITE_URL), // Remplace par ton domaine en production
-	title: "Sandra Bondon - Psychopraticienne, Coach et Hypnothérapeute",
+	title: "Sandra Bondon - Psychopraticienne, Hypnothérapeute et Coach",
 	description:
 		"Découvrez les solutions proposées par Sandra Bondon pour surmonter vos difficultés relationnelles et émotionnelles.",
 	keywords:
 		"Psychopraticienne, Hypnothérapeute, Coaching, Business Coaching, Thérapie, Thérapie brève, Hypnose, MOSAIC®, Santé mentale, Sandra Bondon, Burn-Out, Phobies, Traumatismes, Addiction, Obsessions, Charge Mentale, Anxiété",
 	openGraph: {
-		title: "Sandra Bondon - Psychopraticienne Coach Hypnothérapeute",
+		title: "Sandra Bondon - Psychopraticienne Hypnothérapeute Coach",
 		description:
 			"Des solutions pour votre bien-être et votre équilibre mental.",
 		url: SITE_URL,
@@ -27,7 +27,7 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Sandra Bondon - Psychopraticienne Coach Hypnothérapeute",
+		title: "Sandra Bondon - Psychopraticienne Hypnothérapeute Coach",
 		description:
 			"Des solutions adaptées pour surmonter vos difficultés relationnelles et émotionnelles.",
 		images: "/images/sandra-bondon-preview-image.webp",

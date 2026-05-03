@@ -22,7 +22,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						Sandra Bondon | Psychopraticienne solutionniste & Business Coach
 					</p>
 					<p className="text-center font-semibold mb-12">
-  						Sandra Bondon, business coach et psychopraticienne, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
+  						Sandra Bondon, psychopraticienne, hypnothérapeute et coach, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
 					</p>
 
 					{/* Chapeau SEO (résumé page) */}

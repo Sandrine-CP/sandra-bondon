@@ -42,9 +42,7 @@ export default function HomeCardsAnimation() {
 					lg:col-span-1 lg:col-start-2 lg:row-start-2 mx-auto"
 				>
 					<p className="text-secondary text-center text-2xl font-semibold">
-						Mal être
-						<br />
-						Difficultés relationnelles
+						Dans ma Vie personnelle<br/>dans ma vie de famille<br/>dans ma vie professionnelle
 					</p>
 					<p className="text-secondary text-lg text-center mt-2">
 						Une solution existe pour vous
@@ -76,13 +74,14 @@ export default function HomeCardsAnimation() {
 				</div>
 				<div className="lg:row-start-3 lg:col-start-2">
 					<ImageCard
-						imageSrc="/images/professionnels/accompagner_collaborateurs.webp"
-						imageAlt="Illustration de l'accompagnement des collaborateurs en entreprise et du bien-être au travail"
-						title="Accompagner ses collaborateurs"
-						description="Soutenir la santé mentale en milieu professionnel : accompagner les équipes face au stress, au burnout, aux conflits relationnels ou à la perte de sens. Une intervention bienveillante pour restaurer l’équilibre individuel et collectif dans l’entreprise."
+						title="Troubles du comportement alimentaire"
+						imageSrc="/images/home/troubles-comportement-alimentaire.webp"
+						imageAlt="Illustration des troubles du comportement alimentaire"
+						imageClassName="object-contain p-2 bg-[#F8F5F2]"
+						description="Relation difficile à l’alimentation, au poids et à l’image corporelle : restriction, compulsions, boulimie, hyperphagie, dysmorphophobie."
 					/>
+				</div>			
 				</div>
-			</div>
 		</div>
 	);
 }

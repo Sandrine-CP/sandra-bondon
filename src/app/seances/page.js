@@ -45,14 +45,14 @@ export default function Seances() {
 					textColor="#000"
 					className="my-16 px-6"
 				>
-					<h2 className="text-xl font-bold mb-4">Horaires et Tarifs</h2>
-					<h3 className="text-l font-bold">Horaires</h3>
-					<p className="pt-5">
-						Je vous accueille sur rendez-vous, lundi, mercredi, vendredi et samedi de 11h à 17h.<br />
+					<h2 className="text-xl font-bold mb-4">Jours de consultation et Tarifs</h2>
+					<h3 className="text-l font-bold">Jours de consultation</h3>
+					<p className="pt-5 mb-4">
+						Je vous accueille sur rendez-vous, lundi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio (WhatsApp).
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>
-						<li>Séance individuelle : 85 à 110 €</li>
+						<li>Séance individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
 						<li>Séance de couple : 160 €</li>
 						<li>Séance de groupe (minimum 3 personnes) : me contacter</li>
 						<li>Séance famille : 180 €</li>

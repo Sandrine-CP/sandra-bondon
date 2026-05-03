@@ -30,7 +30,7 @@ export default function Header() {
 					S | B
 				</Link>
 				<p className="text-xs sm:text-base text-center">
-					Psychopraticienne - Coach - Hypnothérapeute
+					Psychopraticienne - Hypnothérapeute - Coach
 				</p>
 			</div>
 

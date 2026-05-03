@@ -13,7 +13,7 @@ export default function Consultations() {
 		<section className="py-16 px-4">
 			<h2 className="text-2xl font-bold mb-4 text-center">Consultations</h2>
 			<p className="max-w-2xl mx-auto mb-4 text-center font-semibold">
-				Horaires :<br /> Lundi, mercredi, vendredi et samedi de 11h à 17h.<br />
+				Jours de consultation :<br /> Lundi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio.
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-7 gap-4 text-center">
 				{/* Bloc Cabinet */}
@@ -41,8 +41,7 @@ export default function Consultations() {
 			{/* Section des Tarifs */}
 			<div className="text-center mt-8">
 				<p className="text-gray-500 text-sm">Tarifs</p>
-				<p className="text-gray-500 text-sm">Prix moyen à titre indicatif</p>
-				<p className="text-gray-500 text-sm">85 à 110 euros</p>
+				<p className="text-gray-500 text-sm">Séance individuelle : 85 €<br/>Une première consultation téléphonique de 30 min est offerte.</p>
 			</div>
 			<div className="mt-8">
 				<GoogleMap addresses={addresses} />

@@ -58,7 +58,7 @@ export default function Professionals() {
 		<section ref={sectionRef} className="bg-[#ffd7ba] py-16 px-4">
 			<div>
 				<h2 className="text-2xl font-bold mb-8 text-center">
-					Solution pour vos collaborateurs
+					Coaching
 				</h2>
 				<div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8">
 					{/* Bloc gauche : Texte */}

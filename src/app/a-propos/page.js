@@ -18,7 +18,7 @@ export default function APropos() {
 				{/* Container */}
 				<div className="max-w-5xl mx-auto">
 					<h1 className="text-2xl font-bold uppercase text-center mb-10">
-  					Psychopraticienne solutionniste à Saint-Germain-en-Laye
+  					Sandra Bondon<br/>Psychopraticienne - Hypnotherapeute - Coach <br/>à Saint-Germain-en-Laye
 					</h1>
 					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-12">
   					À propos de moi
@@ -38,7 +38,7 @@ export default function APropos() {
   							"
 	                    >
   							<Image
-    						src="/images/apropos/sandra-bondon-a-propos.jpeg"
+    						src="/images/portrait-sandra-bondon.webp"
     						alt="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye"
     						fill
     						priority
@@ -53,7 +53,7 @@ export default function APropos() {
 							</h2>
 
 							<p className="mt-3 text-center md:text-left">
-								Sandra Bondon est psychopraticienne solutionniste à Saint-Germain-en-Laye, spécialisée dans l’accompagnement émotionnel, les traumatismes, l’anxiété et le développement personnel.<br/>{" "}
+								Je suis psychopraticienne solutionniste à Saint-Germain-en-Laye, spécialisée dans l’accompagnement émotionnel, les traumatismes, l’anxiété et le développement personnel.<br/>{" "}
 								<strong>À vos côtés pour révéler vos ressources intérieures.</strong>
 							</p>
 
@@ -217,8 +217,7 @@ export default function APropos() {
 
 							<p>
 								La thérapie solutionniste expérientielle est une approche profonde, efficiente et brève :
-								les premiers changements apparaissent souvent dans les 6 premiers mois. La durée d’un accompagnement
-								varie selon chacun, entre 8 mois et 2 ans.
+								les premiers changements apparaissent souvent dans les 6 premiers mois. La durée de ce type de thérapie est au moins de 6 mois et varie selon chaque personne jusqu’à 3ans.
 							</p>
 							</div>
 						</section>
@@ -228,11 +227,11 @@ export default function APropos() {
 							</h3>
 							<p className="font-semibold mb-6">
   							Être psychopraticienne est pour moi un engagement profondément humain, fondé
-  							sur l’écoute, la présence et la confiance dans la capacité de chacun à évoluer.
+  							sur l’écoute active, la présence et la confiance dans la capacité de chacun à évoluer.
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
 								<p>
-									Je sais l&apos;importance d&apos;avoir un espace où on peut être entendu(e), écouté(e) sans jugement, dans la bienveillance.
+									Je sais l&apos;importance d&apos;avoir un espace où l&apos;on peut être entendu(e), écouté(e) sans jugement, dans la bienveillance. Je suis le mirroir de vos propos.
 								</p>
 								<p>
 									Je crois profondément en la capacité de chacun à se
