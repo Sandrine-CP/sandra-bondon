@@ -15,8 +15,8 @@ const links = [
 	{ title: "Solutions pour vous", href: "/solutions-pour-vous" },
 	{ title: "Séances", href: "/seances" },
 	{
-		title: "Solutions pour vos collaborateurs",
-		href: "/solutions-pour-vos-collaborateurs",
+		title: "Coaching",
+		href: "/coaching",
 	},
 	{ title: "À propos", href: "/a-propos" },
 	{ title: "Contact", href: "/contact" },

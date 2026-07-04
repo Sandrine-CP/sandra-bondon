@@ -52,10 +52,10 @@ export default function Seances() {
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>
-						<li>Séance individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
-						<li>Séance de couple : 160 €</li>
-						<li>Séance de groupe (minimum 3 personnes) : me contacter</li>
-						<li>Séance famille : 180 €</li>
+						<li>Thérapie individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
+						<li>Thérapie de couple : 160 €</li>
+						<li>Thérapie de groupe (minimum 3 personnes) : me contacter</li>
+						<li>Thérapie famille : 180 €</li>
 					</ul>
 					<p className="pt-5">
 						Les séances peuvent se faire en cabinet ou en visioconférence

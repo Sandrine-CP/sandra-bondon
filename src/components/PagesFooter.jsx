@@ -79,9 +79,9 @@ export default function PagesFooter() {
 					</Link>
 					<Link
 						className="hover:texte-primary hover:underline"
-						href="/solutions-pour-vos-collaborateurs"
+						href="/coaching"
 					>
-						Solutions pour vos collaborateurs
+						Coaching
 					</Link>
 					<Link
 						className="hover:texte-primary hover:underline"

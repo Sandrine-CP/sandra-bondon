@@ -14,18 +14,10 @@ export default function TherapiesSection() {
 
 	return (
 		<>
-			{/* Section cards animation */}
-			<div className="bg-primary mt-O">
-				<section>
-					<div>
-						<TherapiesCardsAnimation />
-					</div>
-				</section>
-
 			{/* Section intro */}
 			<section id="therapies" className="py-10 px-4 mb-0 text-center bg-white">
 				<h2 className="text-xl font-bold mb-6">
-					Techniques thérapeutiques adaptées
+					Techniques thérapeutiques
 				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
 					La thérapie solutionniste expérientielle, est une approche centrée sur la recherche de{" "}
@@ -46,11 +38,11 @@ export default function TherapiesSection() {
 					dans un temps qui est le vôtre.
 				</p>
 			</section>
-				{/* Section avec CTA séances */}
-				<section className="bg-white py-10 px-4 text-center">
-					<p className="text-center text-primary">
-						Vous souhaitez savoir comment une séance se déroule ?
-					</p>
+			{/* Section avec CTA séances */}
+			<section className="bg-white py-10 px-4 text-center">
+				<p className="text-center text-primary">
+					Vous souhaitez savoir comment une séance se déroule ?
+				</p>
 					<Link
 						href="/seances"
 						className=" flex flex-row justify-center text-center"
@@ -65,6 +57,15 @@ export default function TherapiesSection() {
 						/>
 					</Link>
 				</section>
+
+			{/* Section cards animation */}
+			<div className="bg-primary mt-O">
+				<section>
+					<div>
+						<TherapiesCardsAnimation />
+					</div>
+				</section>
+
 			</div>
 		</>
 	);

@@ -84,24 +84,33 @@ export default function SolutionsPourVous() {
 					<h1 className="text-2xl font-bold uppercase mb-4 p-5">
 						Solutions Pour Vous
 					</h1>
-					<div className="pt-5">
+					{/* <div className="pt-5">
 						Ma pratique est {" "}
 						<strong className="text-primary font-bold">brève</strong> et a pour finalité de trouver votre solution à votre mal être.
 						<br/>À travers notre travail, vous allez prendre conscience de vos ressources et de vos solutions.
 					</div>
 					<p className="pt-5">
   						Venez déposer vos fardeaux.<br />Cela veut dire :
-					</p>
+					</p> */}
+					<div className="pt-5">
+						Ma pratique est {" "}
+						<strong className="text-primary font-bold">brève</strong> elle se nomme la Thérapie Solutionniste Expérientielle - TSE.
+						<br/>Cette thérapie a pour finalité de trouver votre solution à votre mal-être.
+						<br/>Ainsi à travers notre travail vous prenez conscience de vos ressources et de vos solutions.
+					</div>
+					{/* <p className="pt-5">
+  						Venez déposer vos fardeaux.<br />Cela veut dire :
+					</p> */}
 
-					<blockquote className="my-12 max-w-3xl mx-auto px-4 text-center">
+					{/* <blockquote className="my-12 max-w-3xl mx-auto px-4 text-center">
   					<p className="relative inline-block italic text-lg leading-relaxed text-gray-800 sm:text-xl">
     				<span className="absolute -left-3 -top-5 text-5xl text-orange-400 leading-none sm:-left-6 sm:-top-6 sm:text-6xl">
      				 “
     				</span>
     				Toutes les ressources sont en vous, venez les rencontrer. <br/>Ce que vous voulez vivre demain, vous le vivrez dès aujourd&apos;hui.
   					</p>
-					</blockquote>
-					<div className="pt-5">
+					</blockquote> */}
+					{/* <div className="pt-5">
 						A travers votre travail, nous allons{" "}
 						<strong className="text-primary font-bold">ensemble</strong> trouver
 						vos ressources et les mettre en lumière.
@@ -109,7 +118,7 @@ export default function SolutionsPourVous() {
 						Vous permettre de Re-prendre confiance en vous, retrouver un juste
 						positionnement et la posture qui est en adéquation avec qui vous
 						êtes.
-					</div>
+					</div> */}
 				</section>
 				{/* Section profils clients */}
 				<section className="py-10 px-4 text-center ">

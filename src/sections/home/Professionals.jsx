@@ -94,7 +94,7 @@ export default function Professionals() {
 				</div>
 			</div>
 			<div className="text-center mt-8">
-				<Link href="/solutions-pour-vos-collaborateurs">
+				<Link href="/coaching">
 					<Button
 						text="Voir plus"
 						textColor="#2C254D"

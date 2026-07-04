@@ -166,7 +166,7 @@ export default function Home() {
 					<div className="relative z-10 h-full p-4 md:p-10">
 					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
 						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] self-center text-center leading-tight max-w-3xl mx-auto">
-							Sandra Bondon<br/>Psychopraticienne Hypnothérapeute - Coach<br/> À Saint-Germain-en-Laye
+							Sandra Bondon<br/>Psychopraticienne - Hypnothérapeute - Coach<br/> À Saint-Germain-en-Laye
 						</h1>
 						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
 							S | B

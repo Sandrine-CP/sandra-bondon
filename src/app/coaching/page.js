@@ -15,11 +15,11 @@ export default function SolutionsPourVosCollaborateurs() {
 			<main>
 				<div className="max-w-5xl mx-auto px-4 py-10">
 					<h1 className="text-2xl font-bold uppercase text-center mb-4">
-						Accompagnement professionnel & business coaching en cabinet à Saint-Germain-en-Laye ou sur site
+						Coaching de particuliers ou professionnels en cabinet à saint germain en Laye ou sur site
 					</h1>
 
 					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
-						Sandra Bondon | Psychopraticienne solutionniste & Business Coach
+						Sandra Bondon | Psychopraticienne - Hypnothérapeute - Coach
 					</p>
 					<p className="text-center font-semibold mb-12">
   						Sandra Bondon, psychopraticienne, hypnothérapeute et coach, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
@@ -68,14 +68,13 @@ export default function SolutionsPourVosCollaborateurs() {
 					{/* Section 2 : Pro — Business Coach */}
 					<section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-							Pro : Business Coach - cadres dirigeants, managers, équipes
+							Business Coach - cadres dirigeants, managers, équipes
 						</h3>
 
 						<div className="space-y-4 text-left leading-relaxed">
 							<p className="font-semibold">
 								Coaching professionnel orienté performance durable, posture et relations :
-								retrouver de la clarté, gagner en efficacité et créer une dynamique d’équipe
-								saine.
+								retrouver de la clarté, gagner en efficacité et créer une dynamique d’équipe.
 							</p>
 
 							<ul className="list-disc pl-5 space-y-1">
@@ -83,17 +82,19 @@ export default function SolutionsPourVosCollaborateurs() {
 								<li>Dompter la procrastination (organisation, priorisation, engagement)</li>
 								<li>Créer la synergie d’équipe et fluidifier la communication</li>
 								<li>Harmoniser les esprits pour gagner en efficacité</li>
-								<li>Travailler la responsabilité individuelle</li>
+								<li>Re-gagner en confiance et consolider l’estime de soi</li>
+								<li>Développer un état d’esprit plus optimiste et soutenant</li>
+								{/* <li>Travailler la responsabilité individuelle</li> */}
 								<li>Accompagner une reprise d’activité ou une transition</li>
-								<li>Mettre en perspective savoir, compétences et comportements pour objectiver</li>
+								{/* <li>Mettre en perspective savoir, compétences et comportements pour objectiver</li> */}
 							</ul>
 						</div>
 					</section>
 
 					{/* Section 3 : Particulier — Coaching */}
-					<section>
+					{/* <section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-							Particulier : Coaching - confiance, estime, émotions...
+							Coaching - confiance, estime, émotions...
 						</h3>
 
 						<div className="space-y-4 text-left leading-relaxed">
@@ -106,14 +107,15 @@ export default function SolutionsPourVosCollaborateurs() {
 							<ul className="list-disc pl-5 space-y-1">
 								<li>Re-gagner en confiance et consolider l’estime de soi</li>
 								<li>Développer un état d’esprit plus optimiste et soutenant</li>
-								<li>Se défaire de pensées toxiques et adopter des pensées harmonieuses</li>
-								<li>Comprendre son fonctionnement pour mieux gérer ses émotions</li>
-								<li>Trouver ses ressources intérieures et les activer</li>
-								<li>Retrouver du dynamisme et de l’énergie</li>
+								
 								<li>Devenir conscient de son potentiel et l’améliorer</li>
+								<li>Retrouver du dynamisme et de l’énergie</li>
+								<li>Trouver ses ressources intérieures et les activer</li>
+								<li>Comprendre son fonctionnement pour mieux gérer ses émotions</li>
+								<li>Se défaire de pensées toxiques et adopter des pensées harmonieuses</li>
 							</ul>
 						</div>
-					</section>
+					</section> */}
 
 					{/* Section 4 : Psychopraticienne — thématiques */}
 					<section>

@@ -44,7 +44,7 @@ export default function TherapiesCardsAnimation() {
 						imageSrc="/images/therapies/therapie-breve-parcours-solution.webp"
 						imageAlt="Illustration de la thérapie brève orientée vers la résolution de problèmes"
 						title="Thérapie transpersonnelle"
-						description="Approche ciblée et orientée solution, pour avancer rapidement face à une difficulté précise."
+						description="Initiée dans les années 1960 par Abraham Maslow et Stanislav Grof, cette discipline place la dimension spirituelle au cœur de l’humain. Elle intègre le potentiel thérapeutique des états modifiés de conscience, pour une complète connaissance de soi."
 					/>
 				</div>
 				{/* card 4-Title */}
@@ -68,6 +68,15 @@ export default function TherapiesCardsAnimation() {
 						description="Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques."
 					/>
 				</div>
+				{/* card 8 */}
+				<div>
+					<ImageCard
+						imageSrc="/images/therapies/therapie-individuelle-adulte-ado-enfant.webp"
+						imageAlt="Illustration de la thérapie individuelle pour adulte, adolescent et enfant"
+						title="Thérapie individuelle"
+						description="Un accompagnement personnalisé, à chaque âge, adulte, ado, enfant, pour avancer à votre rythme selon vos besoins."
+					/>
+				</div>
 				{/* card 6 */}
 				<div>
 					<ImageCard
@@ -80,19 +89,10 @@ export default function TherapiesCardsAnimation() {
 				{/* card 7 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/therapies/therapie-groupe.webp"
-						imageAlt="Illustration de la thérapie de groupe et du soutien collectif"
-						title="Thérapie de groupe"
+						imageSrc="/images/therapies/coaching.webp"
+						imageAlt="Illustration du coaching et du soutien en groupe"
+						title="Coaching"
 						description="Un cadre d’échange et de soutien pour partager, se sentir compris et avancer ensemble."
-					/>
-				</div>
-				{/* card 8 */}
-				<div>
-					<ImageCard
-						imageSrc="/images/therapies/therapie-individuelle-adulte-ado-enfant.webp"
-						imageAlt="Illustration de la thérapie individuelle pour adulte, adolescent et enfant"
-						title="Thérapie individuelle"
-						description="Un accompagnement personnalisé, à chaque âge, adulte, ado, enfant, pour avancer à votre rythme selon vos besoins."
 					/>
 				</div>
 			</div>
