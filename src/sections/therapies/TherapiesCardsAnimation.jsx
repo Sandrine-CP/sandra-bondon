@@ -9,7 +9,7 @@ import ImageCard from "@/components/ImageCard";
 
 export default function TherapiesCardsAnimation() {
 	return (
-		<div className="bg-[#22223b] flex justify-center mt-4 pt-20 mb-8">
+		<div className="bg-[#22223b] flex justify-center mt-4 py-20">
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 md:px-10 place-items-center max-w-[1300px] mx-auto">
 				{/* card 1 */}
 				<div>
@@ -82,7 +82,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/therapies/therapie-couple-accompagnement-cabinet.webp"
 						imageAlt="Illustration de la thérapie de couple dans un cadre d'accompagnement en cabinet"
-						title="Thérapie fammile/couple - Coaching"
+						title="Thérapie couple/famille"
 						description="Un espace pour mieux se comprendre, apaiser les tensions et retrouver une relation plus sereine."
 					/>
 				</div>

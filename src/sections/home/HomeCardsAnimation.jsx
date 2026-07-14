@@ -1,4 +1,5 @@
 import ImageCard from "@/components/ImageCard";
+import HomeSolutionCard from "@/components/HomeSolutionCard";
 
 export default function HomeCardsAnimation() {
 	return (
@@ -36,7 +37,7 @@ export default function HomeCardsAnimation() {
 						description="Marque psychique profonde laissée par un événement vécu comme violent, injuste ou dangereux. Le traumatisme peut ressurgir longtemps après, sous forme d’angoisses, d’images ou de blocages."
 					/>
 				</div>
-				<div
+				{/* <div
 					className="flex flex-col justify-center items-center w-[280px] h-[180px] rounded-lg shadow-lg
 					sm:col-span-2 sm:col-start-1 sm:row-start-3
 					lg:col-span-1 lg:col-start-2 lg:row-start-2 mx-auto"
@@ -47,7 +48,18 @@ export default function HomeCardsAnimation() {
 					<p className="text-secondary text-lg text-center mt-2">
 						Une solution existe pour vous
 					</p>
-				</div>{" "}
+				</div>{" "} */}
+							
+				{/* Card centrale avec CTA solutions-pour-vous au hover */}
+				<div
+				className="
+				sm:col-span-2 sm:col-start-1 sm:row-start-3
+				lg:col-span-1 lg:col-start-2 lg:row-start-2
+				mx-auto
+				"
+				>
+					<HomeSolutionCard />
+				</div>
 				<div className="lg:row-start-2 lg:col-start-3">
 					<ImageCard
 						title="Charge Mentale"
