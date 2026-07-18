@@ -82,7 +82,7 @@ export default function TherapiesCardsAnimation() {
 					<ImageCard
 						imageSrc="/images/therapies/therapie-couple-accompagnement-cabinet.webp"
 						imageAlt="Illustration de la thérapie de couple dans un cadre d'accompagnement en cabinet"
-						title="Thérapie couple/famille"
+						title="Thérapie couple / famille"
 						description="Un espace pour mieux se comprendre, apaiser les tensions et retrouver une relation plus sereine."
 					/>
 				</div>

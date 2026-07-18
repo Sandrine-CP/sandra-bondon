@@ -58,7 +58,7 @@ export default function CabinetSection({ addresses, className }) {
 						className="flex flex-col justify-center items-center text-center lg:w-1/2 w-full"
 					>
 						<h2 className="text-xl font-bold p-5">
-							Trouvez facilement mon cabinet
+							Le cabinet
 						</h2>
 						<p>
 							Le cabinet est situé à Saint-Germain-en-Laye, dans un espace calme et facilement accessible. <br />

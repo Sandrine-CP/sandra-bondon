@@ -41,7 +41,7 @@ export default function Consultations() {
 			{/* Section des Tarifs */}
 			<div className="text-center mt-8">
 				<p className="text-gray-500 text-sm">Tarifs</p>
-				<p className="text-gray-500 text-sm">Séance individuelle : 85 €<br/>Une première consultation téléphonique de 30 min est offerte.</p>
+				<p className="text-gray-500 text-sm">Séance individuelle : 85 €<br/>Un premier échange téléphonique de 30 min est offert.</p>
 			</div>
 			<div className="mt-8">
 				<GoogleMap addresses={addresses} />

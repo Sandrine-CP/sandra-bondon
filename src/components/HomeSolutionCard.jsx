@@ -49,14 +49,12 @@ export default function HomeSolutionCard() {
 		            [backface-visibility:hidden]
 	                "
                 >
-                    <p className="max-w-[250px] text-secondary text-center text-2xl font-semibold leading-snug">
-	                Dans ma vie
+                    <p className="max-w-[250px] text-secondary text-center text-xl font-semibold leading-snug">
+	                Dans ma vie personnelle
 	                <br />
-	                personnelle,
+	                Dans ma vie familiale
 	                <br />
-	                familiale
-	                <br />
-	                et professionnelle
+	               Dans ma vie professionnelle
                     </p>	                
                 <motion.div
                      animate={{ y: [0, 5, 0] }}

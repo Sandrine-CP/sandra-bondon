@@ -149,18 +149,18 @@ export default function Home() {
 						/>
 					</Link>
 				</section>{" "}
-				{/* Section Sandra Bondon */}
-				<section
+				{/* OLD Section Sandra Bondon */}
+				{/* <section
 					className="h-[520px] sm:h-[480px] md:h-[500px] lg:h-[75vh] bg-cover bg-center relative"
 					style={{ backgroundImage: "url(/images/home/fondHomeAbout.webp)" }}
 				>
-					<div className="absolute left-4 top-1/2 -translate-y-1/2">							
+					<div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">							
 						<Image
-							src="/images/home/sandra-bondon-home.jpeg"
+							src="/images/portrait-sandra-bondon.webp"
 							alt="Portrait de Sandra Bondon, psychopraticienne, hypnothérapeute et business coach"
 							width={120}
 							height={120}
-							className="rounded-e-full w-[120px] h-auto md:w-60 md:h-auto"
+							className="rounded-full object-cover border-white/80 border-2 shadow-lg w-[120px] h-auto md:w-60 md:h-auto"
 						/>
 					</div>{" "}
 					<div className="relative z-10 h-full p-4 md:p-10">
@@ -187,7 +187,68 @@ export default function Home() {
 					</div>
 					</div>
 
+				</section> */}
+
+				{/* NEW Section Sandra Bondon */}
+				<section
+				className="h-[520px] sm:h-[480px] md:h-[500px] lg:h-[75vh] bg-cover bg-center relative"
+				style={{ backgroundImage: "url(/images/home/fond-home-about-peche.webp)" }}
+>
+				<div className="relative z-10 h-full px-4 md:px-10">
+
+				<div className="h-full flex flex-col items-center justify-between pt-10 pb-28">
+
+				{/* Titre */}
+				<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] text-center leading-tight max-w-3xl">
+				Sandra Bondon
+				<br />
+				Psychopraticienne - Hypnothérapeute - Coach
+				<br />
+				À Saint-Germain-en-Laye
+				</h1>
+
+				{/* Photo */}
+				<Image
+					src="/images/portrait-sandra-bondon.webp"
+					alt="Portrait de Sandra Bondon"
+					width={240}
+					height={240}
+					className="
+						w-[120px] h-[120px]
+						md:w-60 md:h-60
+						rounded-full
+						object-cover
+						border-2 border-white/80
+						shadow-lg
+						-translate-y-3
+						md:translate-y-0
+						"
+				/>
+
+				{/* Signature */}
+				<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase self-end mr-2 md:mr-6 opacity-[0.35]">
+					S | B
+				</p>
+
+				</div>
+
+				{/* CTA */}
+				<div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
+					<Link className="text-center" href="/a-propos">
+						<Button
+							text="Voir mon parcours"
+							textColor="#FFFFFF"
+							bgColor="#4961E1"
+							hoverTextColor="#FFFFFF"
+							hoverBgColor="#4961E1"
+							className="mt-6 mb-6"
+							/>
+					</Link>	
+
+				</div>
+				</div>
 				</section>
+				
 				{/* Section Spécialités */}
 				<section className="bg-white">
 					<FloatingList

@@ -68,11 +68,13 @@ export default function Professionals() {
 					>
 						<h3 className="text-l font-bold mb-4">Accompagnement en entreprise</h3>
 						<p className="leading-relaxed">
-							Nous identifions ensemble vos besoins. <br />
-							Nous pouvons travailler sur la gestion du changement, la charge
-							mentale, la prévention du burn-out, le développement de carrière
-							ou tout autre sujet qui permettra à vos collaborateurs de vivre
-							pleinement et sereinement leur carrière.
+							Vos besoins sont peut-être: <br />
+							Peur de prendre la parole en public ? <br />
+							Peur de parler à vos collaborateurs ou managers ? <br />
+							Envie de changer de posture ? <br />
+							Envie de gérer votre stress ? <br />
+							Mon accompagnement : <br />
+							l'art de trouver les mots justes pour bien s'exprimer en toutes circonstances dans votre environnement professionnel.
 						</p>
 					</div>
 
