@@ -41,8 +41,8 @@ export default function TherapiesCardsAnimation() {
 				{/* card 3 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/therapies/therapie-breve-parcours-solution.webp"
-						imageAlt="Illustration de la thérapie brève orientée vers la résolution de problèmes"
+						imageSrc="/images/therapies/pyramide-transpersonnelle-personnage-feminin.webp"
+						imageAlt="Illustration de la thérapie transpersonnelle initiée dans les années 1960 par A.MAslow orientée vers la dimension spirituelle de l'humain"
 						title="Thérapie transpersonnelle"
 						description="Initiée dans les années 1960 par Abraham Maslow et Stanislav Grof, cette discipline place la dimension spirituelle au cœur de l’humain. Elle intègre le potentiel thérapeutique des états modifiés de conscience, pour une complète connaissance de soi."
 					/>
@@ -89,7 +89,7 @@ export default function TherapiesCardsAnimation() {
 				{/* card 7 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/therapies/coaching.webp"
+						imageSrc="/images/therapies/coaching-professionnel.webp"
 						imageAlt="Illustration du coaching et du soutien en groupe"
 						title="Coaching"
 						description="Un cadre d’échange et de soutien pour partager, se sentir compris et avancer ensemble."
