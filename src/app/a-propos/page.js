@@ -217,7 +217,7 @@ export default function APropos() {
 
 							<p>
 								La thérapie solutionniste expérientielle est une approche profonde, efficiente et brève :
-								les premiers changements apparaissent souvent dans les 6 premiers mois. La durée de ce type de thérapie est au moins de 6 mois et varie selon chaque personne jusqu’à 3ans.
+								les premiers changements apparaissent souvent dans les 6 premiers mois. La durée de ce type de thérapie est au moins de 6 mois et varie selon chaque personne jusqu’à 3 ans.
 							</p>
 							</div>
 						</section>

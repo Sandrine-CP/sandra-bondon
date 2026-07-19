@@ -18,12 +18,12 @@ export default function SolutionsPourVosCollaborateurs() {
 						Coaching de particuliers ou professionnels en cabinet à saint germain en Laye ou sur site
 					</h1>
 
-					<p className="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
+					<p className="text-center text-xl tracking-widest text-gray-500 mb-8">
 						Sandra Bondon | Psychopraticienne - Hypnothérapeute - Coach
 					</p>
-					<p className="text-center font-semibold mb-12">
+					{/*OLD <p className="text-center font-semibold mb-12">
   						Sandra Bondon, psychopraticienne, hypnothérapeute et coach, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
-					</p>
+					</p> */}
 
 					{/* Chapeau SEO (résumé page) */}
 					<p className="text-center mb-12">
@@ -68,7 +68,7 @@ export default function SolutionsPourVosCollaborateurs() {
 					{/* Section 2 : Pro — Business Coach */}
 					<section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
-							Business Coach - cadres dirigeants, managers, équipes
+							Coaching : cadres dirigeants, managers, équipes
 						</h3>
 
 						<div className="space-y-4 text-left leading-relaxed">
@@ -81,9 +81,9 @@ export default function SolutionsPourVosCollaborateurs() {
 								<li>Trouver vos ressources et renforcer votre posture</li>
 								<li>Dompter la procrastination (organisation, priorisation, engagement)</li>
 								<li>Créer la synergie d’équipe et fluidifier la communication</li>
-								<li>Harmoniser les esprits pour gagner en efficacité</li>
+								<li>Gestion de l&apos;anxiété</li>
 								<li>Re-gagner en confiance et consolider l’estime de soi</li>
-								<li>Développer un état d’esprit plus optimiste et soutenant</li>
+								<li>Maîtrise de l&apos;expression orale</li>
 								{/* <li>Travailler la responsabilité individuelle</li> */}
 								<li>Accompagner une reprise d’activité ou une transition</li>
 								{/* <li>Mettre en perspective savoir, compétences et comportements pour objectiver</li> */}
@@ -91,7 +91,7 @@ export default function SolutionsPourVosCollaborateurs() {
 						</div>
 					</section>
 
-					{/* Section 3 : Particulier — Coaching */}
+					{/* OLD Section 3 : Particulier — Coaching */}
 					{/* <section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 							Coaching - confiance, estime, émotions...
@@ -117,8 +117,8 @@ export default function SolutionsPourVosCollaborateurs() {
 						</div>
 					</section> */}
 
-					{/* Section 4 : Psychopraticienne — thématiques */}
-					<section>
+					{/* OLD Section 4 : Psychopraticienne — thématiques */}
+					{/* <section>
 						<h3 className="mt-12 mb-4 text-xl font-semibold tracking-tight text-center lg:text-left lg:text-2xl">
 							Psychopraticienne : accompagnement thérapeutique
 						</h3>
@@ -136,7 +136,7 @@ export default function SolutionsPourVosCollaborateurs() {
 								<li>Hypnose de régression (selon la situation)</li>
 							</ul>
 						</div>
-					</section>
+					</section> */}
 
 					{/* Section 5 : Approche solutionniste (MOSAIC®/EMDR, PNL, hypnose) */}
 					<section>
