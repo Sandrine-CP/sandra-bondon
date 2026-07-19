@@ -74,7 +74,7 @@ export default function Professionals() {
 							Envie de changer de posture ? <br />
 							Envie de gérer votre stress ? <br />
 							Mon accompagnement : <br />
-							l'art de trouver les mots justes pour bien s'exprimer en toutes circonstances dans votre environnement professionnel.
+							l&apos;art de trouver les mots justes pour bien s&apos;exprimer en toutes circonstances dans votre environnement professionnel.
 						</p>
 					</div>
 

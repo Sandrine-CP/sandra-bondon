@@ -22,7 +22,7 @@ export default function ApproachSection() {
 					Je vous propose une approche personnalisée
 				</h2>
 				<p className="leading-relaxed max-w-4xl mx-auto text-gray-700">
-					En tant que psychopraticienne, j'accueille sans jugement vos problèmes. Grâce à mon écoute active, je serai le miroir de vos propos.
+					En tant que psychopraticienne, j&apos;accueille sans jugement vos problèmes. Grâce à mon écoute active, je serai le miroir de vos propos.
 					<br /> Ensemble, nous explorons vos difficultés et vos objectifs pour
 					établir une{" "}
 					<strong className="text-primary font-bold">
