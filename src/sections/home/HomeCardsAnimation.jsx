@@ -65,7 +65,7 @@ export default function HomeCardsAnimation() {
 						title="Charge Mentale"
 						imageSrc="/images/home/charge-mentale-surcharge-esprit.webp"
 						imageAlt="Illustration de la charge mentale et de la surcharge de l'esprit"
-						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
+						description="Saturation invisible liée à la gestion simultanée de tâches, pensées, responsabilités. Irritabilité souvent présente, elle épuise sans qu’on s’en rende compte et impacte fortement la clarté d’esprit et la disponibilité émotionnelle."
 					/>
 				</div>
 				<div className="lg:row-start-3 lg:col-start-1">

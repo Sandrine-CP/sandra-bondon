@@ -58,7 +58,7 @@ export default function APropos() {
 							</p>
 
 							<blockquote className="mt-6 px-6 py-4 border-l-4 border-orange-400 bg-gray-50 italic rounded-md text-left">								<p>
-									« Vous accompagner vers un équilibre émotionnel grâce à une approche
+									« Vous accompagner : vous conduire vers un juste et bon équilibre émotionnel grâce à une approche
 									bienveillante et profondément humaine. »
 								</p>
 							</blockquote>
@@ -123,14 +123,14 @@ export default function APropos() {
 									l’accompagnement thérapeutique se fait plus fort.
 								</p>
 								<p>
-									Puis survient un moment déterminant, j’entame
+									Survient un moment déterminant, j’entame
 									une psychothérapie qui dure 15 ans. Un espace précieux, neutre,
 									où je peux me raconter, comprendre qui je suis et transformer ce
 									qui demande à l’être. Cette thérapie me révèle, telle{" "}
 									<strong>une chenille qui devient papillon.</strong>
 								</p>
 								<p>
-									Puis 2020 arrive, ma décision est prise, je reviens à mes premières amours : la psychologie. Je bascule donc vers un nouveau monde :{" "}
+									2020 arrive, ma décision est prise, je reviens à mes premières amours : la psychologie. Je bascule donc vers un nouveau monde :{" "}
 									<strong>l’aide à la personne</strong>. Je me forme intensivement
 									pour offrir un accompagnement complet et ajusté :
 								</p>
@@ -164,7 +164,7 @@ export default function APropos() {
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
 							<p>
-								Créée par le Dr G. Poupard en 2012, la <strong>Thérapie Solutionniste Expérientielle®</strong>
+								Créée par le Dr G. Poupard en 2012, la <strong>Thérapie Solutionniste Expérientielle® </strong>
 								s’inscrit dans le courant des <strong>thérapies humanistes</strong>, troisième grand courant
 								de la psychologie et de la thérapie.
 							</p>
@@ -231,7 +231,7 @@ export default function APropos() {
 							</p>
 							<div className="space-y-4 text-left leading-relaxed">
 								<p>
-									Je sais l&apos;importance d&apos;avoir un espace où l&apos;on peut être entendu(e), écouté(e) sans jugement, dans la bienveillance. Je suis le mirroir de vos propos.
+									Je sais l&apos;importance d&apos;avoir un espace où l&apos;on peut être entendu(e), écouté(e) sans jugement, dans la bienveillance. Je suis le miroir de vos propos.
 								</p>
 								<p>
 									Je crois profondément en la capacité de chacun à se

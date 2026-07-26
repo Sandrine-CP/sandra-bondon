@@ -32,12 +32,13 @@ export default function TherapiesCardsAnimation() {
 				{/* card 3 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/therapies/therapie-mosaic.webp"
-						imageAlt="Illustration de la méthode MOSAIC® et du processus de transformation émotionnelle"
-						title="MOSAIC®"
-						description="Méthode innovante utilisant des stimulations bilatérales pour favoriser une transformation profonde, durable et centrée sur la sensation qui conduit vers la solution."
+						imageSrc="/images/therapies/therapie-etatsDuMoi-ESTI.webp"
+						imageAlt="Illustration de la thérapie des états du Moi et de l'accompagnement des traumatismes"
+						title="Thérapie des états du Moi® (ESTI)"
+						description="Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques."
 					/>
 				</div>
+
 				{/* card 3 */}
 				<div>
 					<ImageCard
@@ -62,12 +63,13 @@ export default function TherapiesCardsAnimation() {
 				{/* card 5 */}
 				<div>
 					<ImageCard
-						imageSrc="/images/therapies/therapie-etatsDuMoi-ESTI.webp"
-						imageAlt="Illustration de la thérapie des états du Moi et de l'accompagnement des traumatismes"
-						title="Thérapie des états du Moi® (ESTI)"
-						description="Modèle innovant d’aide psychologique, reconnu comme l’un des plus efficient dans l’accompagnement des traumatismes et des troubles somatiques ou psychosomatiques."
+						imageSrc="/images/therapies/therapie-mosaic.webp"
+						imageAlt="Illustration de la méthode MOSAIC® et du processus de transformation émotionnelle"
+						title="MOSAIC®"
+						description="Méthode innovante utilisant des stimulations bilatérales pour favoriser une transformation profonde, durable et centrée sur la sensation qui conduit vers la solution."
 					/>
 				</div>
+
 				{/* card 8 */}
 				<div>
 					<ImageCard

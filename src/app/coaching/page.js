@@ -81,11 +81,12 @@ export default function SolutionsPourVosCollaborateurs() {
 								<li>Trouver vos ressources et renforcer votre posture</li>
 								<li>Dompter la procrastination (organisation, priorisation, engagement)</li>
 								<li>Créer la synergie d’équipe et fluidifier la communication</li>
-								<li>Gestion de l&apos;anxiété</li>
+								<li>Gérer son anxiété</li>
 								<li>Re-gagner en confiance et consolider l’estime de soi</li>
-								<li>Maîtrise de l&apos;expression orale</li>
+								<li>Maîtriser son expression orale</li>
 								{/* <li>Travailler la responsabilité individuelle</li> */}
 								<li>Accompagner une reprise d’activité ou une transition</li>
+								<li>Et surtout trouver vos ressources « afin de les faire grandir »</li>
 								{/* <li>Mettre en perspective savoir, compétences et comportements pour objectiver</li> */}
 							</ul>
 						</div>
