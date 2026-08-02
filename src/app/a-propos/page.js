@@ -58,7 +58,7 @@ export default function APropos() {
 							</p>
 
 							<blockquote className="mt-6 px-6 py-4 border-l-4 border-orange-400 bg-gray-50 italic rounded-md text-left">								<p>
-									« Vous accompagner : vous conduire vers un juste et bon équilibre émotionnel grâce à une approche
+									« Vous accompagner vers un juste et bon équilibre émotionnel grâce à une approche
 									bienveillante et profondément humaine. »
 								</p>
 							</blockquote>

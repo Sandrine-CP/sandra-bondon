@@ -59,7 +59,7 @@ export default function TherapiesSection() {
 				</section>
 
 			{/* Section cards animation */}
-			<div className="bg-primary mt-O">
+			<div className="bg-primary mt-0">
 				<section>
 					<div>
 						<TherapiesCardsAnimation />
