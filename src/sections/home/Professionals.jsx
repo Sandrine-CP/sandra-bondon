@@ -68,7 +68,7 @@ export default function Professionals() {
 					>
 						<h3 className="text-l font-bold mb-4">Accompagnement en entreprise</h3>
 						<p className="leading-relaxed">
-							Vos besoins sont peut-être: <br />
+							Vos besoins sont peut-être : <br />
 							Peur de prendre la parole en public ? <br />
 							Peur de parler à vos collaborateurs ou managers ? <br />
 							Envie de changer de posture ? <br />
