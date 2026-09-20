@@ -157,6 +157,7 @@ export default function Home() {
 					sm:h-[520px] 
 					md:h-[620px] 
 					lg:h-[75vh] 
+					lg:min-h-[620px]
 					bg-cover bg-center relative"
 
 					style={{ backgroundImage: "url(/images/home/fond-home-about-peche.webp)" }}
