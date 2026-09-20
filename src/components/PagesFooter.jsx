@@ -60,7 +60,9 @@ export default function PagesFooter() {
 				</div>
 				<div>
 					<h2 className="font-bold">Crédits</h2>
-					<p>Crédits visuels : photographies, illustrations sous licence et créations visuelles adaptées pour le site.</p>
+					<p>Crédits visuels : photographies, illustrations sous licence et créations visuelles adaptées pour le site.
+						<br/>Portraits de Sandra Bondon : Studio Amélie Marzouk
+					</p>
 					<p>Conception et réalisation du site : Sandrine Cazenave</p>
 				</div>
 				<div className="flex flex-col ">

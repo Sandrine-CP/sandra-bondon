@@ -48,7 +48,7 @@ export default function Seances() {
 					<h2 className="text-xl font-bold mb-4">Jours de consultation et Tarifs</h2>
 					<h3 className="text-l font-bold">Jours de consultation</h3>
 					<p className="pt-5 mb-4">
-						Je vous accueille sur rendez-vous, lundi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio (WhatsApp).
+						Je vous accueille sur rendez-vous, mardi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio (WhatsApp).
 					</p>
 					<h3 className="text-l font-bold mb-4">Tarifs</h3>
 					<ul>

@@ -38,7 +38,7 @@ export default function APropos() {
   							"
 	                    >
   							<Image
-    						src="/images/portrait-sandra-bondon.webp"
+    						src="/images/apropos/sandra-bondon-a-propos.webp"
     						alt="Sandra Bondon, psychopraticienne à Saint-Germain-en-Laye"
     						fill
     						priority
@@ -140,7 +140,13 @@ export default function APropos() {
 									<li>Psychopathologie</li>
 									<li>Relation d&apos;aide</li>
 									<li>Hypnose</li>
-									<li>MOSAIC® / EMDR solutionniste</li>
+									<li>MOSAIC® / EMDR solutionniste -{" "}
+										 <Link 
+										className="hover:text-primary hover:underline" 
+										href="https://wayinside.fr/articles/mosaic/"
+										target="_blank" rel="noopener noreferrer">
+										Formation auprès de Way Inside
+									</Link></li>
 									<li>Coaching</li>
 									<li>PNL</li>
 									<li>États du moi (ESTI®)</li>

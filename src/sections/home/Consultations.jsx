@@ -13,7 +13,7 @@ export default function Consultations() {
 		<section className="py-16 px-4">
 			<h2 className="text-2xl font-bold mb-4 text-center">Consultations</h2>
 			<p className="max-w-2xl mx-auto mb-4 text-center font-semibold">
-				Jours de consultation :<br /> Lundi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio.
+				Jours de consultation :<br /> Mardi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio.
 			</p>
 			<div className="grid grid-cols-1 md:grid-cols-7 gap-4 text-center">
 				{/* Bloc Cabinet */}

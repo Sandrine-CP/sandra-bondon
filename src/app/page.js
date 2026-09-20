@@ -149,95 +149,69 @@ export default function Home() {
 						/>
 					</Link>
 				</section>{" "}
-				{/* OLD Section Sandra Bondon */}
-				{/* <section
-					className="h-[520px] sm:h-[480px] md:h-[500px] lg:h-[75vh] bg-cover bg-center relative"
-					style={{ backgroundImage: "url(/images/home/fondHomeAbout.webp)" }}
-				>
-					<div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">							
-						<Image
-							src="/images/portrait-sandra-bondon.webp"
-							alt="Portrait de Sandra Bondon, psychopraticienne, hypnothérapeute et business coach"
-							width={120}
-							height={120}
-							className="rounded-full object-cover border-white/80 border-2 shadow-lg w-[120px] h-auto md:w-60 md:h-auto"
-						/>
-					</div>{" "}
-					<div className="relative z-10 h-full p-4 md:p-10">
-					<div className="h-full flex flex-col justify-between text-blue-500 mix-blend-difference pb-24">
-						<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] self-center text-center leading-tight max-w-3xl mx-auto">
-							Sandra Bondon<br/>Psychopraticienne - Hypnothérapeute - Coach<br/> À Saint-Germain-en-Laye
-						</h1>
-						<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase text-right">
-							S | B
-						</p>
-					</div>
-
-					<div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 text-center">
-						<Link className="text-center" href="/a-propos">
-							<Button
-								text="Voir mon parcours"
-								textColor="#FFFFFF"
-								bgColor="#4961E1"
-								hoverTextColor="#FFFFFF"
-								hoverBgColor="#4961E1"
-								className="mt-6 mb-6"
-							/>
-						</Link>	
-					</div>
-					</div>
-
-				</section> */}
 
 				{/* NEW Section Sandra Bondon */}
 				<section
-				className="h-[520px] sm:h-[480px] md:h-[500px] lg:h-[75vh] bg-cover bg-center relative"
-				style={{ backgroundImage: "url(/images/home/fond-home-about-peche.webp)" }}
+					className="
+					h-[520px] 
+					sm:h-[520px] 
+					md:h-[620px] 
+					lg:h-[75vh] 
+					bg-cover bg-center relative"
+
+					style={{ backgroundImage: "url(/images/home/fond-home-about-peche.webp)" }}
 >
 				<div className="relative z-10 h-full px-4 md:px-10">
 
-				<div className="h-full flex flex-col items-center justify-between pt-10 pb-28">
+				<div className="h-full flex flex-col items-center pt-10 pb-28">
 
-				{/* Titre */}
-				<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] text-center leading-tight max-w-3xl">
-				Sandra Bondon
-				<br />
-				Psychopraticienne - Hypnothérapeute - Coach
-				<br />
-				À Saint-Germain-en-Laye
+					{/* Titre */}
+					<h1 className="text-[4vw] sm:text-[3vw] md:text-[2.5vw] lg:text-[1.9vw] text-center leading-tight max-w-3xl">
+					Sandra Bondon
+					<br />
+					Psychopraticienne - Hypnothérapeute - Coach
+					<br />
+					À Saint-Germain-en-Laye
 				</h1>
 
 				{/* Photo */}
 				<Image
-					src="/images/portrait-sandra-bondon.webp"
-					alt="Portrait de Sandra Bondon"
+					src="/images/home/sandra-bondon-home.webp"
+					alt="Sandra Bondon, psychopraticienne, hypnothérapeute et coach"
 					width={240}
-					height={240}
+					height={320}
 					className="
-						w-[120px] h-[120px]
-						md:w-60 md:h-60
-						rounded-full
-						object-cover
-						border-2 border-white/80
-						shadow-lg
-						-translate-y-3
-						md:translate-y-0
-						"
+					mt-6 md:mt-8
+					w-[135px] h-[180px]
+					sm:w-[165px] sm:h-[220px]
+					md:w-[210px] md:h-[280px]
+					lg:w-[240px] lg:h-[320px]
+					rounded-3xl
+					object-cover
+					border-2 border-white/80
+					shadow-lg
+					"
 				/>
 
 				{/* Signature */}
-				<p className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw] uppercase self-end mr-2 md:mr-6 opacity-[0.35]">
+				<p className="
+					mt-auto
+					text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[5vw]
+					uppercase
+					self-end
+					mr-2 md:mr-6
+					opacity-[0.35]
+					"			>
 					S | B
 				</p>
 
-				</div>
-
+			</div>
 				{/* CTA */}
 				<div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
 					<Link className="text-center" href="/a-propos">
 						<Button
 							text="Voir mon parcours"
-							textColor="#FFFFFF"
+							textColor="#22223b"
 							bgColor="#4961E1"
 							hoverTextColor="#FFFFFF"
 							hoverBgColor="#4961E1"
