@@ -3,6 +3,7 @@
 // Imports de base : React, hooks, libraries essentielles
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_URL  } from "@/config/site";
 // Bibliothèques tierces
 import { gsap } from "gsap";
@@ -45,36 +46,84 @@ export default function Seances() {
 					textColor="#000"
 					className="my-16 px-6"
 				>
-					<h2 className="text-xl font-bold mb-4">Jours de consultation et Tarifs</h2>
-					<h3 className="text-l font-bold">Jours de consultation</h3>
-					<p className="pt-5 mb-4">
-						Je vous accueille sur rendez-vous, mardi, mercredi, vendredi et samedi.<br />En présentiel, par téléphone ou en visio (WhatsApp).
-					</p>
-					<h3 className="text-l font-bold mb-4">Tarifs</h3>
-					<ul>
-						<li>Thérapie individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
-						<li>Thérapie de couple : 160 €</li>
-						<li>Thérapie de groupe (minimum 3 personnes) : me contacter</li>
-						<li>Thérapie famille : 180 €</li>
-					</ul>
-					<p className="pt-5">
-						Les séances peuvent se faire en cabinet ou en visioconférence
-						(WhatsApp), selon vos préférences.
-						<br />
-						Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
-						à me contacter via le formulaire en ligne ou par téléphone au
-						<br/>06 24 18 23 02.
-					</p>
-					<Link href="/contact">
-						<Button
-							text="Me contacter"
-							textColor="#2C254D"
-							bgColor="#FFA500"
-							hoverTextColor="#2C254D"
-							hoverBgColor="#FFA500"
-							className="mt-6"
-						/>
-					</Link>
+					<div className="
+						flex flex-col
+						lg:flex-row
+						items-center
+						lg:items-start
+						gap-10 lg:gap-16
+						max-w-5xl mx-auto
+					">
+						
+						{/* Portrait */}
+						<div className="
+							relative
+							w-[220px] h-[220px]
+							md:w-[280px] md:h-[280px]
+							lg:w-[340px] lg:h-[340px]
+							shrink-0
+							overflow-hidden
+							rounded-3xl
+						">
+							<Image
+								src="/images/seances/sandra-bondon-seances.webp"
+								alt="Sandra Bondon, psychopraticienne et hypnothérapeute à Saint-Germain-en-Laye"
+								fill
+								sizes="(min-width: 1024px) 340px, (min-width: 768px) 280px, 220px"
+								className="object-cover"
+							/>
+						</div>
+
+						{/* Informations */}
+						<div className="flex-1">
+							<h2 className="text-xl font-bold mb-4">
+								Jours de consultation et Tarifs
+							</h2>
+
+							<h3 className="text-l font-bold">
+								Jours de consultation
+							</h3>
+
+							<p className="pt-5 mb-4">
+								Je vous accueille sur rendez-vous, mardi, mercredi, vendredi et samedi.
+								<br />
+								En présentiel, par téléphone ou en visio (WhatsApp).
+							</p>
+
+							<h3 className="text-l font-bold mb-4">
+								Tarifs
+							</h3>
+
+							<ul>
+								<li>Thérapie individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
+								<li>Thérapie de couple : 160 €</li>
+								<li>Thérapie de groupe (minimum 3 personnes) : me contacter</li>
+								<li>Thérapie famille : 180 €</li>
+							</ul>
+
+							<p className="pt-5">
+								Les séances peuvent se faire en cabinet ou en visioconférence
+								(WhatsApp), selon vos préférences.
+								<br />
+								Pour plus d’informations ou pour prendre rendez-vous, n’hésitez pas
+								à me contacter via le formulaire en ligne ou par téléphone au
+								<br />
+								06 24 18 23 02.
+							</p>
+
+							<Link href="/contact">
+								<Button
+									text="Me contacter"
+									textColor="#2C254D"
+									bgColor="#FFA500"
+									hoverTextColor="#2C254D"
+									hoverBgColor="#FFA500"
+									className="mt-6"
+								/>
+							</Link>
+						</div>
+
+					</div>
 				</FadeInSectionAnimation>
 
 				{/* Section Cabinet et Google Maps */}

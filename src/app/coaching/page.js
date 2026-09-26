@@ -21,9 +21,6 @@ export default function SolutionsPourVosCollaborateurs() {
 					<p className="text-center text-xl tracking-widest text-gray-500 mb-8">
 						Sandra Bondon | Psychopraticienne - Hypnothérapeute - Coach
 					</p>
-					{/*OLD <p className="text-center font-semibold mb-12">
-  						Sandra Bondon, psychopraticienne, hypnothérapeute et coach, accompagne professionnels et particuliers en cabinet à Saint-Germain-en-Laye ou sur site.
-					</p> */}
 
 					{/* Chapeau SEO (résumé page) */}
 					<p className="text-center mb-12">
@@ -34,9 +31,17 @@ export default function SolutionsPourVosCollaborateurs() {
 
 					{/* Section 1 : Hero */}
 					<section className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10 md:justify-start">
-						<div className="relative w-[200px] h-[240px] md:w-[260px] md:h-[320px] lg:w-[300px] lg:h-[360px] overflow-hidden rounded-xl md:rounded-s-full shrink-0">
+						<div className="
+							relative 
+							w-[200px] h-[300px] 
+							md:w-[260px] md:h-[390px] 
+							lg:w-[300px] lg:h-[450px] 
+							overflow-hidden 
+							rounded-xl 
+							md:rounded-s-full 
+							shrink-0">
 							<Image
-								src="/images/professionnels/accompagner_collaborateurs.webp"
+								src="/images/professionnels/sandra-bondon-professionnels.webp"
 								alt="Coaching professionnel en entreprise avec Sandra Bondon à Saint-Germain-en-Laye"
 								fill
 								priority
