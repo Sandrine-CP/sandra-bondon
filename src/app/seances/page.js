@@ -95,7 +95,7 @@ export default function Seances() {
 							</h3>
 
 							<ul>
-								<li>Thérapie individuelle : 85 €. Un premier échange téléphonique de 30 min est offert</li>
+								<li>Thérapie individuelle : 85 €. <br/>Un premier échange téléphonique de 30 min est offert</li>
 								<li>Thérapie de couple : 160 €</li>
 								<li>Thérapie de groupe (minimum 3 personnes) : me contacter</li>
 								<li>Thérapie famille : 180 €</li>
