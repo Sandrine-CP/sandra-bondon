@@ -45,7 +45,7 @@ export default function CabinetSection({ addresses, className }) {
 						className="flex justify-center items-center m-2 lg:w-1/2 w-full mt-4 lg:mt-0"
 					>
 						<Image
-							src="/images/cabinet.jpg"
+							src="/images/cabinet-sandra-bondon.webp"
 							alt="Photo du cabinet à Saint-Germain-en-Laye de Sandra Bondon"
 							width={900} // Largeur explicite
 							height={600} // Hauteur explicite
