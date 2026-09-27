@@ -268,7 +268,7 @@ export default function APropos() {
 									je serais heureuse de vous accompagner.
 								</p>
 								<p className="italic font-semibold">
-									Tarif des séances : à partir de 85 €.
+									Tarif des séances : à partir de 85 €
 								</p>
 							</div>
 
